@@ -1,6 +1,7 @@
 .feature {
   width: 100%;
-  height: 500px;
+  height: 37vw;
+  max-height: 500px;
   margin-top: 75px;
   margin-bottom: 75px;
   display: flex;
@@ -17,7 +18,7 @@
 
 .feature h5 {
   font-size: 32px;
-  margin-top: 160px;
+  margin-top: 10vw;
   margin-left: 8%;
   margin-bottom: 10px;
 }
@@ -39,6 +40,7 @@
 
 .feature .logo {
   height: 45px;
+  display: block;
 }
 
 .feature .capture {
@@ -51,5 +53,29 @@
   margin-right: 5%;
 }
 
+.featureright .info {
+  margin-left: auto;
+  margin-right: 25px;
+}
 
+.featureright .capture {
+  margin-left: auto;
+}
 
+.featureright .logo {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.featureright h5 {
+  margin-left: 0px;
+}
+
+.featureright p {
+  margin-left: 0px;
+}
+
+.featureright a {
+  margin-left: 125px;
+  width: fit-content;
+}

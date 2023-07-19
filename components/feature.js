@@ -2,19 +2,8 @@ import Link from "next/link";
 
 import styles from "@/styles/components/feature.module.css";
 
-function Feature() {
-  const details = {
-    id: 0,
-    index: 0,
-    identifier: "hispanichackers",
-    title: "Hispanic Hackers",
-    description:
-      "Leading and designing website & brand content for a non-profit elevating the Latino tech community.",
-    link: "View Case Study",
-    background: "#287E7F",
-    captureMB: "0px",
-  };
-
+function Feature(props) {
+  const details = props.details;
   const bg = {
     "--bg": details.background,
   };

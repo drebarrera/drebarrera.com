@@ -4,6 +4,11 @@ import Link from "next/link";
 
 import styles from "@/styles/index.module.css";
 
+import featuredwork from "data/featuredwork.json"
+featuredwork.sort((a, b) => a.index - b.index);
+import featuredprojects from "data/featuredprojects.json"
+featuredprojects.sort((a, b) => a.index - b.index);
+
 function Introduction() {
   return (
     <article className={`${styles.introduction}`}>
@@ -97,11 +102,91 @@ function Work() {
     <article className={`${styles.featured} ${styles.work}`}>
       <div className={`${styles.content}`}>
         <h4>WORK</h4>
-        <Feature></Feature>
-        <Feature></Feature>
+        {featuredwork.map((details, index) => {
+          details.index = index;
+          return <Feature details={details}></Feature>
+        })}
       </div>
     </article>
   );
+}
+
+function Austin() {
+  return (
+    <article className={`${styles.austin}`}>
+      <div className={`${styles.content}`}>
+        <div className={`${styles.info}`}>
+          <div className={`${styles.container}`}>
+            <div className={`${styles.location}`}>
+              <img src="/images/icons/location.png"/>
+              <h5>AUSTIN, TX</h5>
+            </div>
+            <p>I work with innovators across the globe to direct and support software and design projects.</p>
+            <Link href="/contact" class="arrowlink">
+              <p>Send me a note</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 40 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M34 7.75L38.25 12m0 0l-4.25 4.25M36 12H3"
+                />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </article>
+  )
+}
+
+function PersonalProjects() {
+  return (
+    <article className={`${styles.featured} ${styles.projects}`}>
+      <div className={`${styles.content}`}>
+        <h4>PERSONAL PROJECTS</h4>
+        {featuredprojects.map((details, index) => {
+          details.index = index;
+          return <Feature details={details}></Feature>
+        })}
+      </div>
+    </article>
+  );
+}
+
+function LimitlessInnovation() {
+  const clientHeight = {
+    "height": (document.documentElement.clientHeight - 70) + "px",
+  };
+  return  (
+    <article className={`${styles.limitless}`} style={clientHeight}>
+      <h3>Limitless innovation and community brings progress.</h3>
+      <h4>Let's build something together.</h4>
+      <Link href="/contact" class="arrowlink">
+        <p>Send me a note</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 40 24"
+          strokeWidth={2}
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M34 7.75L38.25 12m0 0l-4.25 4.25M36 12H3"
+          />
+        </svg>
+      </Link>
+    </article>
+  )
 }
 
 function IndexPage() {
@@ -111,6 +196,9 @@ function IndexPage() {
       <Header></Header>
       <Specialties></Specialties>
       <Work></Work>
+      <Austin></Austin>
+      <PersonalProjects></PersonalProjects>
+      <LimitlessInnovation></LimitlessInnovation>
     </div>
   );
 }
