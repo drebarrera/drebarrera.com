@@ -6,9 +6,11 @@
   margin-bottom: 75px;
   display: flex;
   flex-direction: row;
-  background-color: var(--bg);
+  background: var(--bg);
   border-radius: 30px;
   color: white;
+  background-position: center;
+  background-size: cover;
 }
 
 .feature .info {
@@ -18,7 +20,7 @@
 
 .feature h5 {
   font-size: 32px;
-  margin-top: 10vw;
+  margin-top: 8vw;
   margin-left: 8%;
   margin-bottom: 10px;
 }
@@ -39,7 +41,7 @@
 }
 
 .feature .logo {
-  height: 45px;
+  width: 150px;
   display: block;
 }
 

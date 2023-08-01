@@ -2,21 +2,31 @@
   {
     "id": 0,
     "index": 0,
-    "identifier": "hispanichackers",
-    "title": "Hispanic Hackers",
-    "description": "Leading and designing website & brand content for a non-profit elevating the Latino tech community.",
+    "identifier": "arachnode",
+    "title": "Arachnode",
+    "description": "Developing and training an AI model to find information on the web.",
     "link": "View Case Study",
-    "background": "#287E7F",
+    "background": "#166481",
+    "captureMB": "5%"
+  },
+  {
+    "id": 0,
+    "index": 0,
+    "identifier": "shotglass",
+    "title": "Shotglass Jobs",
+    "description": "Changing the employment industry with an job board that will apply for you.",
+    "link": "View Case Study",
+    "background": "#F59300",
     "captureMB": "0px"
   },
   {
     "id": 0,
-    "index": 1,
-    "identifier": "hispanichackers",
-    "title": "Test",
-    "description": "Leading and designing website & brand content for a non-profit elevating the Latino tech community.",
+    "index": 0,
+    "identifier": "webgen",
+    "title": "WebGen Python UI Framework",
+    "description": "Developing an object-oriented Python framework for frontend.",
     "link": "View Case Study",
-    "background": "#287E7F",
+    "background": "#614D5B",
     "captureMB": "0px"
   }
 ]

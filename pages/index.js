@@ -1,6 +1,7 @@
 import Header from "components/header";
 import Feature from "components/feature";
 import Link from "next/link";
+import { useState, useEffect } from 'react';
 
 import styles from "@/styles/index.module.css";
 
@@ -161,30 +162,49 @@ function PersonalProjects() {
 }
 
 function LimitlessInnovation() {
-  const clientHeight = {
-    "height": (document.documentElement.clientHeight - 70) + "px",
+  const [clientHeight, setClientHeight] = useState(0);
+  
+  useEffect(() => {
+    function handleResize() {
+      setClientHeight(window.innerHeight);
+    }
+
+    window.addEventListener('resize', handleResize);
+    setClientHeight(window.innerHeight);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const height = {
+    "height": (clientHeight - 70) + "px",
   };
+
   return  (
-    <article className={`${styles.limitless}`} style={clientHeight}>
-      <h3>Limitless innovation and community brings progress.</h3>
-      <h4>Let's build something together.</h4>
-      <Link href="/contact" class="arrowlink">
-        <p>Send me a note</p>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 40 24"
-          strokeWidth={2}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M34 7.75L38.25 12m0 0l-4.25 4.25M36 12H3"
-          />
-        </svg>
-      </Link>
+    <article className={`${styles.limitless}`} style={height}>
+      <div className={`${styles.content}`}>
+        <h3>Limitless innovation and community bring progress.</h3>
+        <div className={`${styles.centered}`}>
+          <h4>Let's build something together.</h4>
+          <Link href="/contact" class="arrowlink">
+            <p>Send me a note</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 40 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M34 7.75L38.25 12m0 0l-4.25 4.25M36 12H3"
+              />
+            </svg>
+          </Link>
+        </div>
+      </div>
     </article>
   )
 }

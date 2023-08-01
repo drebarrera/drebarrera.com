@@ -8,5 +8,35 @@
     "link": "View Case Study",
     "background": "#287E7F",
     "captureMB": "0px"
+  },
+  {
+    "id": 0,
+    "index": 0,
+    "identifier": "f5cec",
+    "title": "FATHOM5 - CEC",
+    "description": "Modernizing the United States Navy’s tactical weapon’s system.",
+    "link": "View Case Study",
+    "background": "url('images/featured/f5cec/bg.png')",
+    "captureMB": "0px"
+  },
+  {
+    "id": 0,
+    "index": 0,
+    "identifier": "f5tesar",
+    "title": "FATHOM5 - EMBEDDED",
+    "description": "Designing R&D circuits and firmware for the next generation of electric vehicles.",
+    "link": "View Case Study",
+    "background": "url('images/featured/f5tesar/bg.png')",
+    "captureMB": "5%"
+  },
+  {
+    "id": 0,
+    "index": 0,
+    "identifier": "alpenaerial",
+    "title": "ALPEN AERIAL",
+    "description": "Designing R&D circuits and firmware for the next generation of electric vehicles.",
+    "link": "View Case Study",
+    "background": "#CE7829",
+    "captureMB": "0px"
   }
 ]

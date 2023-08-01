@@ -207,5 +207,40 @@
 }
 
 .limitless {
-  height: var(--clientHeight);
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.limitless .content {
+  height: 80%;
+  width: 80%;
+
+}
+
+.limitless h3 {
+  width: 55%;
+  min-width: 300px;
+  position: absolute;
+  white-space: pre-wrap;
+  color: white;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.limitless .centered {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.limitless h4 {
+  color: #6ECFC9;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
