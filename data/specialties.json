@@ -1,0 +1,20 @@
+[
+  {
+    "title": "UI/UX Design",
+    "details":
+      "Next.js, React, HTML, CSS, JavaScript, jQuery, Chrome Extensions, Wix, Figma, Photoshop, Lightroom",
+    "icon": "/images/icons/paintbrush.png"
+  },
+  {
+    "title": "Backend & DevOps",
+    "details":
+      "C/C++, Go, Python, PHP, Java, Node.js Selenium, API, Git, AWS, NoSQL, MongoDB, Prometheus, Grafana, Docker",
+    "icon": "/images/icons/code.png"
+  },
+  {
+    "title": "Engineering",
+    "details":
+      "Software, Web Apps, Data Automation, Artificial Intelligence, Embedded Systems, Prototyping",
+    "icon": "/images/icons/microchip.png"
+  }
+]

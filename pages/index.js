@@ -1,13 +1,15 @@
 import Header from "components/header";
 import Feature from "components/feature";
-import Link from "next/link";
-import { useState, useEffect } from 'react';
+import ArrowLink from "components/arrowlink";
+import { Fragment } from "react";
+import { useState, useEffect } from "react";
 
 import styles from "@/styles/index.module.css";
 
-import featuredwork from "data/featuredwork.json"
+import specialties from "data/specialties.json";
+import featuredwork from "data/featuredwork.json";
 featuredwork.sort((a, b) => a.index - b.index);
-import featuredprojects from "data/featuredprojects.json"
+import featuredprojects from "data/featuredprojects.json";
 featuredprojects.sort((a, b) => a.index - b.index);
 
 function Introduction() {
@@ -23,7 +25,7 @@ function Introduction() {
         </section>
         <img
           className={`${styles.centerpiece}`}
-          src="/images/centerpiece.png"
+          src="/images/centerpiece.gif"
         />
       </div>
     </article>
@@ -31,81 +33,41 @@ function Introduction() {
 }
 
 function Specialties() {
-  const SPECIALTY_INFO = [
-    {
-      title: "UI/UX Design",
-      details:
-        "Next.js, React, HTML, CSS, JavaScript, jQuery, Chrome Extensions, Wix, Figma, Photoshop, Lightroom",
-      icon: "/images/icons/paintbrush.png",
-    },
-    {
-      title: "Backend & DevOps",
-      details:
-        "C/C++, Go, Python, PHP, Java, Node.js Selenium, API, Git, AWS, NoSQL, MongoDB, Prometheus, Grafana, Docker",
-      icon: "/images/icons/code.png",
-    },
-    {
-      title: "Engineering",
-      details:
-        "Software, Web Apps, Data Automation, Artificial Intelligence, Embedded Systems, Prototyping",
-      icon: "/images/icons/microchip.png",
-    },
-  ];
-
   return (
     <article className={`${styles.specialties}`}>
       <div className={`${styles.content}`}>
-        {SPECIALTY_INFO.map((specialty) => {
-          return (
-            <section className={`${styles.specialty}`}>
-              <h3 className={`${styles.title}`}>{specialty.title}</h3>
-              <p className={`${styles.details}`}>{specialty.details}</p>
-            </section>
-          );
-        })}
-      </div>
-      <div className={`${styles.content}`}>
-        {SPECIALTY_INFO.map((specialty) => {
+        {specialties.map((specialty) => {
           const url = {
             "--url": `url(${specialty.icon})`,
           };
           return (
-            <div className={`${styles.specialty}`}>
-              <div className={`${styles.icon}`} style={url}></div>
-            </div>
+            <section className={`${styles.specialty}`}>
+              <h3 className={`${styles.title}`}>{specialty.title}</h3>
+              <p className={`${styles.details}`}>{specialty.details}</p>
+              <div className={`${styles.specialty}`}>
+                <div className={`${styles.icon}`} style={url}></div>
+              </div>
+            </section>
           );
         })}
       </div>
 
-      <Link href="/manifesto" class="arrowlink">
-        <p>My Manifesto</p>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 40 24"
-          strokeWidth={2}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M34 7.75L38.25 12m0 0l-4.25 4.25M36 12H3"
-          />
-        </svg>
-      </Link>
+      <ArrowLink
+        details={{ link: "My Manifesto", url: "/manifesto" }}
+      ></ArrowLink>
     </article>
   );
 }
 
 function Work() {
   return (
-    <article className={`${styles.featured} ${styles.work}`}>
+    <article className={`${styles.featured} ${styles.work}`} id="work">
       <div className={`${styles.content}`}>
         <h4>WORK</h4>
         {featuredwork.map((details, index) => {
           details.index = index;
-          return <Feature details={details}></Feature>
+          details["route"] = "work";
+          return <Feature details={details}></Feature>;
         })}
       </div>
     </article>
@@ -119,42 +81,32 @@ function Austin() {
         <div className={`${styles.info}`}>
           <div className={`${styles.container}`}>
             <div className={`${styles.location}`}>
-              <img src="/images/icons/location.png"/>
+              <img src="/images/icons/location.png" />
               <h5>AUSTIN, TX</h5>
             </div>
-            <p>I work with innovators across the globe to direct and support software and design projects.</p>
-            <Link href="/contact" class="arrowlink">
-              <p>Send me a note</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 40 24"
-                strokeWidth={2}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M34 7.75L38.25 12m0 0l-4.25 4.25M36 12H3"
-                />
-              </svg>
-            </Link>
+            <p>
+              I work with innovators across the globe to direct and support
+              software and design projects.
+            </p>
+            <ArrowLink
+              details={{ link: "Send me a note", url: "/contact" }}
+            ></ArrowLink>
           </div>
         </div>
       </div>
     </article>
-  )
+  );
 }
 
 function PersonalProjects() {
   return (
-    <article className={`${styles.featured} ${styles.projects}`}>
+    <article className={`${styles.featured} ${styles.projects}`} id="projects">
       <div className={`${styles.content}`}>
         <h4>PERSONAL PROJECTS</h4>
         {featuredprojects.map((details, index) => {
           details.index = index;
-          return <Feature details={details}></Feature>
+          details["route"] = "project";
+          return <Feature details={details}></Feature>;
         })}
       </div>
     </article>
@@ -163,55 +115,42 @@ function PersonalProjects() {
 
 function LimitlessInnovation() {
   const [clientHeight, setClientHeight] = useState(0);
-  
+
   useEffect(() => {
     function handleResize() {
       setClientHeight(window.innerHeight);
     }
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     setClientHeight(window.innerHeight);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   const height = {
-    "height": (clientHeight - 70) + "px",
+    height: clientHeight - 60 + "px",
   };
 
-  return  (
+  return (
     <article className={`${styles.limitless}`} style={height}>
       <div className={`${styles.content}`}>
         <h3>Limitless innovation and community bring progress.</h3>
         <div className={`${styles.centered}`}>
+          <div className={`${styles.me}`}></div>
           <h4>Let's build something together.</h4>
-          <Link href="/contact" class="arrowlink">
-            <p>Send me a note</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 40 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M34 7.75L38.25 12m0 0l-4.25 4.25M36 12H3"
-              />
-            </svg>
-          </Link>
+          <ArrowLink
+            details={{ link: "Send me a note", url: "/contact" }}
+          ></ArrowLink>
         </div>
       </div>
     </article>
-  )
+  );
 }
 
 function IndexPage() {
   return (
-    <div>
+    <Fragment>
       <Introduction></Introduction>
       <Header></Header>
       <Specialties></Specialties>
@@ -219,7 +158,7 @@ function IndexPage() {
       <Austin></Austin>
       <PersonalProjects></PersonalProjects>
       <LimitlessInnovation></LimitlessInnovation>
-    </div>
+    </Fragment>
   );
 }
 

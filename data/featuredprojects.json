@@ -7,7 +7,12 @@
     "description": "Developing and training an AI model to find information on the web.",
     "link": "View Case Study",
     "background": "#166481",
-    "captureMB": "5%"
+    "captureMB": "5%",
+    "role": "Independent Project",
+    "location": "Austin, Texas",
+    "tools": ["Next.js", "React", "HTML", "CSS", "JavaScript", "Adobe Photoshop"],
+    "website": "https://www.hispanichackers.com",
+    "premise": "premise"
   },
   {
     "id": 0,
@@ -17,7 +22,12 @@
     "description": "Changing the employment industry with an job board that will apply for you.",
     "link": "View Case Study",
     "background": "#F59300",
-    "captureMB": "0px"
+    "captureMB": "0px",
+    "role": "President | Software Engineer",
+    "location": "Austin, Texas",
+    "tools": ["Next.js", "React", "HTML", "CSS", "JavaScript", "Adobe Photoshop"],
+    "website": "https://www.hispanichackers.com",
+    "premise": "premise"
   },
   {
     "id": 0,
@@ -27,6 +37,11 @@
     "description": "Developing an object-oriented Python framework for frontend.",
     "link": "View Case Study",
     "background": "#614D5B",
-    "captureMB": "0px"
+    "captureMB": "0px",
+    "role": "President | Software Engineer",
+    "location": "Austin, Texas",
+    "tools": ["Next.js", "React", "HTML", "CSS", "JavaScript", "Adobe Photoshop"],
+    "website": "https://www.hispanichackers.com",
+    "premise": "premise"
   }
 ]

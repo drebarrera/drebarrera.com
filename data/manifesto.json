@@ -1,0 +1,22 @@
+[
+  {
+      "title": "There is no one-size-fit-all solution.",
+      "info": "A diverse set of skills are needed to build any project and provide opportunity for growth.",
+      "img": "/images/values/diversity.png"
+  },
+  {
+      "title": "Community is everything.",
+      "info": "Community is crucial to create an environment of reliability and support for any project.",
+      "img": "/images/values/community.png"
+  },
+  {
+      "title": "Automation leads to high-efficiency innovation.",
+      "info": "Program and process automation leads to higher quality and quantity performance. ",
+      "img": "/images/values/automation.png"
+  },
+  {
+      "title": "Our most powerful tool is our ability to learn.",
+      "info": "Metrics alone do not indicate project success. Continuous growth and learning is crucial.",
+      "img": "/images/values/learning.png"
+  }
+]

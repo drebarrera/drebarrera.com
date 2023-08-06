@@ -4,39 +4,61 @@
     "index": 0,
     "identifier": "hispanichackers",
     "title": "Hispanic Hackers",
-    "description": "Leading and designing website & brand content for a non-profit elevating the Latino tech community.",
+    "description": "Leading and designing content for a non-profit elevating the Latino tech community.",
     "link": "View Case Study",
     "background": "#287E7F",
-    "captureMB": "0px"
+    "captureMB": "0",
+    "role": "President | Software Engineer",
+    "location": "Austin, Texas",
+    "tools": ["Next.js", "React", "HTML", "CSS", "JavaScript", "Adobe Photoshop"],
+    "website": "https://www.hispanichackers.com",
+    "premise": "premise"
   },
   {
     "id": 0,
     "index": 0,
     "identifier": "f5cec",
-    "title": "FATHOM5 - CEC",
+    "title": "Defense Software Modernization",
     "description": "Modernizing the United States Navy’s tactical weapon’s system.",
     "link": "View Case Study",
-    "background": "url('images/featured/f5cec/bg.png')",
-    "captureMB": "0px"
+    "background": "url('/images/featured/f5cec/bg.png')",
+    "captureMB": "0",
+    "role": "Software Engineer",
+    "location": "Austin, Texas",
+    "tools": ["C++", "Go", "Docker", "Prometheus", "Grafana", "RTI DDS", "GitHub", "Linux", "Draw.io"],
+    "website": "",
+    "premise-removed": "Note: To comply with Fathom5's Non-Disclosure Agreement, only information which is publicly available or common practice has been given in this report.\n\nFathom5 is a US Navy contracting company with an afinity for creating cyber-first software solutions. As a Fathom5 software engineer, I had the pleasure of working on the CEC Next team of two dedicated software engineers.",
+    "challenge": "CEC Next has the goal of modernizing the US Navy's Cooperative Engagement Capability (CEC) system. As shown in the figure to the left, CEC is a system crucial to tactical tracking and engagement by collecting, aggregating, and controlling both local and networked data on warships, jets, and sensors. By aggregating entity position data from multiple different sources and vantage points, for example, a strategically placed asset is able to better address an adversary entity. However, developed in the 1990s, the software responsible for data aggregation is due for an update.",
+    "solution": "To demonstrate modernization capability of the system, my two-developer team applied containerization techniques to a number of threaded subprocesses representing the subprocesses of the CEC software."
   },
   {
     "id": 0,
     "index": 0,
     "identifier": "f5tesar",
-    "title": "FATHOM5 - EMBEDDED",
+    "title": "EV Systems Architecture",
     "description": "Designing R&D circuits and firmware for the next generation of electric vehicles.",
     "link": "View Case Study",
-    "background": "url('images/featured/f5tesar/bg.png')",
-    "captureMB": "5%"
+    "background": "url('/images/featured/f5tesar/bg.png')",
+    "captureMB": "25px",
+    "role": "Embedded Systems Engineer",
+    "location": "Austin, Texas",
+    "tools": ["KiCAD", "Beagle Board", "Arduino", "Linux", "C++", "Python", "Node.js", "Texas Instruments", "Nordic", "Solidworks", "Draw.io", "Adafruit", "GitHub"],
+    "website": "",
+    "premise": "premise"
   },
   {
     "id": 0,
     "index": 0,
     "identifier": "alpenaerial",
-    "title": "ALPEN AERIAL",
-    "description": "Designing R&D circuits and firmware for the next generation of electric vehicles.",
+    "title": "Alpen Aerial",
+    "description": "Building website & brand content for a startup which takes drone footage to new heights.",
     "link": "View Case Study",
     "background": "#CE7829",
-    "captureMB": "0px"
+    "captureMB": "0",
+    "role": "Frontend Engineer",
+    "location": "Colorado Springs, Colorado",
+    "tools": ["HTML", "CSS", "JavaScript", "jQuery", "Python", "WebGen", "Wix"],
+    "website": "https://www.alpenaerial.com",
+    "premise": "premise"
   }
 ]

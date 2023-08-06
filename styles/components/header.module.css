@@ -58,6 +58,6 @@
 
 .header .chatbutton:hover {
   background-image: none;
-  background-color: white;
+  background-color: var(--flax);
   border-bottom: 0px solid;
 }

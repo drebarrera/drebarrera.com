@@ -1,15 +1,17 @@
 import Link from "next/link";
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 import styles from "@/styles/components/header.module.css"
 
 export default function Header() {
   const HEADER_LINKS = [
     {
-      href: "/work",
+      href: "/#work",
       name: "Work",
     },
     {
-      href: "/projects",
+      href: "/#projects",
       name: "Personal Projects",
     },
     {
@@ -37,7 +39,7 @@ export default function Header() {
             );
           })}
           <Link href="/contact">
-            <div className={`${styles.chatbutton}`}>Let's Chat</div>
+            <div className={`${styles.chatbutton}`} scroll={false}>Let's Chat</div>
           </Link>
         </div>
       </div>

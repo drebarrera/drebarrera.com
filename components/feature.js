@@ -1,4 +1,4 @@
-import Link from "next/link";
+import ArrowLink from "components/arrowlink";
 
 import styles from "@/styles/components/feature.module.css";
 
@@ -15,29 +15,9 @@ function Feature(props) {
   function FeatureInfo() {
     return (
       <div className={`${styles.info}`}>
-        <img
-          src={`images/featured/${details.identifier}/logo.png`}
-          className={`${styles.logo}`}
-        />
         <h5>{`${details.title}`}</h5>
         <p>{`${details.description}`}</p>
-        <Link href={`/project/${details.identifier}`} class="arrowlink">
-          <span>{`${details.link}`}</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 40 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M34 7.75L38.25 12m0 0l-4.25 4.25M36 12H3"
-            />
-          </svg>
-        </Link>
+        <ArrowLink details={{link: details.link, url: `/${details.route}/${details.identifier}`}}/>
       </div>
     );
   }
@@ -45,12 +25,18 @@ function Feature(props) {
   if (!(details.index % 2)) {
     return (
       <section className={`${styles.feature} ${styles.featureleft}`} style={bg}>
+        <img
+          src={`images/featured/${details.identifier}/logo.png`}
+          className={`${styles.logo}`}
+        />
+        <div className={`${styles.content}`}>
         <FeatureInfo></FeatureInfo>
         <img
           src={`images/featured/${details.identifier}/capture.png`}
           className={`${styles.capture}`}
           style={captureMB}
         />
+        </div>
       </section>
     );
   } else {
@@ -60,11 +46,17 @@ function Feature(props) {
         style={bg}
       >
         <img
-          src={`images/featured/${details.identifier}/capture.png`}
-          className={`${styles.capture}`}
-          style={captureMB}
+          src={`images/featured/${details.identifier}/logo.png`}
+          className={`${styles.logo}`}
         />
-        <FeatureInfo></FeatureInfo>
+        <div className={`${styles.content}`}>
+          <FeatureInfo></FeatureInfo>
+          <img
+            src={`images/featured/${details.identifier}/capture.png`}
+            className={`${styles.capture}`}
+            style={captureMB}
+          />
+        </div>
       </section>
     );
   }

@@ -1,0 +1,212 @@
+.macrosection {
+  background-color: var(--gunmetal);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.macrosection h4 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-left: 25px;
+  padding-bottom: 25px; 
+}
+
+.macrosection .content {
+  width: 90%;
+  height: fit-content;
+  margin-top: 100px;
+  max-width: 1200px;
+}
+
+.manifesto {
+  width: 98%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.value {
+  width: 45%;
+  min-width: 350px;
+  height: fit-content;
+  min-height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin: 2.5%;
+  padding: 15px;
+  background-color: var(--police-blue);
+}
+
+.value .text {
+  width: 60%;
+  min-width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 20px;
+}
+
+.value .icon {
+  margin-left: 2.5%;
+  width: 30%;
+  min-width: 150px;
+  height: 100%;
+  min-height: 250px;
+  background: var(--url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.value h5 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.value p {
+  font-size: 22px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.skill {
+  width: 225px;
+  height: 60px;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.skill:hover .skillbar {
+  animation: skillPulse 0.5s ease-in-out;
+}
+
+.skill .row {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skill .bar {
+  width: calc(100% - 50px);
+  height: 8px;
+  border-radius: 10px;
+  background-color: var(--dark-gunmetal);
+}
+
+.skillbar {
+  width: var(--barwidth);
+  height: 8px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--flax), var(--amber));
+}
+
+.skill .row p {
+  width: 50px;
+  text-align: center;
+  color: var(--amber);
+}
+
+.skill h6 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@keyframes skillPulse {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--barwidth);
+  }
+}
+
+.toolset {
+  width: 98%;
+  background-color: #F3F3F3;
+  padding: 50px;
+  border-radius: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 50px 0px;
+}
+
+.toolset h5 {
+  width: 100%;
+  font-size: 28px;
+}
+
+.toolcontent {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  align-content: center;
+}
+
+.tool {
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+.tool:hover {
+  background-color: rgba(200, 200, 200, 0.25);
+  animation: shake 0.8s linear;
+}
+
+.tool .icon {
+  width: 100px;
+  height: 100px;
+  background: var(--url);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tool h6 {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: rotate(-5deg);
+  }
+  20%, 40%, 60%, 80% {
+    transform: rotate(5deg);
+  }
+}
