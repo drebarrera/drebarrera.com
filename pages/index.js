@@ -29,6 +29,7 @@ function Introduction() {
 
   const height = {
     height: clientHeight - 70 + "px",
+    "min-height": "fit-content"
   };
 
   return (
@@ -109,6 +110,7 @@ function Austin() {
 
   const height = {
     height: clientHeight - 60 + "px",
+    "min-height": "fit-content"
   };
 
   return (
@@ -166,6 +168,7 @@ function LimitlessInnovation() {
 
   const height = {
     height: clientHeight - 60 + "px",
+    "min-height": "fit-content"
   };
 
   return (
