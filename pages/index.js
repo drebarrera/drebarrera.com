@@ -13,7 +13,7 @@ import featuredprojects from "data/featuredprojects.json";
 featuredprojects.sort((a, b) => a.index - b.index);
 
 function Introduction() {
-  const [clientHeight, setClientHeight] = useState(0);
+  /*const [clientHeight, setClientHeight] = useState(0);
 
   useEffect(() => {
     function handleResize() {
@@ -25,15 +25,15 @@ function Introduction() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, []);*/
 
-  const height = {
-    height: clientHeight - 70 + "px",
-    "min-height": "fit-content"
-  };
+  // const height = {
+  //   height: clientHeight - 70 + "px",
+  //   "min-height": "fit-content"
+  // };
 
   return (
-    <article className={`${styles.introduction}`} style={height}>
+    <article className={`${styles.introduction}`} /*style={height}*/>
       <div className={`${styles.content}`}>
         <section className={`${styles.textbox}`}>
           <h2>Hi, I'm Andr&#233;s</h2>
