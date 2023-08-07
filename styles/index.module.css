@@ -262,8 +262,9 @@
 @media screen and (max-width: 650px) {
   .introduction .content {
     margin-top: 0px;
+    margin-bottom: 15px;
   }
-  
+
   .limitless .content {
     height: 85%;
     width: 80%;
