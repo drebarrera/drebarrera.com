@@ -13,8 +13,26 @@ import featuredprojects from "data/featuredprojects.json";
 featuredprojects.sort((a, b) => a.index - b.index);
 
 function Introduction() {
+  const [clientHeight, setClientHeight] = useState(0);
+
+  useEffect(() => {
+    function handleResize() {
+      setClientHeight(window.innerHeight);
+    }
+
+    window.addEventListener("resize", handleResize);
+    setClientHeight(window.innerHeight);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const height = {
+    height: clientHeight - 70 + "px",
+  };
+
   return (
-    <article className={`${styles.introduction}`}>
+    <article className={`${styles.introduction}`} style={height}>
       <div className={`${styles.content}`}>
         <section className={`${styles.textbox}`}>
           <h2>Hi, I'm Andr&#233;s</h2>
@@ -75,8 +93,26 @@ function Work() {
 }
 
 function Austin() {
+  const [clientHeight, setClientHeight] = useState(0);
+
+  useEffect(() => {
+    function handleResize() {
+      setClientHeight(window.innerHeight);
+    }
+
+    window.addEventListener("resize", handleResize);
+    setClientHeight(window.innerHeight);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const height = {
+    height: clientHeight - 60 + "px",
+  };
+
   return (
-    <article className={`${styles.austin}`}>
+    <article className={`${styles.austin}`} style={height}>
       <div className={`${styles.content}`}>
         <div className={`${styles.info}`}>
           <div className={`${styles.container}`}>

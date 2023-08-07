@@ -9,3 +9,12 @@
   color: white;
   margin-top: -70px;
 }
+
+.frame h2 {
+  font-size: 48px;
+}
+
+.frame h3 {
+  font-size: 24px;
+  font-weight: 300;
+}

@@ -10,7 +10,7 @@ import tools from "data/tools.json"
 
 function Manifesto() {
     return (
-        <article className={`${styles.macrosection}`}>
+        <article className={`${styles.macrosection} ${styles.macromanifesto}`}>
             <div className={`${styles.content}`}>
                 <h4>MANIFESTO</h4>
                 <div className={`${styles.manifesto}`}>
@@ -66,7 +66,7 @@ function Skills() {
 
 function Tools() {
     return (
-        <article className={`${styles.macrosection}`}>
+        <article className={`${styles.macrosection} ${styles.macrotool}`}>
             <div className={`${styles.content}`}>
                 <h4>Tools</h4>
                 <div className={`${styles.tools}`}>
