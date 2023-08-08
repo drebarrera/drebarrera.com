@@ -44,7 +44,7 @@ export default function ContactPage() {
       setFormEmail("");
       setFormMessage("");
       setTimeout(function() {
-        setSubmitText("Send!");
+        setSubmitText("Send");
       }, 3000);
     }
   };

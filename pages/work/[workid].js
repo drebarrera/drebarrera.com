@@ -32,7 +32,7 @@ export async function getStaticPaths() {
 
   return {
     paths: paths,
-    fallback: false,
+    fallback: true,
   };
 }
 
@@ -50,6 +50,7 @@ export default function WorkPage(props) {
 
   const images = {
     "--challenge": `url(/images/featured/${details.identifier}/challenge.png)`,
+    "--solution": `url(/images/featured/${details.identifier}/solution.png)`,
   };
 
   return (
@@ -143,6 +144,13 @@ export default function WorkPage(props) {
           <div className={`${styles.content}`}>
             <p className={`${styles.label}`}>Solution</p>
             <p>{details.solution}</p>
+          </div>
+        </section>
+        <section className={`${styles.section} ${styles.choices}`}>
+          <div className={`${styles.img}`} style={images}></div>
+          <div className={`${styles.content}`}>
+            <p className={`${styles.label}`}>Design and Development Choices</p>
+            <p>{details.choices}</p>
           </div>
         </section>
       </article>

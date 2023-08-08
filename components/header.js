@@ -94,6 +94,11 @@ export default function Header() {
           </Link>
         );
       })}
+      <Link href="/contact">
+        <div className={`${styles.chatbutton}`} scroll={false}>
+          Let's Chat
+        </div>
+      </Link>
       </div>
     </header>
   );

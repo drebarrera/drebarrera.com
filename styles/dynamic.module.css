@@ -53,6 +53,17 @@
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 700px) {
+  .overview .content {
+    width: 98%;
+    min-width: 98%;
+  }
+
+  .overview {
+    justify-content: center;
+  }
+}
+
 .overview .content p {
   width: 100%;
   margin: 10px;
@@ -129,4 +140,18 @@
 
 .solution {
   flex-direction: row-reverse;
+}
+
+.solution .img {
+  background: var(--solution);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.choices .img {
+  background: var(--choices);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
