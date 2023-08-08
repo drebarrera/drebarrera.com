@@ -51,6 +51,7 @@ export default function WorkPage(props) {
   const images = {
     "--challenge": `url(/images/featured/${details.identifier}/challenge.png)`,
     "--solution": `url(/images/featured/${details.identifier}/solution.png)`,
+    "--result": `url(/images/featured/${details.identifier}/result.png)`,
   };
 
   return (
@@ -147,12 +148,36 @@ export default function WorkPage(props) {
           </div>
         </section>
         <section className={`${styles.section} ${styles.choices}`}>
-          <div className={`${styles.img}`} style={images}></div>
+          <div className={`${styles.list}`}>
+          <p className={`${styles.title}`}>Development Tools</p>
+            {details.tools.map((tool) => {
+              var link = "";
+              tools.forEach((toolset) => {
+                Object.keys(toolset.tools).map((t) => {
+                  if (t == tool) {
+                    link = toolset.tools[t];
+                  }
+                });
+              });
+              return (
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  <div style={bg}>{tool}</div>
+                </a>
+              );
+            })}
+          </div>
           <div className={`${styles.content}`}>
             <p className={`${styles.label}`}>Design and Development Choices</p>
             <p>{details.choices}</p>
           </div>
         </section>
+        <section className={`${styles.section} ${styles.result}`}>
+          <div className={`${styles.content}`}>
+            <p className={`${styles.label}`}>Result</p>
+            <p>{details.result}</p>
+          </div>
+        </section>
+        <div className={`${styles.resultimg}`} style={images}></div>
       </article>
     </Fragment>
   );

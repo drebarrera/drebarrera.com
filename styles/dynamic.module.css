@@ -99,8 +99,8 @@
 
 .label {
   font-weight: 700;
-  line-height: 1.8;
-  font-size: 22px;
+  font-size: 32px;
+  margin-bottom: 10px;
   margin-block-start: 0em;
 }
 
@@ -124,6 +124,7 @@
   height: auto;
   min-width: 350px;
   min-height: 450px;
+  margin: 10px 0px;
 }
 
 .section .content {
@@ -149,9 +150,51 @@
   background-position: center;
 }
 
-.choices .img {
-  background: var(--choices);
+.choices .list {
+  width: 43.5%;
+  min-width: 350px;
+  height: 450px;
+  margin: 10px 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #EEEEEE;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+}
+
+.choices .list .title {
+  font-size: 22px;
+  color: black;
+  text-align: center;
+  font-weight: 700;
+}
+
+.choices .list div {
+  display: inline-block;
+  width: 98%;
+  padding: 5px;
+  background: var(--bg);
+  background-position: center;
+  margin: 5px;
+  border-radius: 5px;
+  text-align:center;
+}
+
+.choices .list div:hover {
+  background: var(--gunmetal);
+}
+
+.resultimg {
+  width: 100%;
+  background: var(--result);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  height: auto;
+  min-width: 350px;
+  min-height: 450px;
+  margin: 10px 0px;
 }
