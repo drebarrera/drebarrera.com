@@ -262,6 +262,7 @@
 
 @media screen and (max-width: 650px) {
   .introduction .content {
+    height: fit-content;
     margin-top: 0px;
     margin-bottom: 15px;
   }
