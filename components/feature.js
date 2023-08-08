@@ -26,13 +26,13 @@ function Feature(props) {
     return (
       <section className={`${styles.feature} ${styles.featureleft}`} style={bg}>
         <img
-          src={`images/featured/${details.identifier}/logo.png`}
+          src={`images/featured/${details.identifier}/logo.webp`}
           className={`${styles.logo}`}
         />
         <div className={`${styles.content}`}>
         <FeatureInfo></FeatureInfo>
         <img
-          src={`images/featured/${details.identifier}/capture.png`}
+          src={`images/featured/${details.identifier}/capture.webp`}
           className={`${styles.capture}`}
           style={captureMB}
         />
@@ -46,13 +46,13 @@ function Feature(props) {
         style={bg}
       >
         <img
-          src={`images/featured/${details.identifier}/logo.png`}
+          src={`images/featured/${details.identifier}/logo.webp`}
           className={`${styles.logo}`}
         />
         <div className={`${styles.content}`}>
           <FeatureInfo></FeatureInfo>
           <img
-            src={`images/featured/${details.identifier}/capture.png`}
+            src={`images/featured/${details.identifier}/capture.webp`}
             className={`${styles.capture}`}
             style={captureMB}
           />

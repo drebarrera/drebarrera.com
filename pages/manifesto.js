@@ -79,7 +79,7 @@ function Tools() {
                                     {
                                     Object.keys(tool.tools).map((item) => {
                                         const url = {
-                                            "--url": `url("images/tools/${item.replace(' ', '_')}.png")`,
+                                            "--url": `url("images/tools/${item.replace(' ', '_')}.webp")`,
                                         };
                                         return (
                                             <Link href={`${tool.tools[item]}`} target="_blank">

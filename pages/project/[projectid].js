@@ -98,7 +98,7 @@ export default function projectsPage(props) {
               </p>
             </div>
             <img
-              src={`/images/featured/${details.identifier}/capture.png`}
+              src={`/images/featured/${details.identifier}/capture.webp`}
               style={captureMB}
             />
           </div>

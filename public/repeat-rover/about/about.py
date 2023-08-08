@@ -66,8 +66,8 @@ slide1.content = [[[slide1title]],[[slide1caption]],[[button_bar]],[[]],[[]],[[]
 slide1title.content = "REPEAT ROVER"
 slide1caption.content = "Repeat Rover is a remote-programmable automated R/C vehicle designed for resource delivery in repeated process environments."
 slide1diagramC.content = [slide1diagramWSSB,slide1diagramMAGB,slide1diagramBLEB,slide1diagramMOTB,slide1diagramMCUB,slide1diagramPWRB,slide1diagramSTOB,slide1diagram]
-slide1diagram.src = 'images/component_diagram.png'
-slide1logo.src = 'images/logo.png'
+slide1diagram.src = 'images/component_diagram.webp'
+slide1logo.src = 'images/logo.webp'
 
 # SLIDE 2
 slide2.content = [[[slide2description]]]

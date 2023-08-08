@@ -13,25 +13,6 @@ import featuredprojects from "data/featuredprojects.json";
 featuredprojects.sort((a, b) => a.index - b.index);
 
 function Introduction() {
-  /*const [clientHeight, setClientHeight] = useState(0);
-
-  useEffect(() => {
-    function handleResize() {
-      setClientHeight(window.innerHeight);
-    }
-
-    window.addEventListener("resize", handleResize);
-    setClientHeight(window.innerHeight);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);*/
-
-  // const height = {
-  //   height: clientHeight - 70 + "px",
-  //   "min-height": "fit-content"
-  // };
-
   return (
     <article className={`${styles.introduction}`} /*style={height}*/>
       <div className={`${styles.content}`}>
@@ -119,7 +100,7 @@ function Austin() {
         <div className={`${styles.info}`}>
           <div className={`${styles.container}`}>
             <div className={`${styles.location}`}>
-              <img src="/images/icons/location.png" />
+              <img src="/images/icons/location.webp" />
               <h5>AUSTIN, TX</h5>
             </div>
             <p>

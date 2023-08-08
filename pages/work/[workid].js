@@ -49,9 +49,9 @@ export default function WorkPage(props) {
   };
 
   const images = {
-    "--challenge": `url(/images/featured/${details.identifier}/challenge.png)`,
-    "--solution": `url(/images/featured/${details.identifier}/solution.png)`,
-    "--result": `url(/images/featured/${details.identifier}/result.png)`,
+    "--challenge": `url(/images/featured/${details.identifier}/challenge.webp)`,
+    "--solution": `url(/images/featured/${details.identifier}/solution.webp)`,
+    "--result": `url(/images/featured/${details.identifier}/result.webp)`,
   };
 
   return (
@@ -118,7 +118,7 @@ export default function WorkPage(props) {
               </p>
             </div>
             <img
-              src={`/images/featured/${details.identifier}/capture.png`}
+              src={`/images/featured/${details.identifier}/capture.webp`}
               style={captureMB}
             />
           </div>
