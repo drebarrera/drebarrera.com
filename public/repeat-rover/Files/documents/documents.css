@@ -1,0 +1,44 @@
+#page {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#bg {
+	width: 100%;
+	height: 100%;
+}
+
+.doc_container {
+	font-size: 35px;
+}
+
+
+
+#flextable h2 {
+	font-size: 70px;
+	font-weight: 300;
+	text-align: center;
+}
+
+#flextable {
+	padding-bottom: 50px;
+	width: fit-content;
+}
+
+.doc_img {
+	height: 75px;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.doc_container:hover {
+	color: #005580 !important;
+}
+
+.doc_container:hover .doc_img {
+	opacity: 0.75;
+}
