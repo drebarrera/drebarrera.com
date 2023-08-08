@@ -260,9 +260,9 @@
   background-position: center;
 }
 
-@media screen {
+@media screen and (max-height: 600px) {
   .introduction {
-    height: fit-content;
+    height: 600px;
     min-height: fit-content;
   }
 }
