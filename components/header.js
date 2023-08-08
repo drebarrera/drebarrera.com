@@ -20,7 +20,7 @@ export default function Header() {
       name: "Manifesto",
     },
     {
-      href: "/resume",
+      href: "/Andres_Barrera_Resume.pdf",
       name: "Resume",
     },
   ];

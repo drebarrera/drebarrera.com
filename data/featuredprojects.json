@@ -10,7 +10,7 @@
     "captureMB": "5%",
     "role": "Independent Project",
     "location": "Austin, Texas",
-    "tools": ["Next.js", "React", "HTML", "CSS", "JavaScript", "Adobe Photoshop"],
+    "tools": ["Next.js", "React", "AWS", "HTML", "CSS", "JavaScript", "Adobe Photoshop"],
     "website": "https://www.hispanichackers.com",
     "premise": "premise"
   },
@@ -25,7 +25,7 @@
     "captureMB": "0px",
     "role": "President | Software Engineer",
     "location": "Austin, Texas",
-    "tools": ["Next.js", "React", "HTML", "CSS", "JavaScript", "Adobe Photoshop"],
+    "tools": ["Next.js", "React", "AWS", "HTML", "CSS", "JavaScript", "Adobe Photoshop"],
     "website": "https://www.hispanichackers.com",
     "premise": "premise"
   },
