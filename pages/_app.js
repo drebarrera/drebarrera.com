@@ -6,6 +6,14 @@ export default function App({ Component, pageProps }) {
     <>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <title>Andrés Barrera</title>
+      <meta name="description" content="I help companies craft beautiful UI, orchestrate efficient automation, and prototype interconnected systems." />
+      <meta property="og:title" content="Andrés Barrera" />
+      <meta property="og:description" content="I help companies craft beautiful UI, orchestrate efficient automation, and prototype interconnected systems." />
+      <meta property="og:image" content="/images/centerpiece.gif" />
+      <meta property="og:url" content="www.drebarrera.com" />
+      <link rel="icon" href="/favicon.ico" />
+      <meta name="robots" content="index, follow" />
     </Head>
     <Component {...pageProps} />
     </>
