@@ -3,6 +3,7 @@ import Feature from "components/feature";
 import ArrowLink from "components/arrowlink";
 import { Fragment } from "react";
 import { useState, useEffect } from "react";
+import Head from "next/head";
 
 import styles from "@/styles/index.module.css";
 
@@ -157,7 +158,7 @@ function LimitlessInnovation() {
         <h3>Limitless innovation and community bring progress.</h3>
         <div className={`${styles.centered}`}>
           <div className={`${styles.me}`}></div>
-          <h4>Let's build something together.</h4>
+          <h4>Let's build something beautiful together.</h4>
           <ArrowLink
             details={{ link: "Send me a note", url: "/contact" }}
           ></ArrowLink>
@@ -170,6 +171,10 @@ function LimitlessInnovation() {
 function IndexPage() {
   return (
     <Fragment>
+      <Head>
+        <title>Andrés Barrera</title>
+        <meta name="description" content="I help companies craft beautiful UI, orchestrate efficient automation, and prototype interconnected systems." />
+      </Head>
       <Introduction></Introduction>
       <Header></Header>
       <Specialties></Specialties>

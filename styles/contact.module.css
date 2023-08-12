@@ -45,7 +45,7 @@
 
 .section input, .section textarea {
   font-size: 14px;
-  border: 3px solid var(--flax);
+  border: 2px solid var(--flax);
   color: var(--flax);
   border-radius: 7.5px;
   margin-bottom: 15px;

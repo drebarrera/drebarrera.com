@@ -19,8 +19,9 @@
     "tools": {
       "React": "https://react.dev",
       "Next.js": "http://nextjs.org",
-      "Wix": "https://www.wix.com",
       "jQuery": "https://jquery.com",
+      "TailwindCSS": "http://tailwindcss.com",
+      "Wix": "https://www.wix.com",
       "WebGen": "http://drebarrera.com/webgen/"
     }
   },
@@ -52,8 +53,9 @@
       "Google Fonts": "https://fonts.google.com",
       "Coolors": "https://coolors.co",
       "unDraw": "https://undraw.co",
-      "Lottie": "https://lottiefiles.com"
-
+      "Lottie": "https://lottiefiles.com",
+      "Final Cut Pro": "https://www.apple.com/final-cut-pro/",
+      "Logic Pro X": "https://www.apple.com/logic-pro/"
     }
   },
   {

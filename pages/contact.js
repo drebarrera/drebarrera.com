@@ -1,4 +1,5 @@
 import { Fragment, useState } from "react";
+import Head from 'next/head';
 
 import Header from "components/header";
 
@@ -51,6 +52,10 @@ export default function ContactPage() {
 
   return (
     <article className={styles.article}>
+      <Head>
+          <title>Write Me a Note</title>
+          <meta name="description" content="Contact me. Let's create something beautiful." />
+      </Head>
       <Header></Header>
       <section className={styles.section}>
         <h2>

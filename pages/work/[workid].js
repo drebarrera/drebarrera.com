@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Header from "components/header";
+import Head from 'next/head';
 
 import featuredwork from "data/featuredwork.json";
 import tools from "data/tools.json";
@@ -56,6 +57,10 @@ export default function WorkPage(props) {
 
   return (
     <Fragment>
+      <Head>
+          <title>{details.title}</title>
+          <meta name="description" content={details.description} />
+      </Head>
       <Header></Header>
       <article className={`${styles.article}`}>
         <section className={styles.header} style={bg}>

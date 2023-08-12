@@ -10,7 +10,7 @@
     "captureMB": "0",
     "role": "President | Software Engineer",
     "location": "Austin, Texas",
-    "tools": ["Hispanic Hackers", "Techqueria", "Next.js", "React", "HTML", "CSS", "JavaScript", "Adobe Photoshop"],
+    "tools": ["Hispanic Hackers", "Techqueria", "Next.js", "React", "TailwindCSS", "HTML", "CSS", "JavaScript", "Adobe Photoshop"],
     "website": "https://www.hispanichackers.com",
     "challenge": "According to the US Census Bureau, people of Latino or Hispanic ethnicity make up 19.1% of the United States population. However, 1 out of every 6 of the Hispanic-identifying citizens live under the poverty line and Latinos make up only 8% of the tech workforce (Pew Research Center). With such a large disparity between Latinos and the promising US tech industry, the Hispanic population is in need of resources, community, and opportunities for advancement.",
     "solution": "Elevating the Latino community in tech is where Hispanic Hackers shines. I am the president of the 2400 member 501(c)(3) non-profit which offers events, resources, and community to Latinos/Hispanics in the tech industry. As the president, I inherited an 8-year old group and turned it into a federally recognized organization. We are constantly forming new partnerships, providing a safe space for Latino voices, and creating new resources for our community. To support the organization, I am leading a team of developers, designers, and leaders to build our portfolio for change.",
@@ -47,9 +47,12 @@
     "captureMB": "25px",
     "role": "Embedded Systems Engineer",
     "location": "Austin, Texas",
-    "tools": ["KiCAD", "Beagle Board", "Arduino", "Linux", "C++", "Python", "Node.js", "Texas Instruments", "Nordic", "Solidworks", "Draw.io", "Adafruit", "GitHub"],
+    "tools": ["KiCAD", "Beagle Board", "Arduino", "Linux", "C++", "Python", "Node.js", "JavaScript", "Texas Instruments", "Nordic", "Solidworks", "Draw.io", "Adafruit", "GitHub"],
     "website": "",
-    "challenge": "In the modern world, many have decided to give up their gas-powered vehicles for electric ones to save on powering costs, carbon emissions, and to adopt new technology. I have had the pleasure of completing several projects in electric vehicle embedded systems technology, combining both firmware and electrical design. "
+    "challenge": "The electric vehicle industry is a fast evolving one. As the industry continues to grow, I have had the pleasure of completing several projects in electric vehicle embedded systems technology, combining both firmware and electrical design. Two of these projects related to distinct yet interconnected domains: the design of an innovative electrical circuit and firmware for a motorcycle with a mechanically modernized transmission system, and the creation of a rover capable of performing repetitive tasks in various repeat process environments. Both projects required cutting-edge solutions that would set new standards in efficiency, performance, and adaptability.",
+    "solution": "Solutions for these projects involved a holistic approach that seamlessly integrated various technologies. For the motorcycle, a state-of-the-art EV Systems Architecture was designed, optimized for telemetry and efficiency, and integrated with the modern transmission system. The rover required a modular and scalable embedded system, equipped with advanced algorithms to enable autonomous learning and task optimization. The image to the left shows the mechatronics processes for the Repeat Rover project.",
+    "choices": "Both projects involved coinciding sets of technology such as the KiCAD electric design suite, Solidworks for modeling custom mechanical components, and C++ as the basic language for providing microcontroller instructions. While the motorcycle project used prototyping controllers such as Arduino and Beagle Bone, the rover project was controlled by a Nordic nRF52 chip with custom firmware mounted on a custom PCB. The motorcycle interfaced with a custom set of microchips to interact with the CANBUS, read real-time wheel speed data from the ABS system, and assert motor shifting with asynchronous motors. The rover, on the other hand, used a custom set of reluctors and hall effect sensors, an accelerometer, and bluetooth to recieve and compute instructions. Realtime telemetry and testing UI were programmed with Node.js and JavaScript for both projects.",
+    "result": "The combined result of both projects demonstrated an advancement in both the automotive and robotics industries. The data collected from the motorcycle with a modernized transmission system proved significant growth in the future of the EV industry, setting new standards in performance. Simultaneously, the rover's intelligent design enabled it to function in repeat process environments, showcasing the potential for further innovation in automation and robotics."
   },
   {
     "id": 0,
@@ -62,8 +65,11 @@
     "captureMB": "0",
     "role": "Frontend Engineer",
     "location": "Colorado Springs, Colorado",
-    "tools": ["HTML", "CSS", "JavaScript", "jQuery", "Python", "WebGen", "Wix"],
+    "tools": ["HTML", "CSS", "JavaScript", "jQuery", "Python", "WebGen", "Wix", "Adobe Photoshop", "Final Cut Pro"],
     "website": "https://www.alpenaerial.com",
-    "premise": "premise"
+    "premise": "premise",
+    "challenge": "Alpen Aerial specializes in converting panoramic drone footage into interactive online tours. However, the company lacked a cohesive online presence to showcase its capabilities. The challenge was to create a website and brand content that would not only reflect the startup's cutting-edge technology but also engage users and potential clients. The project required a blend of aesthetic appeal, functionality, and a clear representation of the brand's unique value proposition",
+    "solution": "Solving Alpen Aerial's branding needs involved a comprehensive approach to building a website that would serve as the startup's digital storefront. This included creating a visually appealing design that resonated with the brand's active and innovative spirit, developing interactive features to showcase the panoramic tours, and crafting compelling content that communicated the startup's mission and services. Collaboration with the startup's team ensured alignment with their vision and goals.",
+    "choices": "This project involved a mix of web programming with WebGen, Python, and JavaScript as well as Wix and Wix Velo development. In addition to producing website content for the company, I programmed embedded webpages for client panoramic tours. "
   }
 ]

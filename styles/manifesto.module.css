@@ -201,10 +201,7 @@
 .tool .icon {
   width: 100px;
   height: 100px;
-  background: var(--url);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
 }
 
 .tool h6 {
