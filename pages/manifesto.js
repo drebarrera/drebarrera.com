@@ -83,7 +83,7 @@ function Tools() {
                                         return (
                                             <Link href={`${tool.tools[item]}`} target="_blank">
                                                 <div className={`${styles.tool}`}>
-                                                    <div className={`${styles.icon}`}><Image src={`/images/tools/${item.replaceAll(' ', '_')}.webp`}  alt={`${item}`} layout="fill" objectFit="contain"/></div>
+                                                    <div className={`${styles.icon}`}><Image src={`/images/tools/${item.replaceAll(' ', '_')}.png`}  alt={`${item}`} layout="fill" objectFit="contain"/></div>
                                                     <h6>{`${item}`}</h6>
                                                 </div>
                                             </Link>
