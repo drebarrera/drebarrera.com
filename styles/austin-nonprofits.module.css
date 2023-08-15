@@ -1,0 +1,50 @@
+.article {
+  height: fit-content;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  width: fit-content;
+  height: fit-content;
+  padding: 30px 15px;
+  border-radius: 25px;
+  background-color: white;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  border-radius: 10%;
+}
+
+.section h1 {
+  width: 250px;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+}
+
+.section div {
+  width: 250px;
+  height: fit-content;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #ffce83;
+  margin: 5px 0px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.section div:hover {
+  background-color: #ffaa68;
+}
