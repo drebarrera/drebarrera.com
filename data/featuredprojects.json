@@ -10,9 +10,9 @@
     "captureMB": "5%",
     "role": "Independent Project",
     "location": "Austin, Texas",
-    "tools": ["Next.js", "React", "AWS", "HTML", "CSS", "JavaScript", "Adobe Photoshop"],
-    "website": "https://www.hispanichackers.com",
-    "premise": "premise"
+    "tools": ["Python", "AWS", "Chrome Extensions", "JavaScript", "HTML", "CSS", "Selenium"],
+    "website": ""
+
   },
   {
     "id": 0,
@@ -25,9 +25,8 @@
     "captureMB": "0px",
     "role": "President | Software Engineer",
     "location": "Austin, Texas",
-    "tools": ["Next.js", "React", "AWS", "HTML", "CSS", "JavaScript", "Adobe Photoshop"],
-    "website": "https://www.hispanichackers.com",
-    "premise": "premise"
+    "tools": ["Next.js", "React", "AWS", "HTML", "CSS", "JavaScript", "jQuery"],
+    "website": ""
   },
   {
     "id": 0,
@@ -40,8 +39,7 @@
     "captureMB": "0px",
     "role": "President | Software Engineer",
     "location": "Austin, Texas",
-    "tools": ["Next.js", "React", "HTML", "CSS", "JavaScript", "Adobe Photoshop"],
-    "website": "https://www.hispanichackers.com",
-    "premise": "premise"
+    "tools": ["HTML", "CSS", "JavaScript", "Python", "PHP", "jQuery"],
+    "website": "https://www.drebarrera.com/webgen/"
   }
 ]

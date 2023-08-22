@@ -52,7 +52,6 @@ export default function WorkPage(props) {
   const images = {
     "--challenge": `url(/images/featured/${details.identifier}/challenge.webp)`,
     "--solution": `url(/images/featured/${details.identifier}/solution.webp)`,
-    "--result": `url(/images/featured/${details.identifier}/result.webp)`,
   };
 
   return (
@@ -182,7 +181,9 @@ export default function WorkPage(props) {
             <p>{details.result}</p>
           </div>
         </section>
-        <div className={`${styles.resultimg}`} style={images}></div>
+        <section className={`${styles.resultimg}`}>
+          <img src={`/images/featured/${details.identifier}/result.webp`}/>
+        </section>
       </article>
     </Fragment>
   );
