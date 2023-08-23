@@ -11,8 +11,11 @@
     "role": "Independent Project",
     "location": "Austin, Texas",
     "tools": ["Python", "AWS", "Chrome Extensions", "JavaScript", "HTML", "CSS", "Selenium"],
-    "website": ""
-
+    "website": "",
+    "challenge": "The challenge of ArachNode was to create an AI program capable of navigating the complex and dynamic landscape of the web to identify specific information. Traditional scraping methods often fall short in handling intricate navigation and decision-making. The goal was to design an intelligent system that could mimic human-like browsing behavior, making decisions on when to click on links or backtrack, and do so efficiently and accurately.",
+    "solution": "The solution, ArachNode, involved designing an AI program using reinforcement learning, a method that allows the system to learn optimal navigation strategies through trial and error. The program was trained on data collected by a Chrome Extensions routine, which captured user intentions and interactions within webpages. A custom API created with AWS API Gateway was used to send the data to an AWS S3 repository, ensuring a seamless flow of information for training and analysis. The architecture diagram to the right shows the training process for ArachNode.",
+    "choices": "ArachNode is designed with a Q-Learning algorithm in mind, using reflective data, reward values, and a learning rate to enable the AI to learn optimal navigation strategies. Chrome Extensions is used to register browser actions and user intentions with a simple UI designed to show the data being logged. Every HTML element clicked, a reference to its ancestor elements, the attributes of such elements, and every url/page title change is regarded as relevant data for defining the instructions given to the browser. This data is formatted and sent to an AWS S3 repository using AWS API Gateway. The data is taken from the repository using a boto3 script written in Python and used to train the Python Q-Learning program.",
+    "result": "The ArachNode project is not yet complete and has been put on hold. However, the development of the ArachNode Chrome Extensions routine and API has shown promising results. As shown below, the routine is able to log data as intended from user browsing. While on hold, data is being collected to create a large corpus of web browsing actions in order to train the AI in the future."
   },
   {
     "id": 0,
@@ -25,8 +28,12 @@
     "captureMB": "0px",
     "role": "President | Software Engineer",
     "location": "Austin, Texas",
-    "tools": ["Next.js", "React", "AWS", "HTML", "CSS", "JavaScript", "jQuery"],
-    "website": ""
+    "tools": ["Next.js", "React", "AWS", "HTML", "CSS", "JavaScript", "jQuery", "Chrome Extensions", "Selenium", "Photoshop"],
+    "website": "",
+    "challenge": "The challenge of Shotglass Jobs was to create a web application that could automate the tedious process of job searching by finding, assessing, and submitting applications for job postings tailored to a user's profile. The complexity lay in scraping diverse job platforms, evaluating the relevance of postings, and integrating a seamless user experience that would allow for personalized job application submissions.",
+    "solution": "The solution, Shotglass Jobs, involved designing a web application that utilized data scraping techniques to gather job postings from various platforms. This is to be implemented using the ArachNode AI developed in my simultaneous project. The application assesses the relevance of these postings based on user profiles and preferences and provides an automated submission process using a Chrome Extensions routine. The entire application is hosted on AWS, leveraging services like S3, Route53, Cloudfront, Cognito User Database, DynamoDB, API Gateway, and AWS Lambda to ensure scalability, security, and performance.",
+    "choices": "The frontend of Shotglass Jobs is designed using HTML, CSS, JavaScript, jQuery, and my Python compiler, WebGen. The backend was complex to set up, but saved me on cost and performance - using AWS services to provide hosting, authentication, and data storage for the program. The goal is to be able to provide an interface for creating and editing resume and cover letter templates. User data is already stored and retrieved by the frontend from AWS DynamoDB and AWS Cognito. API Gateway and AWS Lambda manage the serverless functions of the program.",
+    "result": "Although not yet complete, the Shotglass Jobs shows great promise for providing a personalized and automated experience. The project has been put on hold while I develop the ArachNode AI (explained in another one of my projects) to provide the information search algorithm to be used by the web application. So far, the use of AWS services has ensured a scalable, secure, and efficient infrastructure, as shown in the live examples of the site below, where I have collected and displayed data with persistant authentication."
   },
   {
     "id": 0,
@@ -40,6 +47,10 @@
     "role": "President | Software Engineer",
     "location": "Austin, Texas",
     "tools": ["HTML", "CSS", "JavaScript", "Python", "PHP", "jQuery"],
-    "website": "https://www.drebarrera.com/webgen/"
+    "website": "https://www.drebarrera.com/webgen/",
+    "challenge": "The challenge was to design a frontend web application framework that would offer an OOP alternative to existing modern frameworks. The goal was to leverage the power and flexibility of Python to create a framework that would provide developers with a more intuitive and structured way to build web applications. The project required a deep understanding of both frontend development and Python's OOP capabilities, as well as the ability to innovate beyond existing paradigms.",
+    "solution": "The solution, WebGen, involved creating a new frontend web application framework that utilized Python's OOP principles. By designing a framework that allowed developers to build web applications using Python classes and objects, the project aimed to offer a more organized and intuitive development experience. The framework was designed to be flexible, efficient, and compatible with existing web technologies, providing a unique and powerful tool for web development.",
+    "choices": "WebGen leverages Python's object-oriented capabilities to create a more intuitive web programming experience. With the ability to create global files and link them to specific pages, repeat frontend code structures using loops and functions, and implement JavaScript, PHP, and CSS code, the framework provides an alternative to common frameworks such as ReactJS, AngularJS, and VueJS. All Python code created is compiled into HTML code with fixed styles and dynamic classes.",
+    "result": "The resulting frontend web application framework successfully provided an OOP alternative to modern frameworks, offering developers a new and intuitive way to build web applications using Python. By integrating Python's OOP principles with existing web technologies, the framework enabled more structured and organized development. Since creating WebGen, I have used it in a number of projects. WebGen's IP was acquired by an industry 4.0 software company in 2022. The images below show the simplicity of WebGen code to create flexible websites."
   }
 ]
