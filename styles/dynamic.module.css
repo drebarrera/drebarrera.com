@@ -1,5 +1,5 @@
 .article {
-  width: 100%;
+  width: 100vw;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -128,8 +128,8 @@
 }
 
 .section .content {
-  width: 43.5%;
-  min-width: 415px;
+  width: 90%;
+  max-width: 400px;
 }
 
 .challenge .img {
@@ -202,4 +202,14 @@
 .resultimg img {
   width: 90%;
   max-width: 1200px;
+}
+
+@media screen and (max-width: 650px) {
+  .section .img {
+    min-height: 300px;
+  }
+
+  .section {
+    padding: 10px;
+  }
 }
