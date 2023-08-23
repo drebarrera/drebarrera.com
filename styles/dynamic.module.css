@@ -120,16 +120,16 @@
 }
 
 .section .img {
-  width: 43.5%;
+  width: 90%;
   height: auto;
-  min-width: 350px;
+  max-width: 450px;
   min-height: 450px;
   margin: 10px 0px;
 }
 
 .section .content {
   width: 90%;
-  max-width: 400px;
+  max-width: 450px;
 }
 
 .challenge .img {
@@ -205,6 +205,10 @@
 }
 
 @media screen and (max-width: 650px) {
+  .solution {
+    flex-direction: row;
+  }
+
   .section .img {
     min-height: 300px;
   }
