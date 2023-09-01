@@ -29,7 +29,6 @@
     "title": "BACKEND & DEVOPS",
     "tools": {
       "Node.js": "http://nodejs.org",
-      "AWS": "http://aws.amazon.com",
       "MongoDB": "http://mongodb.com",
       "GitHub": "http://github.com",
       "Docker": "http://docker.com",
@@ -40,7 +39,17 @@
       "Selenium": "https://www.selenium.dev",
       "TensorFlow": "https://www.tensorflow.org",
       "Hostinger": "https://www.hostinger.com",
-      "Chrome Extensions": "https://developer.chrome.com/docs/extensions/"
+      "Chrome Extensions": "https://developer.chrome.com/docs/extensions/",
+      "AWS": "http://aws.amazon.com",
+      "AWS IAM": "https://aws.amazon.com/iam/",
+      "AWS Cognito": "https://aws.amazon.com/cognito/",
+      "AWS S3": "https://aws.amazon.com/s3/",
+      "AWS DynamoDB": "https://aws.amazon.com/dynamodb/",
+      "AWS Lambda": "https://aws.amazon.com/lambda/",
+      "AWS API Gateway": "https://aws.amazon.com/apigateway/",
+      "AWS CloudFront": "https://aws.amazon.com/cloudfront/",
+      "AWS Route53": "https://aws.amazon.com/route53/"
+      
     }
   },
   {
