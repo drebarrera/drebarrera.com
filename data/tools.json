@@ -47,7 +47,7 @@
       "AWS DynamoDB": "https://aws.amazon.com/dynamodb/",
       "AWS Lambda": "https://aws.amazon.com/lambda/",
       "AWS API Gateway": "https://aws.amazon.com/apigateway/",
-      "AWS CloudFront": "https://aws.amazon.com/cloudfront/",
+      "AWS Cloudfront": "https://aws.amazon.com/cloudfront/",
       "AWS Route53": "https://aws.amazon.com/route53/"
       
     }
