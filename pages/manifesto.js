@@ -80,6 +80,7 @@ function Tools() {
                                 <div className={`${styles.toolcontent}`}>
                                     {
                                     Object.keys(tool.tools).map((item) => {
+                                        console.log(`/images/tools/${item.replaceAll(' ', '_')}.webp`)
                                         return (
                                             <Link href={`${tool.tools[item]}`} target="_blank">
                                                 <div className={`${styles.tool}`}>
