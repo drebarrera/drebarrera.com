@@ -35,9 +35,9 @@
       "Prometheus": "https://prometheus.io",
       "Grafana": "https://grafana.com",
       "RTI DDS": "https://www.rti.com/en/",
-      "Numpy": "https://numpy.org",
+      "NumPy": "https://numpy.org",
       "Selenium": "https://www.selenium.dev",
-      "Tensorflow": "https://www.tensorflow.org",
+      "TensorFlow": "https://www.tensorflow.org",
       "Hostinger": "https://www.hostinger.com",
       "Chrome Extensions": "https://developer.chrome.com/docs/extensions/",
       "AWS": "http://aws.amazon.com",
@@ -47,7 +47,7 @@
       "AWS DynamoDB": "https://aws.amazon.com/dynamodb/",
       "AWS Lambda": "https://aws.amazon.com/lambda/",
       "AWS API Gateway": "https://aws.amazon.com/apigateway/",
-      "AWS Cloudfront": "https://aws.amazon.com/cloudfront/",
+      "AWS CloudFront": "https://aws.amazon.com/cloudfront/",
       "AWS Route53": "https://aws.amazon.com/route53/"
       
     }
