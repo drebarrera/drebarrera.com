@@ -46,6 +46,8 @@
 .badge h5 {
     font-size: 18px;
     text-align: center;
+    font-family: Inter;
+    font-weight: 600;
 }
 
 .tool:hover .badge {
@@ -82,10 +84,10 @@
 
 @keyframes badgeHover {
     0% {
-        transform: scale(1);
+        transform: translateY(0px) scale(1);
     }
     100% {
-        transform: scale(1.5);
+        transform: translateY(50px) scale(1.5);
     }
 }
 
@@ -111,4 +113,44 @@
 .experience p {
     width: 100%;
     text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    .tool {
+        width: 150px;
+        height: 150px;
+        font-size: 12px;
+    }
+
+    .badge {
+        padding: 15px 5px;
+        row-gap: 7.5px;
+    }
+
+    .icon {
+        width: 64px;
+        height: 64px;
+    }
+
+    .badge h5 {
+        font-size: 14px;
+    }
+
+    .tool:hover .badge {
+        padding: 7.5px;
+        row-gap: 3px;
+    }
+
+    .tool:hover .icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .tool:hover {
+        padding: 4px;
+    }
+
+    .years span {
+        font-size: 8px;
+    }
 }

@@ -5,6 +5,8 @@
   align-items: center;
   white-space: wrap;
   cursor: pointer;
+  font-family: Inter;
+  font-weight: 400;
 }
 
 .arrowlink .arrow {

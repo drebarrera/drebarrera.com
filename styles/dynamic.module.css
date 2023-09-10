@@ -25,6 +25,7 @@
   margin-top: 20px;
   align-self: flex-start;
   line-height: 1.2;
+  font-family: Inter;
 }
 
 .overview {
@@ -51,6 +52,7 @@
   align-items: center;
   font-size: 18px;
   margin-bottom: 30px;
+  font-family: Inter;
 }
 
 @media screen and (max-width: 700px) {
@@ -67,6 +69,7 @@
 .overview .content p {
   width: 100%;
   margin: 10px;
+  font-weight: 300;
 }
 
 .overview .content .description {
@@ -75,7 +78,7 @@
 }
 
 .overview .content .label {
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.5;
   font-size: 20px;
 }
@@ -102,6 +105,7 @@
   font-size: 32px;
   margin-bottom: 10px;
   margin-block-start: 0em;
+  font-family: Inter;
 }
 
 .section {
@@ -117,6 +121,7 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  font-family: Inter;
 }
 
 .section .img {

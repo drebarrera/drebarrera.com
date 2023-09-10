@@ -8,10 +8,12 @@ import Head from "next/head";
 import styles from "@/styles/index.module.css";
 
 import specialties from "data/specialties.json";
+import tools from "data/tools.json"
 import skills from "data/skills.json"
 import featuredwork from "data/featuredwork.json";
 featuredwork.sort((a, b) => a.index - b.index);
 import featuredprojects from "data/featuredprojects.json";
+import Tool from "@/components/tool";
 featuredprojects.sort((a, b) => a.index - b.index);
 
 function Introduction() {
@@ -91,6 +93,31 @@ function Specialties() {
       ></ArrowLink>
     </article>
   );
+}
+
+function Tools() {
+
+  return (
+      <article className={`${styles.macrosection} ${styles.macrotool}`}>
+          <div className={`${styles.content}`}>
+              <h4>FULL STACK ENGINEER</h4>
+              <div className={`${styles.toolbar}`}>
+                <div className={`${styles.overlay}`}></div>
+                <div className={`${styles.tools}`}>
+                    {
+                        Object.entries(tools).map(([key, value], index) => {
+                          return <Tool key={index} details={ { "name": key, "type": value.type, "url": value.url, "year": value.year, "icon": value.icon} }></Tool>
+                        })
+                    }
+                </div>
+              </div>
+              <p className={`${styles.caption}`}>Get To Know My Strengths</p>
+              <ArrowLink
+                details={{ link: "My Manifesto", url: "/manifesto" }}
+              ></ArrowLink>
+          </div>
+      </article>
+  )
 }
 
 function Work() {
@@ -210,7 +237,7 @@ function IndexPage() {
       </Head>
       <Introduction></Introduction>
       <Header></Header>
-      <Skills></Skills>
+      <Tools></Tools>
       <Work></Work>
       <Austin></Austin>
       <PersonalProjects></PersonalProjects>

@@ -24,7 +24,7 @@
 
 .introduction .textbox {
   width: 600px;
-  max-width: 98%;
+  max-width: 90%;
   margin: 7% 3% 4% 3%;
 }
 
@@ -37,9 +37,10 @@
 
 .introduction p {
   width: 100%;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 22px;
   white-space: pre-wrap;
+  font-family: Inter;
 }
 
 .introduction h2 + p {
@@ -66,7 +67,7 @@
   font-weight: lighter;
 }
 
-.specialties {
+/*.specialties {
   height: fit-content;
   width: 100vw;
   display: flex;
@@ -118,7 +119,7 @@
 
 .specialty img {
   height: 50px;
-}
+}*/
 
 .featured {
   background-color: white;
@@ -128,6 +129,7 @@
 }
 
 .featured h4 {
+  font-family: Inter;
   font-size: 48px;
   font-weight: 600;
   margin-left: 25px;
@@ -198,6 +200,8 @@
 
 .austin p {
   font-size: 16px;
+  font-family: Inter;
+  font-weight: 300;
 }
 
 .austin a {
@@ -230,7 +234,8 @@
   white-space: pre-wrap;
   color: white;
   font-size: 5vh;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: Inter;
 }
 
 .limitless .centered {
@@ -242,11 +247,26 @@
   align-items: center;
 }
 
+.limitless .centered:hover {
+  animation: 0.5s limitlessHover;
+  animation-fill-mode: forwards;
+}
+
+@keyframes limitlessHover {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-25px);
+  }
+}
+
 .limitless h4 {
   color: var(--flax);
   font-size: 3vh;
-  font-weight: 500;
+  font-weight: 300;
   margin-bottom: 0.8vh;
+  font-family: Inter;
 }
 
 .limitless .me {
@@ -258,6 +278,86 @@
   background: url('/images/icons/me.webp');
   background-size: 126px 126px;
   background-position: center;
+}
+
+.macrosection {
+  background-color: var(--dark-gunmetal);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.macrosection h4 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-left: 25px;
+  padding-bottom: 25px; 
+  text-align: center;
+  font-family: Inter;
+}
+
+.macrosection .content {
+  width: 90%;
+  height: fit-content;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.macrosection:hover .content {
+  animation: sectionHover 0.25s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sectionHover {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+.toolbar {
+  height: 300px;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.overlay {
+  height: 300px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, var(--dark-gunmetal));
+  z-index: 5;
+  pointer-events: none;
+}
+
+.tools {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-content: center;
+}
+
+.macrosection .content .caption {
+  font-size: 22px;
+  margin-top: 35px;
+  margin-bottom: 5px;
+  color: var(--flax);
+  font-family: Inter;
+  font-weight: 300;
+}
+
+.macrosection .content a {
+  margin-bottom: 20px;
 }
 
 @media screen and (max-height: 600px) {
@@ -287,47 +387,7 @@
   }
 }
 
-.macrosection {
-  background-color: var(--dark-gunmetal);
-  position: relative;
-  display: flex;
-  justify-content: center;
-  color: white;
-}
-
-.macrosection h4 {
-  font-size: 48px;
-  font-weight: 600;
-  margin-left: 25px;
-  padding-bottom: 25px; 
-  text-align: center;
-}
-
-.macrosection .content {
-  width: 90%;
-  height: fit-content;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.macrosection:hover .content {
-  animation: sectionHover 0.25s ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-@keyframes sectionHover {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(-15px);
-  }
-}
-
+/*
 .skills {
   display: flex;
   flex-direction: row;
@@ -410,3 +470,4 @@
     width: var(--barwidth);
   }
 }
+*/

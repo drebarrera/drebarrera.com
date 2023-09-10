@@ -24,33 +24,46 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
   overflow-y: hidden;
 }
 
 .feature .info {
   width: 42%;
   min-width: 350px;
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 30px 0px;
 }
 
 .feature h5 {
   font-size: 32px;
   margin-left: 6%;
   margin-bottom: 10px;
+  font-family: Inter;
+  font-weight: 600;
+}
+
+.feature h6 {
+  margin-left: 6%;
+  margin-bottom: 10px;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 200;
 }
 
 .feature p {
   font-size: 20px;
   margin-left: 8%;
+  font-family: Inter;
+  font-weight: 300;
+  margin-bottom: 30px;
 }
 
 .feature a {
-  margin-top: 20px;
+  margin-top: 5px;
   margin-left: 150px;
-  margin-bottom: 30px;
   width: fit-content;
 }
 
@@ -125,6 +138,7 @@
 
   .feature .info {
     min-width: 300px;
+    margin-top: 20px;
   }
 
   .feature a {

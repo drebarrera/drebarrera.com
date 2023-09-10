@@ -29,7 +29,7 @@ export default function Tool(props) {
     };
 
     return (
-        <Link href={url} className={`${styles.tool}`} style={gradient}>
+        <Link href={url} className={`${styles.tool}`} style={gradient} target="_blank">
             <div className={`${styles.badge}`}>
                 <p className={`${styles.category}`}>{`${category}`}</p>
                 <h5>{`${name}`}</h5> 
