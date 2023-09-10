@@ -86,12 +86,10 @@ export default function WorkPage(props) {
                   var comma = undefined;
                   if (tool != details.tools[details.tools.length - 1])
                     comma = <span>, </span>;
-                  tools.forEach((toolset) => {
-                    Object.keys(toolset.tools).map((t) => {
-                      if (t == tool) {
-                        link = toolset.tools[t];
-                      }
-                    });
+                  Object.keys(tools).forEach((t) => {
+                    if (t == tool) {
+                      link = tools[t].url;
+                    }
                   });
                   return (
                     <Fragment>
@@ -156,16 +154,19 @@ export default function WorkPage(props) {
           <p className={`${styles.title}`}>Development Tools</p>
             {details.tools.map((tool) => {
               var link = "";
-              tools.forEach((toolset) => {
-                Object.keys(toolset.tools).map((t) => {
-                  if (t == tool) {
-                    link = toolset.tools[t];
-                  }
-                });
+              var icon = "";
+              Object.keys(tools).forEach((t) => {
+                if (t == tool) {
+                  link = tools[t].url;
+                  icon = tools[t].icon;
+                }
               });
               return (
                 <a href={link} target="_blank" rel="noopener noreferrer">
-                  <div style={bg}>{tool}</div>
+                  <div style={bg} className={`${styles.toolname}`}>
+                    <div className={`${styles.toolicon}`} dangerouslySetInnerHTML={{ __html: icon }}></div>
+                    {tool}
+                  </div>
                 </a>
               );
             })}

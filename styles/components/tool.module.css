@@ -89,6 +89,13 @@
     }
 }
 
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .years {
     width: 100px;
     display: flex;
@@ -101,7 +108,7 @@
     font-size: 12px;
 }
 
-.years p {
+.experience p {
     width: 100%;
     text-align: center;
 }

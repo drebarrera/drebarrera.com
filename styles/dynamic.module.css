@@ -173,15 +173,32 @@
   font-weight: 700;
 }
 
-.choices .list div {
-  display: inline-block;
+.choices .list .toolname {
   width: 98%;
   padding: 5px;
   background: var(--bg);
+  background-image: none;
   background-position: center;
   margin: 5px;
   border-radius: 5px;
   text-align:center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.choices .list .toolicon {
+  height: 30px;
+  width: 30px;
+}
+
+.toolicon *:not([fill="none"]) {
+  fill: white !important;
+}
+
+.toolicon *[stroke]:not([stroke="none"]) {
+  stroke: white !important;
 }
 
 .choices .list div:hover {

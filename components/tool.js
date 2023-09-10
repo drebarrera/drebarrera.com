@@ -34,13 +34,15 @@ export default function Tool(props) {
                 <p className={`${styles.category}`}>{`${category}`}</p>
                 <h5>{`${name}`}</h5> 
                 <div dangerouslySetInnerHTML={{ __html: icon }} className={`${styles.icon}`}></div>
-                <div className={`${styles.years}`}>
-                    <p>{`${years} Years`}</p>
-                    {
-                        Array.from({ length: years }, (_, i) => (
-                            <span key={i}>&#9733;</span>
-                        ))
-                    }
+                <div className={`${styles.experience}`}>
+                    <p>{`${years} Years Experience`}</p>
+                    <div className={`${styles.years}`}>
+                        {
+                            Array.from({ length: years }, (_, i) => (
+                                <span key={i}>&#9733;</span>
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
             
