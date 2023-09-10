@@ -73,11 +73,6 @@
     height: 70px;
 }
 
-
-.tool:hover h5 {
-    
-}
-
 .tool:hover {
     animation: 0.5s badgeHover;
     animation-fill-mode: forwards;
