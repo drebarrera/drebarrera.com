@@ -131,13 +131,13 @@
   font-size: 48px;
   font-weight: 600;
   margin-left: 25px;
-  padding-bottom: 25px; 
+  padding-bottom: 0px; 
 }
 
 .featured .content {
   width: 90%;
   height: fit-content;
-  margin-top: 100px;
+  margin-top: 75px;
   max-width: 1200px;
 }
 
@@ -284,5 +284,129 @@
   .limitless .content {
     height: 85%;
     width: 80%;
+  }
+}
+
+.macrosection {
+  background-color: var(--dark-gunmetal);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.macrosection h4 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-left: 25px;
+  padding-bottom: 25px; 
+  text-align: center;
+}
+
+.macrosection .content {
+  width: 90%;
+  height: fit-content;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.macrosection:hover .content {
+  animation: sectionHover 0.25s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sectionHover {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.skill {
+  width: 225px;
+  height: 60px;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.skill:hover {
+  animation: skillHover 0.2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes skillHover {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.skill:hover .skillbar {
+  width: 0%;
+  animation: skillPulse 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+
+.skill .row {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skill .bar {
+  width: calc(100% - 50px);
+  height: 8px;
+  border-radius: 10px;
+  background-color: var(--gunmetal);
+}
+
+.skillbar {
+  width: var(--barwidth);
+  height: 8px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--flax), var(--amber));
+}
+
+.skill .row p {
+  width: 50px;
+  text-align: center;
+  color: var(--amber);
+}
+
+.skill h6 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.macrosection .content a {
+  margin-top: 25px;
+}
+
+@keyframes skillPulse {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--barwidth);
   }
 }

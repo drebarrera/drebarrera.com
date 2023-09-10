@@ -1,0 +1,112 @@
+.tool {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    color: white;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to bottom, var(--gradient-top), var(--gradient-bottom));
+}
+
+.badge {
+    padding: 20px 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+    row-gap: 10px;
+}
+
+.badge .icon {
+    pointer-events: none;
+}
+
+.badge .icon *:not([fill="none"]) {
+    fill: white !important;
+}
+
+.tool .icon *[stroke]:not([stroke="none"]) {
+    stroke: white !important;
+}
+
+.category {
+    color: white;
+    display: none;
+}
+
+.icon {
+    width: 85px;
+    height: 85px;
+}
+
+.badge h5 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.tool:hover .badge {
+    background: radial-gradient(circle at center, #fff, #ddd);
+    color: black;
+    padding: 10px;
+    row-gap: 5px;
+}
+
+.tool:hover .category {
+    color: var(--gradient-bottom);
+    display: inherit;
+}
+
+.tool:hover .icon *:not([fill="none"]) {
+    fill: black !important;
+}
+
+.tool:hover .icon *[stroke]:not([stroke="none"]) {
+    stroke: black !important;
+}
+
+.tool:hover .icon {
+    width: 70px;
+    height: 70px;
+}
+
+
+.tool:hover h5 {
+    
+}
+
+.tool:hover {
+    animation: 0.5s badgeHover;
+    animation-fill-mode: forwards;
+    z-index: 5;
+    padding: 5px;
+}
+
+@keyframes badgeHover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.years {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.years span {
+    font-size: 12px;
+}
+
+.years p {
+    width: 100%;
+    text-align: center;
+}

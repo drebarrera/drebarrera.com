@@ -1,0 +1,100 @@
+[
+  {
+    "title": "DEVELOPMENT LANGUAGES",
+    "tools": {
+      "C": "https://www.cprogramming.com",
+      "C++": "https://isocpp.org",
+      "Python": "https://www.python.org",
+      "JavaScript": "https://www.javascript.com",
+      "Go": "https://go.dev",
+      "HTML": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      "CSS": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "PHP": "https://www.php.net",
+      "Java": "https://dev.java",
+      "MATLAB": "https://www.mathworks.com/products/matlab.html"
+    }
+  },
+  {
+    "title": "FRONTEND DEVELOPMENT",
+    "tools": {
+      "React": "https://react.dev",
+      "Next.js": "http://nextjs.org",
+      "jQuery": "https://jquery.com",
+      "TailwindCSS": "http://tailwindcss.com",
+      "Wix": "https://www.wix.com",
+      "WebGen": "http://drebarrera.com/webgen/"
+    }
+  },
+  {
+    "title": "BACKEND & DEVOPS",
+    "tools": {
+      "Node.js": "http://nodejs.org",
+      "MongoDB": "http://mongodb.com",
+      "GitHub": "http://github.com",
+      "Docker": "http://docker.com",
+      "Prometheus": "https://prometheus.io",
+      "Grafana": "https://grafana.com",
+      "RTI DDS": "https://www.rti.com/en/",
+      "NumPy": "https://numpy.org",
+      "Selenium": "https://www.selenium.dev",
+      "TensorFlow": "https://www.tensorflow.org",
+      "Hostinger": "https://www.hostinger.com",
+      "Chrome Extensions": "https://developer.chrome.com/docs/extensions/",
+      "AWS": "http://aws.amazon.com",
+      "AWS IAM": "https://aws.amazon.com/iam/",
+      "AWS Cognito": "https://aws.amazon.com/cognito/",
+      "AWS S3": "https://aws.amazon.com/s3/",
+      "AWS DynamoDB": "https://aws.amazon.com/dynamodb/",
+      "AWS Lambda": "https://aws.amazon.com/lambda/",
+      "AWS API Gateway": "https://aws.amazon.com/apigateway/",
+      "AWS CloudFront": "https://aws.amazon.com/cloudfront/",
+      "AWS Route53": "https://aws.amazon.com/route53/"
+      
+    }
+  },
+  {
+    "title": "DESIGN & BRANDING",
+    "tools": {
+      "Figma": "https://www.figma.com",
+      "Adobe Photoshop": "https://www.adobe.com/products/photoshop.html",
+      "Adobe Lightroom": "https://lightroom.adobe.com",
+      "Adobe Fonts": "https://fonts.adobe.com",
+      "Google Fonts": "https://fonts.google.com",
+      "Coolors": "https://coolors.co",
+      "unDraw": "https://undraw.co",
+      "Lottie": "https://lottiefiles.com",
+      "Final Cut Pro": "https://www.apple.com/final-cut-pro/",
+      "Logic Pro X": "https://www.apple.com/logic-pro/"
+    }
+  },
+  {
+    "title": "ENGINEERING",
+    "tools": {
+      "VS Code": "https://code.visualstudio.com",
+      "KiCad": "https://www.kicad.org",
+      "Solidworks": "http://solidworks.com",
+      "Autodesk AutoCAD": "http://www.autodesk.com",
+      "Draw.io": "http://drawio.com",
+      "Linux": "https://www.linux.org",
+      "Arduino": "https://www.arduino.cc",
+      "Beagle Board": "https://www.beagleboard.org",
+      "Raspberry Pi": "https://www.raspberrypi.com",
+      "Micropython": "https://micropython.org",
+      "Adafruit": "https://www.adafruit.com",
+      "Texas Instruments": "https://www.ti.com",
+      "STM": "https://www.st.com/",
+      "Nordic": "https://www.nordicsemi.com",
+      "Stack Overflow": "http://stackoverflow.com"
+    }
+  },
+  {
+    "title": "COMMUNITIES",
+    "tools": {
+      "Hispanic Hackers": "https://www.hispanichackers.com",
+      "Techqueria": "http://techqueria.org",
+      "Capital Factory": "https://www.capitalfactory.com",
+      "Purdue Alum": "https://www.purdue.edu"
+    }
+
+  }
+]

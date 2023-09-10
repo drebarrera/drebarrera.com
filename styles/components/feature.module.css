@@ -24,6 +24,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  overflow-y: hidden;
 }
 
 .feature .info {
@@ -68,6 +69,37 @@
   min-width: 350px;
   margin-top: auto;
   margin-bottom: var(--captureMB);
+}
+
+.feature:hover .capture {
+  animation: featureCaptureHover 0.5s ease-in-out;
+}
+
+.feature:hover {
+  animation: featureHover 0.25s ease-in-out;
+  animation-fill-mode: forwards;
+  background-image: none;
+}
+
+@keyframes featureHover {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-25px);
+  }
+}
+
+@keyframes featureCaptureHover {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .featureleft .info {

@@ -3,11 +3,11 @@ import { Fragment } from "react"
 import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
+import Tool from "components/tool";
 
 import styles from "@/styles/manifesto.module.css";
-
-import manifesto from "data/manifesto.json"
 import skills from "data/skills.json"
+import manifesto from "data/manifesto.json"
 import tools from "data/tools.json"
 
 function Manifesto() {
@@ -41,7 +41,7 @@ function Skills() {
     return (
         <article className={`${styles.macrosection}`}>
             <div className={`${styles.content}`}>
-                <h4>SKILLS</h4>
+                <h4>ENGINEERING SKILLS</h4>
                 <div className={`${styles.skills}`}>
                     {
                     Object.keys(skills).map((skill) => {
@@ -66,11 +66,11 @@ function Skills() {
     )
 }
 
-function Tools() {
+/*function Tools() {
     return (
         <article className={`${styles.macrosection} ${styles.macrotool}`}>
             <div className={`${styles.content}`}>
-                <h4>Tools</h4>
+                <h4>MY TOOLBOX</h4>
                 <div className={`${styles.tools}`}>
                     {
                     tools.map((tool) => {
@@ -93,6 +93,25 @@ function Tools() {
                             </section>
                         );
                     })}
+                </div>
+            </div>
+        </article>
+    )
+}*/
+
+function Tools() {
+    const entries = Object.entries(tools);
+    const sortedEntries = entries.sort(([, a], [, b]) => b.year - a.year);
+    return (
+        <article className={`${styles.macrosection} ${styles.macrotool}`}>
+            <div className={`${styles.content}`}>
+                <h4>MY TOOLBOX</h4>
+                <div className={`${styles.tools}`}>
+                    {
+                        sortedEntries.map(([key, value], index) => {
+                            return <Tool key={index} details={ { "name": key, "type": value.type, "url": value.url, "year": value.year, "icon": value.icon} }></Tool>
+                        })
+                    }
                 </div>
             </div>
         </article>

@@ -8,6 +8,7 @@ import Head from "next/head";
 import styles from "@/styles/index.module.css";
 
 import specialties from "data/specialties.json";
+import skills from "data/skills.json"
 import featuredwork from "data/featuredwork.json";
 featuredwork.sort((a, b) => a.index - b.index);
 import featuredprojects from "data/featuredprojects.json";
@@ -31,6 +32,38 @@ function Introduction() {
       </div>
     </article>
   );
+}
+
+function Skills() {
+  return (
+      <article className={`${styles.macrosection}`}>
+          <div className={`${styles.content}`}>
+              <h4>ENGINEERING SKILLS</h4>
+              <div className={`${styles.skills}`}>
+                  {
+                  Object.keys(skills).map((skill) => {
+                      const barwidth = {
+                          "--barwidth": skills[skill],
+                      };
+                      return (
+                          <div className={`${styles.skill}`}>
+                              <div className={`${styles.row}`}>
+                                  <div className={`${styles.bar}`} style={barwidth}>
+                                      <div className={`${styles.skillbar}`}></div>
+                                  </div>
+                                  <p>{skills[skill]}</p>
+                              </div>
+                              <h6>{skill}</h6>
+                          </div>
+                      );
+                  })}
+              </div>
+              <ArrowLink
+                details={{ link: "My Manifesto", url: "/manifesto" }}
+              ></ArrowLink>
+          </div>
+      </article>
+  )
 }
 
 function Specialties() {
@@ -177,7 +210,7 @@ function IndexPage() {
       </Head>
       <Introduction></Introduction>
       <Header></Header>
-      <Specialties></Specialties>
+      <Skills></Skills>
       <Work></Work>
       <Austin></Austin>
       <PersonalProjects></PersonalProjects>
