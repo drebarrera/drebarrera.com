@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
 import Tool from "components/tool";
+import { useState, useEffect } from "react";
 
 import styles from "@/styles/manifesto.module.css";
 import skills from "data/skills.json"
@@ -102,14 +103,69 @@ function Skills() {
 function Tools() {
     const entries = Object.entries(tools);
     const sortedEntries = entries.sort(([, a], [, b]) => b.year - a.year);
+
+    const categories = ['design', 'frontend', 'backend', 'devops', 'engineering', 'community', 'other'];
+    const [selected, setSelected] = useState([]);
+    const [search, setSearch] = useState("");
+
+    const handleClick = (key, event) => {
+        setSelected((prevSelected) => {
+            if (prevSelected.includes(key)) {
+                return prevSelected.filter((cat) => cat !== key);
+            } else {
+                return [...prevSelected, key];
+            }
+        });
+    }
+    
+    const handleSearch = (event) => {
+        setSearch(event.target.value);
+    }
+
     return (
         <article className={`${styles.macrosection} ${styles.macrotool}`}>
             <div className={`${styles.content}`}>
                 <h4>MY TOOLBOX</h4>
+                <div className={`${styles.search}`}>
+                    <p>Search:</p>
+                    <input type="text" value={search} onChange={handleSearch}/>
+                </div>
+                <div className={`${styles.filters}`}>
+                        {
+                            categories.map((category) => {
+                                const gradient = {
+                                    "--gradient-top": (category === 'backend') ? '#5CA4A9' : 
+                                    (category === 'frontend') ? '#88C29A' : 
+                                    (category === 'devops') ? '#F4B400' : 
+                                    (category === 'design') ? '#FF6B6B' : 
+                                    (category === 'other') ? '#6E7C7C' : 
+                                    (category === 'engineering') ? '#FFA07A' : 
+                                    (category === 'community') ? '#9E579D' : 
+                                    '#A3A948',
+                                    "--gradient-bottom": (category === 'backend') ? '#247BA0' : 
+                                    (category === 'frontend') ? '#4A8F69' : 
+                                    (category === 'devops') ? '#F57C00' : 
+                                    (category === 'design') ? '#D83367' : 
+                                    (category === 'other') ? '#3B3B3B' : 
+                                    (category === 'engineering') ? '#FF4500' : 
+                                    (category === 'community') ? '#674172' : 
+                                    '#B5E655'
+                                };
+                                return <div onClick={(event) => handleClick(category, event)} className={`${styles.category}`} style={gradient}><p className={`${selected.includes(category) ? styles.categorySelected : ''}`}>{category}</p></div>;
+                            })
+                        }
+                    </div>
                 <div className={`${styles.tools}`}>
                     {
                         sortedEntries.map(([key, value], index) => {
-                            return <Tool key={index} details={ { "name": key, "type": value.type, "url": value.url, "year": value.year, "icon": value.icon} }></Tool>
+                            var isSelected = false;
+                            selected.forEach((cat) => {
+                                if (cat == value.type) {
+                                    isSelected = true;
+                                }
+                            });
+                            if ((selected.length == 0 || isSelected) && key.toLowerCase().includes(search.toLowerCase()))
+                                return <Tool key={index} details={ { "name": key, "type": value.type, "url": value.url, "year": value.year, "icon": value.icon} }></Tool>
                         })
                     }
                 </div>
