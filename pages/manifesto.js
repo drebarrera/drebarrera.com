@@ -127,7 +127,7 @@ function Tools() {
             <div className={`${styles.content}`}>
                 <h4>MY TOOLBOX</h4>
                 <div className={`${styles.search}`}>
-                    <p>Search:</p>
+                    <p>Search All {Object.entries(tools).length} Skills:</p>
                     <input type="text" value={search} onChange={handleSearch}/>
                 </div>
                 <div className={`${styles.filters}`}>
