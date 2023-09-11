@@ -100,7 +100,8 @@ function Tools() {
   return (
       <article className={`${styles.macrosection} ${styles.macrotool}`}>
           <div className={`${styles.content}`}>
-              <h4>FULL STACK ENGINEER</h4>
+              <h4>OVER 10 YEARS EXPERIENCE</h4>
+              <p className={`${styles.subtitle}`}>FULL STACK ENGINEER</p>
               <div className={`${styles.toolbar}`}>
                 <div className={`${styles.overlay}`}></div>
                 <div className={`${styles.tools}`}>

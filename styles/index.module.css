@@ -322,6 +322,16 @@
   }
 }
 
+.macrotool .subtitle {
+  font-size: 24px;
+  font-family: Inter;
+  padding-bottom: 30px; 
+}
+
+.macrotool h4 {
+  padding-bottom: 5px; 
+}
+
 .toolbar {
   height: 300px;
   width: 100%;
