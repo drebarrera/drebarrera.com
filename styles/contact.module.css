@@ -18,9 +18,13 @@
 }
 
 .section h2 {
+  width: fit-content;
   font-size: 36px;
   font-weight: 500;
-  color: var(--amber);
+  background: linear-gradient(to right, var(--amber), var(--flax));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .section h2 svg {

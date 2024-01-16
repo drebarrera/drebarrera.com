@@ -1,0 +1,360 @@
+.hero {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--gunmetal);
+    font-family: Inter;
+}
+
+.hero .description {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    z-index: 2;
+    padding: 40px;
+}
+
+.hero .description h2 {
+    width: 90%;
+    font-weight: 300;
+    color: white;
+    font-size: 28px;
+}
+
+.hero .description h2 span {
+    background: linear-gradient(to right, var(--amber), var(--flax));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.hero .description p {
+    max-width: 800px;
+}
+
+.hero .description .button {
+    width: fit-content;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid #50C7DE;
+    border-radius: 10px;
+    font-weight: bolder;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer !important;
+}
+
+.hero .description .button:hover {
+    border: 3px solid white;
+    background-color: rgba(0,0,0,0.8);
+    cursor: pointer;
+}
+
+.hero .image {
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    float: right;
+    clear: left;
+    background: url("/images/clients-main.webp");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 70px;
+    z-index: 1;
+}
+
+.login {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #efefef;
+    font-size: 22px;
+}
+
+.login .container {
+    width: 90%;
+    max-width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-transition:500ms linear;
+	-moz-transition:500ms linear;
+	-o-transition:500ms linear;
+	-ms-transition:500ms linear;
+	transition:500ms linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    padding: 25px 50px;
+    justify-content: center;
+}
+
+.login .container form {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+    overflow: none;
+}
+
+.login .container form div label {
+    align-self: flex-start;
+    color: var(--police-blue);
+    font-family: Inter;
+    font-weight: bolder;
+}
+
+.login .container img {
+    width: 50px;
+    height: auto;
+}
+
+.login form div input, .login form select, .login form textarea {
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    border-image-outset: 5px;
+    font-size: 18px;
+    border: 2px solid var(--police-blue);
+    margin: 5px 0px;
+    color: black;
+    margin-bottom: 22px;
+}
+
+.login form textarea {
+    height: 100px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.login .container form .formset {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.login .container form .QQ {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.login .container form .QQ input {
+    width: 40%;
+}
+
+.login form select:has(option[name="placeholder"]:checked) {
+    color: grey;
+}
+
+.login form div input::placeholder {
+    color: grey;
+}
+
+.login .companyTypes {
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.login .companyType {
+    box-sizing: content-box;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--police-blue);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 5px solid var(--police-blue);
+    fill: white;
+    cursor: pointer;
+}
+
+.login .companyType:hover {
+    background-color: white;
+    fill: var(--police-blue);
+    color: var(--police-blue);
+    animation: scaleSelect 250ms linear;
+    animation-fill-mode: forwards;
+}
+
+.login .companyType svg {
+    height: 75px;
+    width: auto;
+    background-color: transparent !important;
+}
+
+.login .companyType .onlyText {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.login .companyTypeSelected {
+    background-color: white;
+    fill: var(--police-blue);
+    color: var(--police-blue);
+}
+
+@keyframes scaleSelect {
+    0% {
+        transform: scale(1);
+        row-gap: 10px;
+    }
+    100% {
+        transform: scale(1.1);
+        row-gap: 15px;
+    }
+}
+
+.login .techUsed {
+    width: 100%;
+    height: fit-content;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #eee;
+    gap: 8px;
+}
+
+.login .techUsed .techItem {
+    height: fit-content;
+    width: fit-content;
+    padding: 4px 8px;
+    background: linear-gradient(to bottom right, var(--gradient-top), var(--gradient-bottom));
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Inter;
+    border: 4px solid transparent;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.login .techUsed .techItem:hover {
+    border-color: #eee;
+    font-weight: 500;
+}
+
+.login .techUsed .techItemSelected {
+    background: white;
+}
+
+.newproject {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login .container .divider {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+    align-items: center;
+    text-align: center;
+    font-family: inter;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+.login .container .divider div {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+
+.login h3 {
+    font-size: 28px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0px;
+    justify-content: center;
+}
+
+.login .button {
+    width: fit-content;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: normal;
+    background: linear-gradient(to right, #93EDFF, #50C7DE);
+    cursor: pointer !important;
+    border: none;
+}
+
+.login .button:hover {
+    background: #93EDFF;
+    cursor: pointer;
+}
+
+.login .newbutton {
+    width: fit-content;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: normal;
+    background: linear-gradient(to right, var(--flax), var(--amber));
+    cursor: pointer !important;
+    border: none;
+}
+
+.login .newbutton:hover {
+    background: var(--flax);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero .description {
+        width: 100% !important;
+        height: 100%;
+        background-color: rgba(32, 51, 58, 0.5);    
+    }
+}
+

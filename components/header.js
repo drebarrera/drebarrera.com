@@ -56,7 +56,7 @@ export default function Header() {
           <div className={`${styles.nav}`}>
             {HEADER_LINKS.map((link) => {
               return (
-                <Link href={link.href}>
+                <Link key={link.name} href={link.href}>
                   <span>{link.name}</span>
                 </Link>
               );
@@ -74,10 +74,10 @@ export default function Header() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-menu"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-menu"
             onClick={menuClick}
           >
             <line x1="4" x2="20" y1="12" y2="12" />
@@ -89,7 +89,7 @@ export default function Header() {
       <div className={`${styles.menu}`} style={menuStyle}>
       {HEADER_LINKS.map((link) => {
         return (
-          <Link href={link.href} onClick={menuClick}>
+          <Link key={link.name} href={link.href} onClick={menuClick}>
             <div>{link.name}</div>
           </Link>
         );

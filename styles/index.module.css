@@ -29,22 +29,26 @@
 }
 
 .introduction h2 {
-  color: var(--flax);
+  width: fit-content;
+  background: linear-gradient(to right, var(--amber), var(--flax));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 60px;
   line-height: 1;
 }
 
 .introduction p {
   width: 100%;
   font-weight: 200;
-  font-size: 22px;
+  font-size: 24px;
   white-space: pre-wrap;
   font-family: Inter;
 }
 
 .introduction h2 + p {
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .centerpiece {
@@ -262,11 +266,15 @@
 }
 
 .limitless h4 {
-  color: var(--flax);
+  width: fit-content;
   font-size: 3vh;
   font-weight: 300;
   margin-bottom: 0.8vh;
   font-family: Inter;
+  background: linear-gradient(to right, var(--amber), var(--flax));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .limitless .me {
@@ -358,12 +366,17 @@
 }
 
 .macrosection .content .caption {
+  width: fit-content;
   font-size: 22px;
   margin-top: 35px;
   margin-bottom: 5px;
   color: var(--flax);
   font-family: Inter;
   font-weight: 300;
+  background: linear-gradient(to right, var(--amber), var(--flax));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .macrosection .content a {
