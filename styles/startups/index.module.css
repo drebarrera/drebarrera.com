@@ -1,0 +1,136 @@
+.button {
+    color: white;
+    padding: 10px 10px;
+    border-radius: 6px;
+    font-size: 20px;
+    background: linear-gradient(var(--gradientStart), var(--gradientEnd));
+    font-family: inter;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: var(--gradientStart);
+}
+
+.hero {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    --svgheight: 200px;
+    --svgwidth: 200px;
+    --svgfill: url(#gradient);
+    background-color:var(--gunmetal);
+}
+
+.hero h2 {
+    font-size: 50px;
+    color: white;
+    font-family: inter;
+}
+
+.hero p {
+    font-size: 28px;
+    color: white;
+    font-family: inter;
+}
+
+.hero .buttons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    padding: 20px;
+}
+
+.tech {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 75px 50px;
+    background-color: var(--dark-gunmetal);
+    font-family: inter;
+    color: white;
+}
+
+.tech .title {
+    width: fit-content;
+    font-size: 50px;
+    font-weight: 700;
+    background: linear-gradient(to right, #FE5B00, #FFBD12);
+    background-clip: text;
+    color: transparent;
+}
+
+.tech h3 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.tech ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tech ul li {
+    height: 220px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    list-style-type: none;
+    font-size: 22px;
+}
+
+.tech ul li .icon {
+    width: 115px;
+    height: 140px;
+    display: flex;
+    --svgfill: white;
+}
+
+.tech ul li p {
+    width: 440px;
+    font-weight: 300;
+}
+
+.tech ul li p a:hover {
+    text-decoration: underline;
+}
+
+.timeline {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 50px;
+    background-color: white;
+    font-family: inter;
+    color: var(--dark-gunmetal);
+}
+
+.timeline h3 {
+    font-size: 48px;
+}
+
+.timeline h4 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.timeline p {
+    font-size: 24px;
+}

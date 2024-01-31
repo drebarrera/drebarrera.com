@@ -6,7 +6,7 @@
     "title": "Pixel Visa",
     "description": "Developing a website to serve backpackers as a digital passport to global adventures.",
     "link": "View Case Study",
-    "background": "#5A8859",
+    "background": "linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url('/images/featured/pixelvisa/bg.webp') rgba(0,0,0,0.9)",
     "captureMB": "0px",
     "role": "Independent",
     "location": "Austin, Texas",
