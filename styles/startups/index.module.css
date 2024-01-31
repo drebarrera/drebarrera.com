@@ -15,7 +15,7 @@
 }
 
 .hero {
-    height: 600px;
+    height: 650px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -34,10 +34,23 @@
     font-family: inter;
 }
 
-.hero p {
+.hero h3 {
     font-size: 28px;
     color: white;
     font-family: inter;
+    font-weight: 500;
+}
+
+.hero p {
+    font-size: 24px;
+    color: white;
+    font-family: inter;
+    font-weight: 400;
+}
+
+.hero p span {
+    font-size: 18px;
+    color: #eee;
 }
 
 .hero .buttons {
@@ -116,21 +129,52 @@
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    justify-content: center;
+    align-items: center;
     padding: 50px;
     background-color: white;
     font-family: inter;
     color: var(--dark-gunmetal);
+    line-height: 1.5;
 }
 
 .timeline h3 {
     font-size: 48px;
+    width: 100%;
 }
 
 .timeline h4 {
     font-size: 36px;
     font-weight: 500;
+    margin-top: 40px;
 }
 
 .timeline p {
     font-size: 24px;
+}
+
+.timeline ol {
+    width: 90%;
+    max-width: 1000px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 28px;
+}
+
+.timeline ol li {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.timeline ol li h5 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.timeline ol p {
+    font-weight: 400;
+    font-size: 22px;
 }
