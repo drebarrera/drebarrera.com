@@ -1,5 +1,7 @@
 import UIIcon from "components/startups/icons/ui";
 
+import Specs from "components/startups/specs";
+
 import styles from "/styles/startups/index.module.css";
 
 export default function WebDev() {
@@ -22,6 +24,24 @@ export default function WebDev() {
             <h5>Your Website Foundation - Which Platform Should I Choose?</h5>
             <p>In website development, two foundational approaches stand out: Low-Code Content Management System (CMS) websites and framework-based Web Applications. Low-code CMS platforms offer streamlined development through intuitive interfaces and pre-built templates, ideal for rapid deployment without extensive coding knowledge. On the other hand, framework-based web applications provide greater control and customization but require meticulous coding for tailored functionality and scalability. The choice between these approaches depends on project complexity, scalability needs, and long-term goals, guiding businesses towards the most suitable digital path.</p>
             <h6>CMS vs Web Applications</h6>
+            <div class={styles.vs}>
+                <Specs details={
+                    {
+                        "name": "Content Management System (CMS)",
+                        "description": "A web app is an interactive application accessed through a web browser, offering dynamic functionalities and user interactions.",
+                        "pros": ["Low-Code Options"],
+                        "cons": ["Less Configuration", "Relies on Plugins"]
+                    }
+                }></Specs>
+                <Specs details={
+                    {
+                        "name": "Web Application",
+                        "description": "A web app is an interactive application accessed through a web browser, offering dynamic functionalities and user interactions.",
+                        "pros": ["test"],
+                        "cons": ["test2"]
+                    }
+                }></Specs>
+            </div>
         </div>
     </section>);
 }

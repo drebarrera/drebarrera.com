@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "components/header";
 
 import Breadcrumb from "components/breadcrumb";
-import WebDevComponent from "components/topics/website-development";
+import WebDevComponent from "components/startups/topics/website-development";
 
 import styles from "/styles/startups/index.module.css";
 

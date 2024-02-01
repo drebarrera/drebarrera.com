@@ -1,0 +1,76 @@
+.spec {
+    width: 450px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column !important;
+    row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 5px solid #eee;
+    border-radius: 20px;
+}
+
+.spec h6 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.spec p {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.spec .name {
+    font-size: 22px;
+    text-align: center;
+}
+
+.spec .description {
+    font-size: 20px !important;
+    line-height: 1.25 !important;
+    font-weight: 300;
+}
+
+.spec .pc {
+    width: fit-content;
+
+}
+
+.spec ul {
+    width: 100%;
+    font-size: 22px !important;
+    font-family: inter;
+    list-style-type: none;
+}
+
+.spec li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.spec li span {
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    --itemdim: 24px;
+    
+}
+
+.spec .pros li span {
+    --itembackground: linear-gradient(to bottom right, #00FF57 10%, #00FFD1 90%);
+    font-size: 20px !important;
+}
+
+.spec .cons li span  {
+    --itembackground: linear-gradient(to bottom right, #FF00D6 10%, #AD00FF 90%);
+    font-size: 16px !important;
+}

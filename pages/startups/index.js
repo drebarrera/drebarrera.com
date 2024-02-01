@@ -8,7 +8,7 @@ import timeline from "components/startups/content/timeline";
 import RocketIcon from "components/startups/icons/rocket";
 import ExpandIcon from "components/startups/icons/expand";
 
-import WebDevComponent from "components/topics/website-development";
+import WebDevComponent from "components/startups/topics/website-development";
 
 import styles from "/styles/startups/index.module.css";
 
