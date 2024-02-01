@@ -38,6 +38,11 @@
     font-size: 36px;
 }
 
+.breadcrumb {
+    font-size: 20px;
+    margin: 0px 0px;
+}
+
 
 .hero {
     height: 650px;
@@ -270,12 +275,11 @@
     display: flex;
     flex-direction: column;
     row-gap: 50px;
-    overflow: hidden;
 }
 
 .phasei .timelineBar {
     width: 12px;
-    height: 100%;
+    height: calc(100% - 85px);
     position: absolute;
     display: block;
     column-gap: 0px;
@@ -302,6 +306,13 @@
     width: 100%;
     height: fit-content;
     display: flex;
+    flex-direction: column;
+}
+
+.techItem .title {
+    position: sticky;
+    top: 70px;
+    z-index: 2;
 }
 
 .techItem h3 {
@@ -318,5 +329,49 @@
 }
 
 .techItem .title h4 {
+    width: 100%;
     align-self: flex-start;
+    background-color: white;
+    padding: 20px 0px;
+}
+
+.techItem .content {
+    width: calc(100% - 170px);
+    margin-left: 170px;
+    padding: 10px 40px;
+    margin-top: -35px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.techItem .content .contentDescription {
+    font-size: 24px;
+}
+
+.techItem .content p {
+    width: 100%;
+    font-size: 22px;
+}
+
+.techItem .content a {
+    color: var(--itemcolor);
+}
+
+.techItem .content a:hover {
+    text-decoration: underline;
+}
+
+.techItem .content h5 {
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.techItem .content h6 {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
 }

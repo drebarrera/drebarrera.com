@@ -7,7 +7,8 @@ import timeline from "components/startups/content/timeline";
 
 import RocketIcon from "components/startups/icons/rocket";
 import ExpandIcon from "components/startups/icons/expand";
-import UIIcon from "components/startups/icons/ui";
+
+import WebDevComponent from "components/topics/website-development";
 
 import styles from "/styles/startups/index.module.css";
 
@@ -82,27 +83,14 @@ export default function Startups() {
                 }
             </ul>
         </section>
-        <section id="phasei" className={`${styles.frame} ${styles.phasei}`}>
+        <div id="phasei" className={`${styles.frame} ${styles.phasei}`}>
             <div className={styles.timelineBar}></div>
             <div className={styles.phaseTitle}>
                 <div class={`${styles.node} ${styles.phaseNode}`} style={{"--gradientStart": "#20FFAF", "--gradientEnd": "#FF20F6"}}></div>
                 <h3>Phase I - From Napkin Sketch to Developed Brand</h3>
             </div>
-            <div class={styles.techItem}>
-                <div class={styles.title}>
-                    <div class={`${styles.node}`} style={{"--gradientStart": "#FF2323", "--gradientEnd": "#FF844F"}}></div>
-                    <div class={styles.icon}>
-                        <UIIcon>
-                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style={{"stop-color": "#FF2323", "stop-opacity": "1"}} />
-                                <stop offset="100%" style={{"stop-color": "#FF844F", "stop-opacity": "1"}} />
-                            </linearGradient>
-                        </UIIcon>
-                    </div>
-                    <h4>Your Website - The Cornerstone of Your Online Presence</h4>
-                </div>
-            </div>
-        </section>
+            <WebDevComponent></WebDevComponent>
+        </div>
     </article>
     );
 }
