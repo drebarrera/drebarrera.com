@@ -7,7 +7,7 @@ import UAuthIcon from "components/startups/icons/uauth";
 import AnalyticsIcon from "components/startups/icons/analytics";
 import MaintenanceIcon from "components/startups/icons/maintenance";
 
-import React from "react"
+import React from "react";
 
 var tech = {
     "Web": {
@@ -32,9 +32,9 @@ var tech = {
         "color": "#FF8A00"
     },
     "Email": {
-        "textcontent": ["","and","to keep their brand relevant. Utilizing targeted email marketing campaigns and communication channels can nurture customer relationships, drive conversions, and keep your brand top-of-mind."],
+        "textcontent": ["","and","to keep their brand relevant. Utilizing targeted email and social media marketing campaigns can nurture customer relationships, drive conversions, and keep your brand top-of-mind."],
         "linktext": ["Email Hosting", "Marketing Propagation"],
-        "linkhref": ["/email","marketing"],
+        "linkhref": ["/email","/marketing"],
         "svg": <EmailIcon></EmailIcon>,
         "color": "#1DCA00"
     },

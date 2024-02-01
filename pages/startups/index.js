@@ -24,7 +24,7 @@ export default function Startups() {
         <Header></Header>
         <section className={styles.hero}>
             <RocketIcon>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <linearGradient id="turqPinkVertGradient" x1="0%" y1="0%" x2="0%" y2="100%">
                     <stop offset="0%" style={{"stop-color": "rgb(0,221,225)", "stop-opacity": "1"}} />
                     <stop offset="100%" style={{"stop-color": "rgb(225,0,245)", "stop-opacity": "1"}} />
                 </linearGradient>
@@ -69,13 +69,13 @@ export default function Startups() {
                                 <div>
                                     <h5>{key}</h5>
                                     <ExpandIcon>
-                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <linearGradient id="turqPinkHorzGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                                             <stop offset="0%" style={{"stop-color": "rgb(0,221,225)", "stop-opacity": "1"}} />
                                             <stop offset="100%" style={{"stop-color": "rgb(225,0,245)", "stop-opacity": "1"}} />
                                         </linearGradient>    
                                     </ExpandIcon>
                                 </div>
-                                <p>{timeline[key].content}</p>
+                                <p>{timeline[key].text}</p>
                             </li>
                         )
                     })
