@@ -62,7 +62,7 @@ export default function Header() {
               );
             })}
             <Link href="/contact">
-              <div className={`${styles.chatbutton}`} scroll={false}>
+              <div className={`${styles.chatbutton}`} scroll="false">
                 Let's Chat
               </div>
             </Link>
@@ -95,7 +95,7 @@ export default function Header() {
         );
       })}
       <Link href="/contact">
-        <div className={`${styles.chatbutton}`} scroll={false}>
+        <div className={`${styles.chatbutton}`} scroll="false">
           Let's Chat
         </div>
       </Link>

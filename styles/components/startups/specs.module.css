@@ -3,12 +3,14 @@
     height: fit-content;
     display: flex;
     flex-direction: column !important;
-    row-gap: 5px;
+    row-gap: 10px;
     justify-content: center;
     align-items: center;
     padding: 20px;
     border: 5px solid #eee;
     border-radius: 20px;
+    --svgheight: 100px;
+    --svgwidth: 100px;
 }
 
 .spec h6 {
@@ -62,12 +64,11 @@
     align-items: center;
     color: white;
     --itemdim: 24px;
-    
 }
 
 .spec .pros li span {
     --itembackground: linear-gradient(to bottom right, #00FF57 10%, #00FFD1 90%);
-    font-size: 20px !important;
+    font-size: 18px !important;
 }
 
 .spec .cons li span  {

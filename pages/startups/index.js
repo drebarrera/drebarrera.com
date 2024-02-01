@@ -26,8 +26,8 @@ export default function Startups() {
         <section className={styles.hero}>
             <RocketIcon>
                 <linearGradient id="turqPinkVertGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" style={{"stop-color": "rgb(0,221,225)", "stop-opacity": "1"}} />
-                    <stop offset="100%" style={{"stop-color": "rgb(225,0,245)", "stop-opacity": "1"}} />
+                    <stop offset="0%" style={{"stopColor": "rgb(0,221,225)", "stopOpacity": "1"}} />
+                    <stop offset="100%" style={{"stopColor": "rgb(225,0,245)", "stopOpacity": "1"}} />
                 </linearGradient>
             </RocketIcon>
             <h2>Startup Center</h2>
@@ -71,8 +71,8 @@ export default function Startups() {
                                     <h5>{key}</h5>
                                     <ExpandIcon>
                                         <linearGradient id="turqPinkHorzGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                            <stop offset="0%" style={{"stop-color": "rgb(0,221,225)", "stop-opacity": "1"}} />
-                                            <stop offset="100%" style={{"stop-color": "rgb(225,0,245)", "stop-opacity": "1"}} />
+                                            <stop offset="0%" style={{"stopColor": "rgb(0,221,225)", "stopOpacity": "1"}} />
+                                            <stop offset="100%" style={{"stopColor": "rgb(225,0,245)", "stopOpacity": "1"}} />
                                         </linearGradient>    
                                     </ExpandIcon>
                                 </div>
@@ -86,7 +86,7 @@ export default function Startups() {
         <div id="phasei" className={`${styles.frame} ${styles.phasei}`}>
             <div className={styles.timelineBar}></div>
             <div className={styles.phaseTitle}>
-                <div class={`${styles.node} ${styles.phaseNode}`} style={{"--gradientStart": "#20FFAF", "--gradientEnd": "#FF20F6"}}></div>
+                <div className={`${styles.node} ${styles.phaseNode}`} style={{"--gradientStart": "#20FFAF", "--gradientEnd": "#FF20F6"}}></div>
                 <h3>Phase I - From Napkin Sketch to Developed Brand</h3>
             </div>
             <WebDevComponent></WebDevComponent>
