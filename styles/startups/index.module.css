@@ -14,6 +14,31 @@
     background: var(--gradientStart);
 }
 
+.frame {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+    font-family: inter;
+    color: var(--dark-gunmetal);
+    line-height: 1.5;
+}
+
+.frame h3 {
+    font-size: 48px;
+
+}
+
+.frame h4 {
+    font-size: 36px;
+}
+
+
 .hero {
     height: 650px;
     width: 100%;
@@ -139,12 +164,10 @@
 }
 
 .timeline h3 {
-    font-size: 48px;
     width: 100%;
 }
 
 .timeline h4 {
-    font-size: 36px;
     font-weight: 500;
     margin-top: 40px;
 }
@@ -153,28 +176,143 @@
     font-size: 24px;
 }
 
-.timeline ol {
+.timeline ul {
     width: 90%;
     max-width: 1000px;
     height: fit-content;
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 20px;
     font-size: 28px;
+    margin-top: 20px;
 }
 
-.timeline ol li {
+.timeline ul li {
+    max-height: fit-content;
+    height: 65px;
+    overflow: hidden;
     font-size: 28px;
     font-weight: 500;
+    border: 3px solid #eee;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.timeline ol li h5 {
-    font-size: 28px;
-    font-weight: 500;
+.timeline ul .expand {
+    animation: expand 1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes expand {
+    0% {
+        height: 65px;
+    }
+    100% {
+        height: 1000px;
+    }
+}
+
+.timeline ul li div {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    --svgheight: 25px;
     margin-bottom: 10px;
 }
 
-.timeline ol p {
+.timeline ul li:hover {
+    border-color: rgb(0,221,225);
+    --svgfill: url(#gradient);
+}
+
+.timeline ul li div h5 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.timeline ul p {
     font-weight: 400;
     font-size: 22px;
+}
+
+.node {
+    height: 40px !important;
+    width: 40px !important;
+    background: 
+        linear-gradient(var(--dark-gunmetal) 0 0) padding-box,
+        linear-gradient(to bottom right, var(--gradientStart), var(--gradientEnd)) border-box;
+    color: #313149;
+    padding: 10px;
+    border: 8px solid transparent;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 15px;
+}
+
+.phaseNode {
+    height: 50px !important;
+    width: 50px !important;
+    margin: 10px !important;
+}
+
+.phasei {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    overflow: hidden;
+}
+
+.phasei .timelineBar {
+    width: 12px;
+    height: 100%;
+    position: absolute;
+    display: block;
+    column-gap: 0px;
+    align-self: flex-start;
+    justify-self: flex-start;
+    top: 55px;
+    margin: 30px 29px;
+    background: linear-gradient(to bottom, #eee 0%, #eee 90%, #fff 100%);
+    overflow: hidden;
+    z-index: 0;
+}
+
+.phasei div {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    z-index: 1;
+}
+
+.techItem {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+
+.techItem h3 {
+    width: 100%;
+}
+
+.techItem .icon {
+    width: 115px;
+    height: fit-content;
+    max-height: 140px;
+    display: flex;
+    --svgfill: url(#gradient);
+    --svgwidth: 115px;
+}
+
+.techItem .title h4 {
+    align-self: flex-start;
 }
