@@ -45,12 +45,18 @@
 
 .trendBox {
     width: 100%;
-    max-width: 800px;
+    max-width: 850px;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 50px;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.trendBox div {
+    background-color: white;
 }
 
 .trendBox p {
@@ -394,9 +400,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    row-gap: 20px;
-    column-gap: 20px;
+    justify-content: center;
+    row-gap: 25px;
+    column-gap: 25px;
     margin: 25px;
 }
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const GoogleTrends = ({ cssStyles }) => {
+const GoogleTrends = ({ cssStyles, title }) => {
     const [error, setError] = useState(false);
     const trendBoxRef = useRef(null);
 
@@ -29,7 +29,7 @@ const GoogleTrends = ({ cssStyles }) => {
 
         if (trendBoxRef.current) {
             if (!error) {
-                trendBoxRef.current.insertBefore(trendBox, trendBoxRef.current.firstChild);
+                trendBoxRef.current.insertBefore(trendBox, trendBoxRef.current.lastChild);
             } else {
                 trendBoxRef.current.innerText = 'Error loading Google Trends data';
             }
@@ -45,6 +45,7 @@ const GoogleTrends = ({ cssStyles }) => {
 
     return (
         <div className={`${cssStyles.trendBox}`} ref={trendBoxRef}>
+            <h6 style={{"textAlign": "left", "fontWeight": "500", "marginTop": "0px"}}>{title}</h6>
             <p>If the above chart does not appear, it may be because you have third-party cookies or cross-site trafficking disabled. If this is the case, you can find the graph on <a href="https://trends.google.com/trends/explore?date=today%205-y&q=nextjs,reactjs,vuejs,angularjs,expressjs&hl=en" target="_blank">Google Trends</a>.</p>
         </div>
         

@@ -1,19 +1,18 @@
 import styles from "/styles/components/breadcrumb.module.css";
 
 export default function Breadcrumb({ breadcrumbArray }) {
-    console.log(breadcrumbArray);
     return (
         <nav aria-label="Breadcrumb" className={styles.breadcrumb}>
-            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+            <ol itemScope itemType="https://schema.org/BreadcrumbList">
                 {
                     Object.entries(breadcrumbArray).map(([item, url], index) => {
                         return (
-                            <li itemprop="itemListElement" itemscope
-                            itemtype="https://schema.org/ListItem">
-                                <a itemprop="item" href={url}>
-                                    <span itemprop="name">{item}</span>
+                            <li key={index} itemProp="itemListElement" itemScope
+                            itemType="https://schema.org/ListItem">
+                                <a itemProp="item" href={url}>
+                                    <span itemProp="name">{item}</span>
                                 </a>
-                                <meta itemprop="position" content={`${index}`} />
+                                <meta itemProp="position" content={`${index}`} />
                             </li>
                         );
                     })

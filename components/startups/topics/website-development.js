@@ -27,22 +27,61 @@ export default function WebDev() {
             <p className={styles.contentDescription}>Ready to hire a website developer? &rarr; <a href="/startups/hire">Here's What You Need To Know</a></p>
             <h5>Your Website Foundation - Which Platform Should I Choose?</h5>
             <p>In website development, two foundational approaches stand out: Low-Code Content Management System (CMS) websites and framework-based Web Applications. Low-code CMS platforms offer streamlined development through intuitive interfaces and pre-built templates, ideal for rapid deployment without extensive coding knowledge. On the other hand, framework-based web applications provide greater control and customization but require meticulous coding for tailored functionality and scalability. The choice between these approaches depends on project complexity, scalability needs, and long-term goals, guiding businesses towards the most suitable digital path.</p>
-            <h6 style={{"textAlign": "center", "fontWeight": "500"}}>CMS vs Web Applications</h6>
             <div className={styles.vs}>
+                <h6 style={{"textAlign": "center", "fontWeight": "500"}}>CMS vs Web Applications</h6>
                 <Specs details={
                     {
                         "name": "Content Management System (CMS)",
-                        "description": "A web app is an interactive application accessed through a web browser, offering dynamic functionalities and user interactions.",
-                        "pros": ["Low-Code Options"],
-                        "cons": ["Less Configuration", "Relies on Plugins"]
+                        "description": "A CMS offers a simple way to create brand and blog content, prioritizing content over data. Popular CMS platforms include WordPress, Wix, and Shopify.",
+                        "pros": ["Ease of Use",
+                            "Low-Code Content Creation",
+                            "Quick Deployment",
+                            "Lower Development Cost",
+                            "Customizable Templates",
+                            "Third-Party Plugins and Tools",
+                            "Built-In SEO and Analytics",
+                            "Non-Technical Design Features",
+                            "Easily Scalable",
+                            "Built-In Admin Dashboard"
+                        ],
+                        "cons": ["Limited Customization Options",
+                            "Dependency on Platform Updates",
+                            "Limited Management Features",
+                            "Efficiency Loss When Scaling",
+                            "Limited Control Over Backend",
+                            "Third-Party Vulnerabilities",
+                            "Data Security Dependencies",
+                            "Requires Low Project Complexity",
+                            "Focuses On Content Over Data"
+                        ]
                     }
                 }></Specs>
                 <Specs details={
                     {
                         "name": "Web Application",
-                        "description": "A web app is an interactive application accessed through a web browser, offering dynamic functionalities and user interactions.",
-                        "pros": ["test"],
-                        "cons": ["test2"]
+                        "description": "A web app allows for infrastructure, data, and efficiency prioritization over simplicity. Popular web app frameworks include Next.js, React, and Vue.js.",
+                        "pros": ["Highly Customizabile",
+                            "Granular Management",
+                            "Control Over Backend Logic",
+                            "Optimization Opportunities",
+                            "Scalable Architecture Options",
+                            "Configurable Infrastructure",
+                            "Data-Oriented Telemetry Options",
+                            "Enhanceable Security Features",
+                            "Full Product Visibility",
+                            "Third-Party Integration Options"
+                        ],
+                        "cons": [
+                            "Requires High Degree of Coding",
+                            "Higher Development Costs",
+                            "Steeper Developer Learning Curve",
+                            "Requires Specialized Talent",
+                            "Higher Project Complexity",
+                            "Developer-Reliant Security",
+                            "Developer-Reliant Efficiency",
+                            "Requires SEO and Analytics Efforts",
+                            "More Documentation Required"
+                        ]
                     }
                 }></Specs>
             </div>
@@ -50,14 +89,23 @@ export default function WebDev() {
             <p>A web app is an interactive application with complex functionalities, while a CMS website focuses on content management and publishing. Web apps perform specific tasks, while CMS websites are designed for content dissemination and management.A web app is an interactive application with complex functionalities, while a CMS website focuses on content management and publishing. Web apps perform specific tasks, while CMS websites are designed for content dissemination and management.</p>
             <h6>Choosing a Framework</h6>
             <p>A web app is an interactive application with complex functionalities, while a CMS website focuses on content management and publishing. Web apps perform specific tasks, while CMS websites are designed for content dissemination and management.</p>
-            <h6 style={{"textAlign": "center", "fontWeight": "500", "marginTop": "20px"}}>JavaScript Framework Search Popularity Rankings</h6>
-            <FrameworkTrends cssStyles={ styles }></FrameworkTrends>
+            <FrameworkTrends cssStyles={ styles } title={"JavaScript Framework Search Popularity Rankings"}></FrameworkTrends>
+            <h6 style={{"fontWeight":"500", "textAlign": "center"}}>Choice Framework</h6>
             <Specs details={frameworks.highlight}></Specs>
             <div className={styles.vs}>
+            <h6 style={{"fontWeight":"500", "textAlign": "center"}}>Other Popular Frameworks</h6>
             {
                 Object.entries(frameworks.others).map(([i, frD], index) => {
                     return (
-                        <Specs details={frD}></Specs>
+                        <Specs key={index} details={frD}></Specs>
+                    )
+                })
+            }
+            <h6 style={{"fontWeight":"500", "textAlign": "center"}}>Framework Honorable Mentions</h6>
+            {
+                Object.entries(frameworks.mentions).map(([i, frD], index) => {
+                    return (
+                        <Specs key={index} details={frD}></Specs>
                     )
                 })
             }

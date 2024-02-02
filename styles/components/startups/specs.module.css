@@ -9,8 +9,19 @@
     padding: 20px;
     border: 5px solid #eee;
     border-radius: 20px;
+    text-decoration: none !important;
+    color: var(--dark-gunmetal) !important;
     --svgheight: 100px;
     --svgwidth: 100px;
+}
+
+a.spec:hover {
+    border-color: rgb(0,221,225);
+}
+
+.mentionSpec {
+    padding: 10px 20px !important;
+    row-gap: 0px !important;
 }
 
 .spec h6 {
@@ -30,10 +41,19 @@
     text-align: center;
 }
 
+.spec .mention {
+    text-align: left !important;
+}
+
 .spec .description {
     font-size: 20px !important;
     line-height: 1.25 !important;
     font-weight: 300;
+}
+
+.spec .info {
+    font-size: 20px !important;
+    text-align: center;
 }
 
 .spec .pc {
@@ -52,7 +72,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    column-gap: 5px;
+    column-gap: 10px;
     justify-content: flex-start;
     align-items: center;
 }

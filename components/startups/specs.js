@@ -2,12 +2,12 @@ import Item from "components/startups/icons/item";
 
 import styles from "/styles/components/startups/specs.module.css";
 
-export default function Specs({ details }) {
+function SpecInfo({ details }) {
     return (
-        <div className={styles.spec}>
-            <p className={styles.name}>{details.name}</p>
+        <>
+            <p className={`${styles.name} ${details.mention ? styles.mention : null }`}>{details.name}</p>
             {details.icon}
-            {details.info && <p>{details.info}</p>}
+            {details.info && <p className={`${styles.info} ${details.mention ? styles.mention : null }`}>{details.info}</p>}
             {details.description && <p className={styles.description}>{details.description}</p>}
             <div className={styles.pc}>
                 <ul className={styles.pros}>
@@ -35,6 +35,14 @@ export default function Specs({ details }) {
                 }
                 </ul>
             </div>
-        </div>
+    </>
     );
+}
+
+export default function Specs({ details }) {
+    return (
+        details.href ? 
+            <a href={details.href} className={`${styles.spec} ${details.mention ? styles.mentionSpec : null }`} target="_blank"><SpecInfo details={details}></SpecInfo></a>
+        :   <div className={`${styles.spec} ${details.mention ? styles.mentionSpec : null }`}><SpecInfo details={details}></SpecInfo></div>
+    )
 }
