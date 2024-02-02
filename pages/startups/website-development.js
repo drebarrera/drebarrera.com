@@ -15,7 +15,7 @@ export default function WebDev() {
             </Head>
             <Header></Header>
             <article className={`${styles.frame} ${styles.phasei}`}>
-                <div className={styles.breadcrumb}><Breadcrumb breadcrumbArray={{"Dre Barrera": "/", "Startup Center": "/startups", "Website Development": "/startups/website-development"}}></Breadcrumb></div>
+                <div className={styles.breadcrumb}><Breadcrumb breadcrumbArray={{"Andrés Barrera": "/", "Startup Center": "/startups", "Website Development": "/startups/website-development"}}></Breadcrumb></div>
                 <WebDevComponent></WebDevComponent>
             </article>
         </>

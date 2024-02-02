@@ -49,8 +49,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin: 15px 0px;
     background-color: #eee;
     padding: 20px;
 }
@@ -351,7 +350,7 @@
     width: 100%;
     align-self: flex-start;
     background-color: white;
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 .techItem .content {
@@ -386,6 +385,11 @@
     font-size: 28px;
     font-weight: 600;
     margin-top: 20px;
+    position: sticky;
+    background-color: white;
+    padding: 10px 0px;
+    top: 125px;
+    z-index: 4;
 }
 
 .techItem .content h6 {

@@ -2,6 +2,7 @@ import ReactIcon from "components/startups/icons/frameworks/react";
 import NextIcon from "components/startups/icons/frameworks/next";
 import VueIcon from "components/startups/icons/frameworks/vue";
 import AngularIcon from "components/startups/icons/frameworks/angular";
+import ExpressIcon from "components/startups/icons/frameworks/express";
 
 import React from "react";
 
@@ -110,7 +111,7 @@ const frameworks = {
             "href": "https://vuejs.org"
         },
         {
-            "name": "Express.js",
+            "name": "Express.l",
             "info": "Language: JavaScript",
             "description": "A web app is an interactive application accessed through a web browser, offering dynamic functionalities and user interactions.",
             "pros": [
@@ -131,7 +132,7 @@ const frameworks = {
                 "Increasing Routing Complexity",
                 "Challenging Debugging"
             ],
-            "icon": <VueIcon></VueIcon>,
+            "icon": <ExpressIcon></ExpressIcon>,
             "href": "https://vuejs.org"
         }
     ],
@@ -145,26 +146,31 @@ const frameworks = {
         {
             "name": "Ruby on Rails",
             "info": "Language: Ruby",
+            "href": "https://rubyonrails.org",
             "mention": true,
         },
         {
             "name": "Spring Boot",
             "info": "Language: Java",
+            "href": "https://spring.io",
             "mention": true,
         },
         {
             "name": "Laravel",
             "info": "Language: PHP",
+            "href": "https://laravel.com",
             "mention": true,
         },
         {
             "name": "Ember.js",
             "info": "Language: JavaScript",
+            "href": "https://emberjs.com",
             "mention": true,
         },
         {
             "name": "Svelte",
             "info": "Language: JavaScript",
+            "href": "https://svelte.dev",
             "mention": true,
         }
     ]
