@@ -75,6 +75,8 @@ a.spec:hover {
     column-gap: 10px;
     justify-content: flex-start;
     align-items: center;
+    line-height: 1.25;
+    padding: 2px 0px;
 }
 
 .spec li span {

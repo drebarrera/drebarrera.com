@@ -10,9 +10,9 @@ const frameworks = {
     "highlight": {
         "name": "Next.js",
         "info": "Language: JavaScript",
-        "description": "A web app is an interactive application accessed through a web browser, offering dynamic functionalities and user interactions.",
+        "description": "Next.js is a React.js derivative, simplifying React development by integrating production-level features and optimizing developer efficiency for web apps.",
         "pros": [
-            "Out-Of-The-Box Features",
+            "Out-Of-The-Box Production Features",
             "Server-Side Rendering",
             "Faster Initial Loads",
             "Static Site Generation Support",
@@ -38,7 +38,7 @@ const frameworks = {
         {
             "name": "React.js",
             "info": "Language: JavaScript",
-            "description": "A web app is an interactive application accessed through a web browser, offering dynamic functionalities and user interactions.",
+            "description": "React.js is the most popular framework due to its efficient component-based architecture and extensive ecosystem",
             "pros": [
                 "Component-Based Development",
                 "Virtual DOM for Efficient Rendering",
@@ -63,7 +63,7 @@ const frameworks = {
         {
             "name": "Vue.js",
             "info": "Language: JavaScript",
-            "description": "A web app is an interactive application accessed through a web browser, offering dynamic functionalities and user interactions.",
+            "description": "Vue.js stands out as a simple JavaScript framework, prized for its ease of integration, flexibility, and intuitive syntax.",
             "pros": [
                 "Simple to Learn",
                 "High Scalability",
@@ -88,7 +88,7 @@ const frameworks = {
         {
             "name": "Angular.js",
             "info": "Language: JavaScript",
-            "description": "A web app is an interactive application accessed through a web browser, offering dynamic functionalities and user interactions.",
+            "description": "Angular.js is a mature JavaScript framework renowned for its comprehensive features, robust architecture, and extensive community.",
             "pros": [
                 "Robust Structure and Conventions",
                 "Comprehensive Documentation",
@@ -111,9 +111,9 @@ const frameworks = {
             "href": "https://vuejs.org"
         },
         {
-            "name": "Express.l",
+            "name": "Express.js",
             "info": "Language: JavaScript",
-            "description": "A web app is an interactive application accessed through a web browser, offering dynamic functionalities and user interactions.",
+            "description": "Express.js stands out as a lightweight framework, ideal for versatile middleware-facing applications, telemetry, and streamlined development efforts.",
             "pros": [
                 "Minimalist Framework for Node.js",
                 "Highly Customizable",
