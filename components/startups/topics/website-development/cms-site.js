@@ -1,3 +1,5 @@
+import PageIcon from "components/startups/icons/page";
+
 import Specs from "components/startups/specs";
 
 import CMSTrends from '/components/startups/google/cms';
@@ -8,7 +10,20 @@ import styles from "/styles/startups/index.module.css";
 
 export default function CMSSite() {
     return (<>
-            <h5>Creating a Content Management System Website</h5>
+            <h5>Creating a Content Management System Website
+                <span className={styles.buttons}>
+                    Next &rarr; 
+                    <a href="/startups/website-development/web-app" target="_blank">Web Apps</a>
+                    |
+                    <a href="/startups/website-development/" target="_blank">
+                        <PageIcon>
+                            <linearGradient id="pageGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style={{"stopColor": "#FF2323", "stopOpacity": "1"}} />
+                                <stop offset="100%" style={{"stopColor": "#FF844F", "stopOpacity": "1"}} />
+                            </linearGradient>
+                        </PageIcon>
+                    </a>
+                </span></h5>
             <Specs details={
                 {
                     "name": "Content Management System (CMS)",

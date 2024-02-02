@@ -338,6 +338,7 @@
     position: sticky;
     top: 70px;
     z-index: 2;
+    pointer-events: none;
 }
 
 .techItem h3 {
@@ -397,6 +398,30 @@
     padding: 10px 0px;
     top: 125px;
     z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.techItem .content h5 .buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 20px;
+    font-family: inter;
+    font-weight: 500;
+    --svgheight: 30px;
+    --svgweight: 30px;
+    --svgfill: #888;
+}
+
+.techItem .content h5 .buttons a:hover {
+    --svgfill: url(#pageGradient);
+}
+
+.techItem .content h5 .buttons a {
+    display: flex;
+    align-items: center;
 }
 
 .techItem .content h6 {

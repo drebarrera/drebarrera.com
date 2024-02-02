@@ -1,4 +1,5 @@
 import UIIcon from "components/startups/icons/ui";
+import PageIcon from "components/startups/icons/page";
 
 import Specs from "components/startups/specs";
 
@@ -25,7 +26,21 @@ export default function WebDev() {
             <img src="/images/startups/undraw/undraw_website_builder_re_ii6e.svg"/>
             <p className={styles.contentDescription}>Developing a website is a fundamental step for any commercial startup, serving as its digital storefront and primary point of interaction with customers. It establishes credibility, professionalism, and brand identity, enabling global visibility and accessibility around the clock. By providing valuable content, seamless user experiences, and avenues for communication, the website drives brand awareness, organic growth, and revenue generation. Additionally, the website can function as an integral part of the product, delivering content, information, or services to users. As the cornerstone of brand development, website creation sets the stage for establishing a robust online presence and fostering long-term customer relationships.</p>
             <p className={styles.contentDescription}>Ready to hire a website developer? &rarr; <a href="/startups/hire">Here's What You Need To Know</a></p>
-            <h5>Which Web Development Approach Should I Choose?</h5>
+            <h5>Which Web Development Approach Should I Choose?
+                <span className={styles.buttons}>
+                    Next &rarr; 
+                    <a href="/startups/website-development/cms-site" target="_blank">CMS Websites</a>
+                    |
+                    <a href="/startups/website-development/" target="_blank">
+                        <PageIcon>
+                            <linearGradient id="pageGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style={{"stopColor": "#FF2323", "stopOpacity": "1"}} />
+                                <stop offset="100%" style={{"stopColor": "#FF844F", "stopOpacity": "1"}} />
+                            </linearGradient>
+                        </PageIcon>
+                    </a>
+                </span>
+            </h5>
             <p>In website development, two foundational approaches stand out: Low-Code Content Management System (CMS) websites and framework-based Web Applications. Low-code CMS platforms offer streamlined development through intuitive interfaces and pre-built templates, ideal for rapid deployment without extensive coding knowledge. On the other hand, framework-based web applications provide greater control and customization but require meticulous coding for tailored functionality and scalability. The choice between these approaches depends on project complexity, scalability needs, and long-term goals, guiding businesses towards the most suitable digital path.</p>
             <div className={styles.vs}>
                 <h6 style={{"textAlign": "center", "fontWeight": "500"}}>CMS vs Web Applications</h6>
