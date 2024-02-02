@@ -8,7 +8,7 @@ import timeline from "components/startups/content/timeline";
 import RocketIcon from "components/startups/icons/rocket";
 import ExpandIcon from "components/startups/icons/expand";
 
-import WebDevComponent from "components/startups/topics/website-development";
+import WebDevComponent from "components/startups/topics/website-development/website-development";
 
 import styles from "/styles/startups/index.module.css";
 
@@ -57,6 +57,7 @@ export default function Startups() {
         <section id="#timeline" className={`${styles.frame} ${styles.timeline}`}>
             <h3>The Startup Timeline</h3>
             <p>Embarking on a startup journey is thrilling, filled with endless possibilities and life-changing moments. It's about turning ideas into reality and embracing challenges with passion and determination. Every step is a chance to learn, grow, and shape the future of your venture. But along with excitement, comes uncertainty and formidable obstacles. It's a journey of risks, setbacks, and fierce competition. Yet, with resilience and a readiness to adapt, you can overcome obstacles and reach new heights. As you navigate this path, it is important to stay prepared. This guide equips you with the tools to tackle the digital development challenges and seize the opportunities of the startup world.</p>
+            <img src="/images/startups/undraw/undraw_product_iteration_kjok.svg"/>
             <h4>Where Are You On Your Startup Journey?</h4>
             <ul>
                 {
