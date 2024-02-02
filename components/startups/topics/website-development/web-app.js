@@ -65,12 +65,12 @@ export default function WebApp() {
                     )
                 })
             }
+            </div>
             <h6>Does Framework Language Matter?</h6>
             <img src="/images/startups/undraw/undraw_static_website_re_x70h.svg"/>
             <p>As seen above, the popularity of JavaScript for web development stems from several factors. Firstly, JavaScript is the language of the web, supported by all modern browsers, making it a ubiquitous choice for client-side scripting. Additionally, JavaScript's versatility allows developers to build interactive and dynamic web experiences, enhancing user engagement. However, choosing a framework operating in another language like Django (using Python) or Ruby on Rails (using Ruby) might be preferred for specific projects due to the strengths and ecosystems of those languages. For example, Django offers robust built-in features for rapid development and follows the "batteries-included" philosophy, while Ruby on Rails emphasizes convention over configuration, promoting developer productivity and code maintainability. Depending on project requirements, such frameworks may offer better solutions for certain use cases or align more closely with a team's expertise and preferences.</p>
             <h6>Next Steps - Developing the Application</h6>
             <p>Once a foundational framework has been chosen, the website application development process begins with designing the user interface (UI) using prototyping tools to visualize the layout and user interactions effectively. This is typically the job of a dedicated designer rather than programmer and is explained in the next section. Once the UI is finalized, programming the UI elements and integrating external third-party services for authentication and data exchange becomes crucial. In the backend, databases and content providers are implemented, prioritizing robust security measures to safeguard sensitive data. Finally, the completed website is deployed to a hosting service, leveraging repository services like Github or Gitlab for version control and collaboration, ensuring seamless deployment and ongoing maintenance of the application.</p>
-            </div>
         </>
     );
 }

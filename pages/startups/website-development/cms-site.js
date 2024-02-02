@@ -4,11 +4,11 @@ import Header from "components/header";
 import UIIcon from "components/startups/icons/ui";
 
 import Breadcrumb from "components/breadcrumb";
-import WebAppComponent from "components/startups/topics/website-development/web-app";
+import CMSSiteComponent from "components/startups/topics/website-development/cms-site";
 
 import styles from "/styles/startups/index.module.css";
 
-export default function WebApp() {
+export default function CMSSite() {
     return (
         <>
             <Head>
@@ -17,7 +17,7 @@ export default function WebApp() {
             </Head>
             <Header></Header>
             <article className={`${styles.frame} ${styles.phasei}`}>
-                <div className={styles.breadcrumb}><Breadcrumb breadcrumbArray={{"Andrés Barrera": "/", "Startup Center": "/startups", "Website Development": "/startups/website-development", "Website Applications": "/startups/website-development/web-app"}}></Breadcrumb></div>
+                <div className={styles.breadcrumb}><Breadcrumb breadcrumbArray={{"Andrés Barrera": "/", "Startup Center": "/startups", "Website Development": "/startups/website-development", "CMS Websites": "/startups/website-development/cms-site"}}></Breadcrumb></div>
                 <section className={styles.techItem} style={{"--itemcolor":"#FF2323"}}>
                     <div className={styles.title}>
                         <div className={`${styles.node}`} style={{"--gradientStart": "#FF2323", "--gradientEnd": "#FF844F"}}></div>
@@ -32,8 +32,8 @@ export default function WebApp() {
                         <h4>Your Website - The Cornerstone of Your Online Presence</h4>
                     </div>
                     <div className={styles.content} style={{"marginTop": "-90px"}}>
-                        <WebAppComponent></WebAppComponent>
-                        </div>
+                        <CMSSiteComponent></CMSSiteComponent>
+                    </div>
                 </section>
             </article>
         </>

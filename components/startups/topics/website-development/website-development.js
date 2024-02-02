@@ -3,6 +3,7 @@ import UIIcon from "components/startups/icons/ui";
 import Specs from "components/startups/specs";
 
 import WebApp from "components/startups/topics/website-development/web-app";
+import CMSSiteComponent from "components/startups/topics/website-development/cms-site";
 
 import styles from "/styles/startups/index.module.css";
 
@@ -84,6 +85,7 @@ export default function WebDev() {
                     }
                 }></Specs>
             </div>
+            <CMSSiteComponent></CMSSiteComponent>
             <WebApp></WebApp>
         </div>
     </section>);
