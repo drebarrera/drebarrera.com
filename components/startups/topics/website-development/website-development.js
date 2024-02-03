@@ -3,13 +3,15 @@ import PageIcon from "components/startups/icons/page";
 
 import Specs from "components/startups/specs";
 
-import WebApp from "components/startups/topics/website-development/web-app";
+import WebAppComponent from "components/startups/topics/website-development/web-app";
 import CMSSiteComponent from "components/startups/topics/website-development/cms-site";
+import HostingComponent from "components/startups/topics/website-development/deployment";
 
 import styles from "/styles/startups/index.module.css";
 
 export default function WebDev() {
     return (<section className={styles.techItem} style={{"--itemcolor":"#FF2323"}}>
+        <div className={styles.anchor} id="websiteAnchor"></div>
         <div className={styles.title}>
             <div className={`${styles.node}`} style={{"--gradientStart": "#FF2323", "--gradientEnd": "#FF844F"}}></div>
             <div className={styles.icon}>
@@ -29,7 +31,7 @@ export default function WebDev() {
             <h5>Which Web Development Approach Should I Choose?
                 <span className={styles.buttons}>
                     Next &rarr; 
-                    <a href="/startups/website-development/cms-site" target="_blank">CMS Websites</a>
+                    <a href="#cmsAnchor">CMS Websites</a>
                     |
                     <a href="/startups/website-development/" target="_blank">
                         <PageIcon>
@@ -41,7 +43,7 @@ export default function WebDev() {
                     </a>
                 </span>
             </h5>
-            <p>In website development, two foundational approaches stand out: Low-Code Content Management System (CMS) websites and framework-based Web Applications. Low-code CMS platforms offer streamlined development through intuitive interfaces and pre-built templates, ideal for rapid deployment without extensive coding knowledge. On the other hand, framework-based web applications provide greater control and customization but require meticulous coding for tailored functionality and scalability. The choice between these approaches depends on project complexity, scalability needs, and long-term goals, guiding businesses towards the most suitable digital path.</p>
+            <p>In website development, two foundational approaches stand out: Low-Code Content Management System (CMS) websites and framework-based Web Applications. Low-code CMS platforms offer streamlined development through intuitive interfaces and pre-built templates, ideal for rapid deployment without extensive coding knowledge. On the other hand, framework-based web applications provide greater control and customization but require meticulous coding for tailored functionality and scalability. While working with web frameworks is free and open-source, developing a website with a CMS platform often comes with expensive monthly platform subscription fees. The choice between these approaches depends on project complexity, scalability needs, and long-term goals, guiding businesses towards the most suitable digital path.</p>
             <div className={styles.vs}>
                 <h6 style={{"textAlign": "center", "fontWeight": "500"}}>CMS vs Web Applications</h6>
                 <Specs details={
@@ -57,7 +59,8 @@ export default function WebDev() {
                             "Built-In SEO and Analytics",
                             "Non-Technical Design Features",
                             "Easily Scalable",
-                            "Built-In Admin Dashboard"
+                            "Built-In Admin Dashboard",
+                            "Technical Support Help"
                         ],
                         "cons": ["Limited Customization Options",
                             "Dependency on Platform Updates",
@@ -67,7 +70,8 @@ export default function WebDev() {
                             "Third-Party Vulnerabilities",
                             "Data Security Dependencies",
                             "Requires Low Project Complexity",
-                            "Focuses On Content Over Data"
+                            "Focuses On Content Over Data",
+                            "Expensive Subscription Fees"
                         ]
                     }
                 }></Specs>
@@ -84,7 +88,8 @@ export default function WebDev() {
                             "Data-Oriented Telemetry Options",
                             "Enhanceable Security Features",
                             "Full Product Visibility",
-                            "Third-Party Integration Options"
+                            "Third-Party Integration Options",
+                            "Free & Open-Source"
                         ],
                         "cons": [
                             "Requires High Degree of Coding",
@@ -95,13 +100,15 @@ export default function WebDev() {
                             "Developer-Reliant Security",
                             "Developer-Reliant Efficiency",
                             "Requires SEO and Analytics Efforts",
-                            "More Documentation Required"
+                            "More Documentation Required",
+                            "Preparation Needed for Scaling"
                         ]
                     }
                 }></Specs>
             </div>
             <CMSSiteComponent></CMSSiteComponent>
-            <WebApp></WebApp>
+            <WebAppComponent></WebAppComponent>
+            <HostingComponent></HostingComponent>
         </div>
     </section>);
 }

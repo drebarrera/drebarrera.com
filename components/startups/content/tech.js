@@ -13,7 +13,7 @@ var tech = {
     "Web": {
         "textcontent": ["An","to elevate their brand online. Building a commercial online platform with captivating visuals, engaging content, and user-friendly navigation showcases authenticity and proves professionalism."],
         "linktext": ["Engaging Website"],
-        "linkhref": ["/website"],
+        "linkhref": ["#websiteAnchor"],
         "svg": <UIIcon></UIIcon>,
         "color": "#FF2323"
     },

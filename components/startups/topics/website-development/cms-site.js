@@ -10,12 +10,13 @@ import styles from "/styles/startups/index.module.css";
 
 export default function CMSSite() {
     return (<>
+            <div className={styles.anchor} id="cmsAnchor"></div>
             <h5>Creating a Content Management System Website
                 <span className={styles.buttons}>
                     Next &rarr; 
-                    <a href="/startups/website-development/web-app" target="_blank">Web Apps</a>
+                    <a href="#webAppAnchor">Web Apps</a>
                     |
-                    <a href="/startups/website-development/" target="_blank">
+                    <a href="/startups/website-development/cms-site" target="_blank">
                         <PageIcon>
                             <linearGradient id="pageGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                                 <stop offset="0%" style={{"stopColor": "#FF2323", "stopOpacity": "1"}} />
@@ -24,33 +25,35 @@ export default function CMSSite() {
                         </PageIcon>
                     </a>
                 </span></h5>
-            <Specs details={
-                {
-                    "name": "Content Management System (CMS)",
-                    "description": "A CMS offers a simple way to create brand and blog content, prioritizing content over data. Popular CMS platforms include WordPress, Wix, and Shopify.",
-                    "pros": ["Ease of Use",
-                        "Low-Code Content Creation",
-                        "Quick Deployment",
-                        "Lower Development Cost",
-                        "Customizable Templates",
-                        "Third-Party Plugins and Tools",
-                        "Built-In SEO and Analytics",
-                        "Non-Technical Design Features",
-                        "Easily Scalable",
-                        "Built-In Admin Dashboard"
-                    ],
-                    "cons": ["Limited Customization Options",
-                        "Dependency on Platform Updates",
-                        "Limited Management Features",
-                        "Efficiency Loss When Scaling",
-                        "Limited Control Over Backend",
-                        "Third-Party Vulnerabilities",
-                        "Data Security Dependencies",
-                        "Requires Low Project Complexity",
-                        "Focuses On Content Over Data"
-                    ]
-                }
-            }></Specs>
+                <Specs details={
+                    {
+                        "name": "Content Management System (CMS)",
+                        "description": "A CMS offers a simple way to create brand and blog content, prioritizing content over data. Popular CMS platforms include WordPress, Wix, and Shopify.",
+                        "pros": ["Ease of Use",
+                            "Low-Code Content Creation",
+                            "Quick Deployment",
+                            "Lower Development Cost",
+                            "Customizable Templates",
+                            "Third-Party Plugins and Tools",
+                            "Built-In SEO and Analytics",
+                            "Non-Technical Design Features",
+                            "Easily Scalable",
+                            "Built-In Admin Dashboard",
+                            "Technical Support Help"
+                        ],
+                        "cons": ["Limited Customization Options",
+                            "Dependency on Platform Updates",
+                            "Limited Management Features",
+                            "Efficiency Loss When Scaling",
+                            "Limited Control Over Backend",
+                            "Third-Party Vulnerabilities",
+                            "Data Security Dependencies",
+                            "Requires Low Project Complexity",
+                            "Focuses On Content Over Data",
+                            "Expensive Subscription Fees"
+                        ]
+                    }
+                }></Specs>
             <p>
                 Building a website with a CMS platform offers a streamlined solution for rapid, non-technical development, leveraging templated layouts and built-in content data systems. This approach allows for quick deployment, lower development costs, and access to built-in SEO and site performance features. Non-technical users benefit from easy content creation and management, supported by customizable templates and third-party plugins. However, CMS platforms may lack granularity and flexibility, limiting customization options and control over backend logic. They also pose dependencies on platform updates and third-party vulnerabilities, making them less suitable for complex data-driven projects that require scalability and extensive customization beyond standard content management.
                 <br></br><br></br>

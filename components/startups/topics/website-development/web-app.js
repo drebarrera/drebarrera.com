@@ -8,35 +8,38 @@ import styles from "/styles/startups/index.module.css";
 
 export default function WebApp() {
     return (<>
+            <div className={styles.anchor} id="webAppAnchor"></div>
             <h5>Building a Web Application</h5>
             <Specs details={
-                {
-                    "name": "Web Application",
-                    "description": "A web app allows for infrastructure, data, and efficiency prioritization over simplicity. Popular web app frameworks include Next.js, React.js, and Angular.js.",
-                    "pros": ["Highly Customizabile",
-                        "Granular Management",
-                        "Control Over Backend Logic",
-                        "Optimization Opportunities",
-                        "Scalable Architecture Options",
-                        "Configurable Infrastructure",
-                        "Data-Oriented Telemetry Options",
-                        "Enhanceable Security Features",
-                        "Full Product Visibility",
-                        "Third-Party Integration Options"
-                    ],
-                    "cons": [
-                        "Requires High Degree of Coding",
-                        "Higher Development Costs",
-                        "Steeper Developer Learning Curve",
-                        "Requires Specialized Talent",
-                        "Higher Project Complexity",
-                        "Developer-Reliant Security",
-                        "Developer-Reliant Efficiency",
-                        "Requires SEO and Analytics Efforts",
-                        "More Documentation Required"
-                    ]
-                }
-            }></Specs>
+                    {
+                        "name": "Web Application",
+                        "description": "A web app allows for infrastructure, data, and efficiency prioritization over simplicity. Popular web app frameworks include Next.js, React.js, and Angular.js.",
+                        "pros": ["Highly Customizabile",
+                            "Granular Management",
+                            "Control Over Backend Logic",
+                            "Optimization Opportunities",
+                            "Scalable Architecture Options",
+                            "Configurable Infrastructure",
+                            "Data-Oriented Telemetry Options",
+                            "Enhanceable Security Features",
+                            "Full Product Visibility",
+                            "Third-Party Integration Options",
+                            "Free & Open-Source"
+                        ],
+                        "cons": [
+                            "Requires High Degree of Coding",
+                            "Higher Development Costs",
+                            "Steeper Developer Learning Curve",
+                            "Requires Specialized Talent",
+                            "Higher Project Complexity",
+                            "Developer-Reliant Security",
+                            "Developer-Reliant Efficiency",
+                            "Requires SEO and Analytics Efforts",
+                            "More Documentation Required",
+                            "Preparation Needed for Scaling"
+                        ]
+                    }
+                }></Specs>
             <p>
                 Creating a web application offers a multitude of benefits, particularly when tackling complex data-driven challenges. With a web application, developers harness highly customizable code to tailor every aspect according to specific requirements, enabling granular management and control over backend logic. This level of customization presents optimization opportunities, ensuring scalable architecture options and configurable infrastructure to address evolving needs.
                 <br></br><br></br>
