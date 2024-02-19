@@ -6,3 +6,5 @@
 5. degree v. no degree
 6. cost of development
 */
+
+export default function Hire() { return (<></>) }
