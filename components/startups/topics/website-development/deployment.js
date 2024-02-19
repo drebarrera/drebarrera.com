@@ -4,6 +4,8 @@ import repositories from "components/startups/content/repositories";
 
 import PageIcon from "components/startups/icons/page";
 
+import HostingTrends from '/components/startups/google/hosting';
+
 import styles from "/styles/startups/index.module.css";
 
 export default function Hosting() {
@@ -60,8 +62,20 @@ export default function Hosting() {
             }
             </div>
             <h6>Deployment Step 2 - Choosing a Domain Name</h6>
+            <img src="/images/startups/undraw/undraw_domain_names_re_0uun.svg"/>
+            <p>The next step of the deployment process is to select a domain name. A domain is typically named after your business or product and is an important part of your brand identity, serving as the gateway to your website. Domain names can be reserved on a yearly basis and are provided by domain name providers like GoDaddy and Namecheap. Domain prices can vary across providers and it's common to find the same domain name offered on different websites for different prices and packages. However, once a domain name has been purchased, it is taken off the market from all sites.</p>
             <h6>Deployment Step 3 - Choosing a Website Host</h6>
-            <h6>Deployment Step 4 - Time to Deploy!</h6>
+            <HostingTrends cssStyles={ styles } title={"Hosting Services Search Popularity Rankings"}></HostingTrends>
+            <p></p>
+            <h6>Deployment Step 4 - Is SSL Required?</h6>
+            <img src="/images/startups/undraw/undraw_security_re_a2rk.svg"/>
+            <p>
+                SSL (Secure Sockets Layer) is a cryptographic protocol that ensures secure communication over the internet by encrypting data transmitted between a web server and a user's browser. Acting as a digital handshake, SSL certificates authenticate the identity of websites, safeguarding sensitive information such as login credentials, payment details, and personal data from interception by malicious actors. Although SSL is not enforced as a requirement for a website, it is extremely commonplace and recommended for security and authorization. SSL certificates are often purchased in packages with domain names or hosting services, but can also be provided by third-party vendors.
+                <br></br>
+                When an SSL certificate has been properly installed within a website, the website will transmit data through HTTPS instead of HTTP. This change means that the information passing between the website and your browser is now encrypted, keeping it safe from prying eyes. This upgrade to HTTPS helps protect sensitive data such as passwords, credit card numbers, and personal information, making online interactions more secure and trustworthy for everyone.
+            </p>
+            <h6>Deployment Step 5 - Time to Deploy!</h6>
+            <p></p>
         </>
     );
 }

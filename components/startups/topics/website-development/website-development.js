@@ -43,9 +43,9 @@ export default function WebDev() {
                     </a>
                 </span>
             </h5>
-            <p>In website development, two foundational approaches stand out: Low-Code Content Management System (CMS) websites and framework-based Web Applications. Low-code CMS platforms offer streamlined development through intuitive interfaces and pre-built templates, ideal for rapid deployment without extensive coding knowledge. On the other hand, framework-based web applications provide greater control and customization but require meticulous coding for tailored functionality and scalability. While working with web frameworks is free and open-source, developing a website with a CMS platform often comes with expensive monthly platform subscription fees. The choice between these approaches depends on project complexity, scalability needs, and long-term goals, guiding businesses towards the most suitable digital path.</p>
+            <p>In website development, two foundational approaches stand out: Low-Code Content Management System (CMS) websites and framework-based Modern Web Applications. Low-code CMS platforms offer streamlined development through intuitive interfaces and pre-built templates, ideal for rapid deployment without extensive coding knowledge. On the other hand, modern web applications provide greater control and customization but require meticulous coding for tailored functionality and scalability. While working with web frameworks is a low-cost and open-source option, developing a website with a CMS platform often comes with expensive monthly platform subscription fees. The choice between these approaches depends on project complexity, scalability needs, and long-term goals, guiding businesses towards the most suitable digital path.</p>
             <div className={styles.vs}>
-                <h6 style={{"textAlign": "center", "fontWeight": "500"}}>CMS vs Web Applications</h6>
+                <h6 style={{"textAlign": "center", "fontWeight": "500"}}>CMS vs Modern Web Applications</h6>
                 <Specs details={
                     {
                         "name": "Content Management System (CMS)",
@@ -77,7 +77,7 @@ export default function WebDev() {
                 }></Specs>
                 <Specs details={
                     {
-                        "name": "Web Application",
+                        "name": "Modern Web Application",
                         "description": "A web app allows for infrastructure, data, and efficiency prioritization over simplicity. Popular web app frameworks include Next.js, React.js, and Angular.js.",
                         "pros": ["Highly Customizabile",
                             "Granular Management",
@@ -89,7 +89,7 @@ export default function WebDev() {
                             "Enhanceable Security Features",
                             "Full Product Visibility",
                             "Third-Party Integration Options",
-                            "Free & Open-Source"
+                            "Low-Cost & Open-Source"
                         ],
                         "cons": [
                             "Requires High Degree of Coding",

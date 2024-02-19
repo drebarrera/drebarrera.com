@@ -3,16 +3,17 @@ import Specs from "components/startups/specs";
 import FrameworkTrends from '/components/startups/google/frameworks';
 
 import frameworks from "components/startups/content/frameworks";
+import webappHosts from "components/startups/content/webapp-hosts";
 
 import styles from "/styles/startups/index.module.css";
 
 export default function WebApp() {
     return (<>
             <div className={styles.anchor} id="webAppAnchor"></div>
-            <h5>Building a Web Application</h5>
+            <h5>Building a Modern Web Application</h5>
             <Specs details={
                     {
-                        "name": "Web Application",
+                        "name": "Modern Web Application",
                         "description": "A web app allows for infrastructure, data, and efficiency prioritization over simplicity. Popular web app frameworks include Next.js, React.js, and Angular.js.",
                         "pros": ["Highly Customizabile",
                             "Granular Management",
@@ -24,7 +25,7 @@ export default function WebApp() {
                             "Enhanceable Security Features",
                             "Full Product Visibility",
                             "Third-Party Integration Options",
-                            "Free & Open-Source"
+                            "Low-Cost & Open-Source"
                         ],
                         "cons": [
                             "Requires High Degree of Coding",
@@ -72,6 +73,28 @@ export default function WebApp() {
             <h6>Does Framework Language Matter?</h6>
             <img src="/images/startups/undraw/undraw_static_website_re_x70h.svg"/>
             <p>As seen above, the popularity of JavaScript for web development stems from several factors. Firstly, JavaScript is the language of the web, supported by all modern browsers, making it a ubiquitous choice for client-side scripting. Additionally, JavaScript's versatility allows developers to build interactive and dynamic web experiences, enhancing user engagement. However, choosing a framework operating in another language like Django (using Python) or Ruby on Rails (using Ruby) might be preferred for specific projects due to the strengths and ecosystems of those languages. For example, Django offers robust built-in features for rapid development and follows the "batteries-included" philosophy, while Ruby on Rails emphasizes convention over configuration, promoting developer productivity and code maintainability. Depending on project requirements, such frameworks may offer better solutions for certain use cases or align more closely with a team's expertise and preferences.</p>
+            <h6>Choosing a Web Application Host</h6>
+            <p></p>
+            <h6 style={{"fontWeight":"500", "textAlign": "center"}}>Choice Web App Host</h6>
+            <Specs details={webappHosts.highlight}></Specs>
+            <div className={styles.vs}>
+            <h6 style={{"fontWeight":"500", "textAlign": "center"}}>Other Web App Hosts</h6>
+            {
+                Object.entries(webappHosts.others).map(([i, frD], index) => {
+                    return (
+                        <Specs key={index} details={frD}></Specs>
+                    )
+                })
+            }
+            <h6 style={{"fontWeight":"500", "textAlign": "center"}}>Web App Host Honorable Mentions</h6>
+            {
+                Object.entries(webappHosts.mentions).map(([i, frD], index) => {
+                    return (
+                        <Specs key={index} details={frD}></Specs>
+                    )
+                })
+            }
+            </div>
             <h6>Next Steps - Developing the Application</h6>
             <p>Once a foundational framework has been chosen, the website application development process begins with designing the user interface (UI) using prototyping tools to visualize the layout and user interactions effectively. This is typically the job of a dedicated designer rather than programmer and is explained in the next section. Once the UI is finalized, programming the UI elements and integrating external third-party services for authentication and data exchange becomes crucial. In the backend, databases and content providers are implemented, prioritizing robust security measures to safeguard sensitive data. Finally, the completed website is deployed to a hosting service, leveraging repository services like Github or Gitlab for version control and collaboration, ensuring seamless deployment and ongoing maintenance of the application.</p>
         </>
