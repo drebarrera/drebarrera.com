@@ -18,8 +18,10 @@ function Feature(props) {
         <h6>{`${details.role}`}</h6>
         <h5>{`${details.title}`}</h5>
         <p>{`${details.description}`}</p>
-        <ArrowLink details={{link: details.link, url: `/${details.route}/${details.identifier}`}}/>
-        { (details.website != "") ? <ArrowLink details={{link: "Explore the Project", url: details.website}}/> : <></> }
+        <div style={{"display": "flex", "flexDirection": "column", "rowGap": "8px"}}>
+          <ArrowLink details={{link: details.link, url: `/${details.route}/${details.identifier}`}}/>
+          { (details.website != "") ? <ArrowLink details={{link: "Explore the Project", url: details.website}}/> : <></> }
+        </div>
       </div>
     );
   }

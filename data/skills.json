@@ -5,10 +5,10 @@
   "Branding": "90%",
   "Frontend Development": "90%",
   "Backend Development": "80%",
-  "Mobile Development": "70%",
   "DevOps & Cloud": "70%",
   "Telemetry & API": "60%",
-  "Embedded Software": "60%",
-  "Electrical Prototyping": "50%",
-  "Artificial Intelligence": "30%"
+  "Mobile Development": "50%",
+  "Embedded Software": "40%",
+  "Electrical Prototyping": "30%",
+  "Artificial Intelligence": "20%"
 }
