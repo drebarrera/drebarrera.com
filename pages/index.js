@@ -125,7 +125,7 @@ function Work() {
   return (
     <article className={`${styles.featured} ${styles.work}`} id="work">
       <div className={`${styles.content}`}>
-        <h4>WORK</h4>
+        <h4>WORK HISTORY</h4>
         {featuredwork.map((details, index) => {
           details.index = index;
           details["route"] = "work";

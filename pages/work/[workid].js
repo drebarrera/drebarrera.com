@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import Header from "components/header";
 import Head from 'next/head';
 
-import featuredwork from "data/featuredwork.json";
+import featuredwork from "data/featuredwork_chkm8.json";
 import tools from "data/tools.json";
 
 import styles from "@/styles/dynamic.module.css";
@@ -104,15 +104,36 @@ export default function WorkPage(props) {
               <p>
                 {details.website !== "" ? (
                   <>
-                    <span className={`${styles.label}`}>Website</span>
+                    <span className={`${styles.label}`}>Explore the Project</span>
                     <br></br>
-                    <a
-                      href={details.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {details.website.replace("https://", "")}
-                    </a>
+                    {
+                      typeof details.website == "string" ?
+                      <>
+                        <span>&rarr; </span>
+                        <a
+                          href={details.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {details.website.replace("https://", "")}
+                        </a>
+                       </>
+                      : Object.entries(details.website).map(([name, url], index) => {
+                        return (
+                          <>
+                          <span>&rarr; </span>
+                          <a
+                            href={url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {name}
+                          </a>
+                          <br></br>
+                          </>
+                        );
+                      })
+                    }
                   </>
                 ) : (
                   <></>
@@ -136,14 +157,14 @@ export default function WorkPage(props) {
           <></>
         )}
         <section className={`${styles.section} ${styles.challenge}`}>
-          <div className={`${styles.img}`} style={images}></div>
+          <a href={`/images/featured/${details.identifier}/challenge.webp`} target="_blank" className={`${styles.img}`} style={images}></a>
           <div className={`${styles.content}`}>
             <p className={`${styles.label}`}>Challenge</p>
             <p>{details.challenge}</p>
           </div>
         </section>
         <section className={`${styles.section} ${styles.solution}`}>
-          <div className={`${styles.img}`} style={images}></div>
+          <a href={`/images/featured/${details.identifier}/solution.webp`} target="_blank" className={`${styles.img}`} style={images}></a>
           <div className={`${styles.content}`}>
             <p className={`${styles.label}`}>Solution</p>
             <p>{details.solution}</p>
@@ -183,7 +204,7 @@ export default function WorkPage(props) {
           </div>
         </section>
         <section className={`${styles.resultimg}`}>
-          <img src={`/images/featured/${details.identifier}/result.webp`}/>
+          <a href={`/images/featured/${details.identifier}/result.webp`} target="_blank"><img src={`/images/featured/${details.identifier}/result.webp`}/></a>
         </section>
       </article>
     </Fragment>
