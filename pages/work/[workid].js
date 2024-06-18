@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import Header from "components/header";
 import Head from 'next/head';
 
-import featuredwork from "data/featuredwork.json";
+import featuredwork from "data/featuredwork_chkm8.json";
 import tools from "data/tools.json";
 
 import styles from "@/styles/dynamic.module.css";
