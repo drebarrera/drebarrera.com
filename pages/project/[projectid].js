@@ -59,6 +59,7 @@ export default function WorkPage(props) {
       <Head>
           <title>{details.title}</title>
           <meta name="description" content={details.description} />
+          <meta name="robots" content="noindex, nofollow"/>
       </Head>
       <Header></Header>
       <article className={`${styles.article}`}>
