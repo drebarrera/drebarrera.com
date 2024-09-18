@@ -1,10 +1,10 @@
-import PageIcon from "components/startups/icons/page";
+import PageIcon from "/components/startups/icons/page";
 
-import Specs from "components/startups/specs";
+import Specs from "/components/startups/specs";
 
 import CMSTrends from '/components/startups/google/cms';
 
-import cms from "components/startups/content/cms";
+import cms from "/components/startups/content/cms";
 
 import styles from "/styles/startups/index.module.css";
 
@@ -47,7 +47,7 @@ export default function CMSSite() {
                             "Efficiency Loss When Scaling",
                             "Limited Control Over Backend",
                             "Third-Party Vulnerabilities",
-                            "Data Security Dependencies",
+                            "/data Security Dependencies",
                             "Requires Low Project Complexity",
                             "Focuses On Content Over Data",
                             "Expensive Subscription Fees"

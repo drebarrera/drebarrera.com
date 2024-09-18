@@ -1,11 +1,11 @@
-import UIIcon from "components/startups/icons/ui";
-import PaletteIcon from "components/startups/icons/palette";
-import EmailIcon from "components/startups/icons/email";
-import ApplicationIcon from "components/startups/icons/application";
-import AppIcon from "components/startups/icons/app";
-import UAuthIcon from "components/startups/icons/uauth";
-import AnalyticsIcon from "components/startups/icons/analytics";
-import MaintenanceIcon from "components/startups/icons/maintenance";
+import UIIcon from "/components/startups/icons/ui";
+import PaletteIcon from "/components/startups/icons/palette";
+import EmailIcon from "/components/startups/icons/email";
+import ApplicationIcon from "/components/startups/icons/application";
+import AppIcon from "/components/startups/icons/app";
+import UAuthIcon from "/components/startups/icons/uauth";
+import AnalyticsIcon from "/components/startups/icons/analytics";
+import MaintenanceIcon from "/components/startups/icons/maintenance";
 
 import React from "react";
 
@@ -45,9 +45,9 @@ var tech = {
         "svg": <AppIcon></AppIcon>,
         "color": "#00BAC6"
     },
-    "Data": {
+    "/data": {
         "textcontent": ["Secure","and","to ensure user trust. Establishing robust infrastructure, user-friendly interfaces, and PCI-compliant payment processing safeguards user trust and prevents data security issues."],
-        "linktext": ["User Authentication", "Data Storage"],
+        "linktext": ["User Authentication", "/data Storage"],
         "linkhref": ["/userauth", "/data"],
         "svg": <UAuthIcon></UAuthIcon>,
         "color": "#1C85FF"

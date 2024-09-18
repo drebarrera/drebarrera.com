@@ -8786,7 +8786,7 @@ $.extend( Datepicker.prototype, {
 					$.datepicker._gotoToday( id );
 				},
 				selectDay: function() {
-					$.datepicker._selectDay( id, +this.getAttribute( "data-month" ), +this.getAttribute( "data-year" ), this );
+					$.datepicker._selectDay( id, +this.getAttribute( "/data-month" ), +this.getAttribute( "/data-year" ), this );
 					return false;
 				},
 				selectMonth: function() {
@@ -8798,7 +8798,7 @@ $.extend( Datepicker.prototype, {
 					return false;
 				}
 			};
-			$( this ).on( this.getAttribute( "data-event" ), handler[ this.getAttribute( "data-handler" ) ] );
+			$( this ).on( this.getAttribute( "/data-event" ), handler[ this.getAttribute( "/data-handler" ) ] );
 		} );
 	},
 

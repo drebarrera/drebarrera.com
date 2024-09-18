@@ -1,8 +1,8 @@
-import WordPressIcon from "components/startups/icons/cms/wordpress";
-import ShopifyIcon from "components/startups/icons/cms/shopify";
-import WixIcon from "components/startups/icons/cms/wix";
-import SquareSpaceIcon from "components/startups/icons/cms/squarespace";
-import DrupalIcon from "components/startups/icons/cms/drupal";
+import WordPressIcon from "/components/startups/icons/cms/wordpress";
+import ShopifyIcon from "/components/startups/icons/cms/shopify";
+import WixIcon from "/components/startups/icons/cms/wix";
+import SquareSpaceIcon from "/components/startups/icons/cms/squarespace";
+import DrupalIcon from "/components/startups/icons/cms/drupal";
 
 import React from "react";
 
@@ -80,7 +80,7 @@ const cms = {
                 "Template Restriction",
                 "Ads on Free Plan",
                 "Higher Subscription Costs",
-                "Data Portability Issues",
+                "/data Portability Issues",
                 "Less SEO Optimization"
             ],
             "icon": <WixIcon></WixIcon>,
@@ -105,7 +105,7 @@ const cms = {
                 "Higher Cost for Advanced Features",
                 "Template Limitations",
                 "Less Developer-Friendly",
-                "Data Export Limitations",
+                "/data Export Limitations",
                 "Less Plug-Ins and Integration"
             ],
             "icon": <SquareSpaceIcon></SquareSpaceIcon>,

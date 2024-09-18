@@ -1,4 +1,4 @@
-import Header from "components/header";
+import Header from "/components/header";
 
 import styles from "@/styles/404.module.css";
 

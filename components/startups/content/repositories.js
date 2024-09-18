@@ -1,6 +1,6 @@
-import GitHubIcon from "components/startups/icons/repositories/github";
-import GitLabIcon from "components/startups/icons/repositories/gitlab";
-import BitBucketIcon from "components/startups/icons/repositories/bitbucket";
+import GitHubIcon from "/components/startups/icons/repositories/github";
+import GitLabIcon from "/components/startups/icons/repositories/gitlab";
+import BitBucketIcon from "/components/startups/icons/repositories/bitbucket";
 
 import React from "react";
 

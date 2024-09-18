@@ -1,8 +1,8 @@
-import VercelIcon from "components/startups/icons/webapp-hosts/vercel";
-import NetlifyIcon from "components/startups/icons/webapp-hosts/netlify";
-import HerokuIcon from "components/startups/icons/webapp-hosts/heroku";
-import DigitalOceanIcon from "components/startups/icons/webapp-hosts/digital-ocean";
-import AWSAmplifyIcon from "components/startups/icons/webapp-hosts/aws-amplify";
+import VercelIcon from "/components/startups/icons/webapp-hosts/vercel";
+import NetlifyIcon from "/components/startups/icons/webapp-hosts/netlify";
+import HerokuIcon from "/components/startups/icons/webapp-hosts/heroku";
+import DigitalOceanIcon from "/components/startups/icons/webapp-hosts/digital-ocean";
+import AWSAmplifyIcon from "/components/startups/icons/webapp-hosts/aws-amplify";
 
 import React from "react";
 

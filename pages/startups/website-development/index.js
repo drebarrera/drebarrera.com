@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Header from "components/header";
+import Header from "/components/header";
 
-import Breadcrumb from "components/breadcrumb";
-import WebDevComponent from "components/startups/topics/website-development/website-development";
+import Breadcrumb from "/components/breadcrumb";
+import WebDevComponent from "/components/startups/topics/website-development/website-development";
 
 import styles from "/styles/startups/index.module.css";
 

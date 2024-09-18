@@ -1,18 +1,18 @@
-import Header from "components/header";
-import Feature from "components/feature";
-import ArrowLink from "components/arrowlink";
+import Header from "/components/header";
+import Feature from "/components/feature";
+import ArrowLink from "/components/arrowlink";
 import { Fragment } from "react";
 import { useState, useEffect } from "react";
 import Head from "next/head";
 
 import styles from "@/styles/index.module.css";
 
-import specialties from "data/specialties.json";
-import tools from "data/tools.json"
-import skills from "data/skills.json"
-import featuredwork from "data/featuredwork.json";
+import specialties from "/data/specialties.json";
+import tools from "/data/tools.json"
+import skills from "/data/skills.json"
+import featuredwork from "/data/featuredwork.json";
 featuredwork.sort((a, b) => a.index - b.index);
-import featuredprojects from "data/featuredprojects.json";
+import featuredprojects from "/data/featuredprojects.json";
 import Tool from "@/components/tool";
 featuredprojects.sort((a, b) => a.index - b.index);
 

@@ -1,8 +1,8 @@
-import Specs from "components/startups/specs";
+import Specs from "/components/startups/specs";
 
-import repositories from "components/startups/content/repositories";
+import repositories from "/components/startups/content/repositories";
 
-import PageIcon from "components/startups/icons/page";
+import PageIcon from "/components/startups/icons/page";
 
 import HostingTrends from '/components/startups/google/hosting';
 
