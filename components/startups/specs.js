@@ -1,4 +1,4 @@
-import Item from "components/startups/icons/item";
+import Item from "/components/startups/icons/item";
 
 import styles from "/styles/components/startups/specs.module.css";
 

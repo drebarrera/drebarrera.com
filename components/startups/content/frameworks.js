@@ -1,8 +1,8 @@
-import ReactIcon from "components/startups/icons/frameworks/react";
-import NextIcon from "components/startups/icons/frameworks/next";
-import VueIcon from "components/startups/icons/frameworks/vue";
-import AngularIcon from "components/startups/icons/frameworks/angular";
-import ExpressIcon from "components/startups/icons/frameworks/express";
+import ReactIcon from "/components/startups/icons/frameworks/react";
+import NextIcon from "/components/startups/icons/frameworks/next";
+import VueIcon from "/components/startups/icons/frameworks/vue";
+import AngularIcon from "/components/startups/icons/frameworks/angular";
+import ExpressIcon from "/components/startups/icons/frameworks/express";
 
 import React from "react";
 

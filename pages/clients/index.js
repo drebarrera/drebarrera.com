@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Header from "components/header";
+import Header from "/components/header";
 import styles from "@/styles/clients/index.module.css";
 import tools from "@/data/tools.json"
 import { useState } from 'react';

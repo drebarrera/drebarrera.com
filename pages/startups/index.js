@@ -1,14 +1,14 @@
 import Head from "next/head";
 import { useState } from "react";
-import Header from "components/header";
+import Header from "/components/header";
 
-import tech from "components/startups/content/tech";
-import timeline from "components/startups/content/timeline";
+import tech from "/components/startups/content/tech";
+import timeline from "/components/startups/content/timeline";
 
-import RocketIcon from "components/startups/icons/rocket";
-import ExpandIcon from "components/startups/icons/expand";
+import RocketIcon from "/components/startups/icons/rocket";
+import ExpandIcon from "/components/startups/icons/expand";
 
-import WebDevComponent from "components/startups/topics/website-development/website-development";
+import WebDevComponent from "/components/startups/topics/website-development/website-development";
 
 import styles from "/styles/startups/index.module.css";
 

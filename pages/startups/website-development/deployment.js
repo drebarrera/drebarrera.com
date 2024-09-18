@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Header from "components/header";
+import Header from "/components/header";
 
-import UIIcon from "components/startups/icons/ui";
+import UIIcon from "/components/startups/icons/ui";
 
-import Breadcrumb from "components/breadcrumb";
-import HostingComponent from "components/startups/topics/website-development/deployment";
+import Breadcrumb from "/components/breadcrumb";
+import HostingComponent from "/components/startups/topics/website-development/deployment";
 
 import styles from "/styles/startups/index.module.css";
 

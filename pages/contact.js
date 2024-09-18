@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import Head from 'next/head';
 
-import Header from "components/header";
+import Header from "/components/header";
 
 import styles from "@/styles/contact.module.css";
 

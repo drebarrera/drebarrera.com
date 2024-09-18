@@ -1,9 +1,9 @@
-import Specs from "components/startups/specs";
+import Specs from "/components/startups/specs";
 
 import FrameworkTrends from '/components/startups/google/frameworks';
 
-import frameworks from "components/startups/content/frameworks";
-import webappHosts from "components/startups/content/webapp-hosts";
+import frameworks from "/components/startups/content/frameworks";
+import webappHosts from "/components/startups/content/webapp-hosts";
 
 import styles from "/styles/startups/index.module.css";
 
@@ -21,7 +21,7 @@ export default function WebApp() {
                             "Optimization Opportunities",
                             "Scalable Architecture Options",
                             "Configurable Infrastructure",
-                            "Data-Oriented Telemetry Options",
+                            "/data-Oriented Telemetry Options",
                             "Enhanceable Security Features",
                             "Full Product Visibility",
                             "Third-Party Integration Options",

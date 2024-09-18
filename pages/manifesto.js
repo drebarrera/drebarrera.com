@@ -1,15 +1,13 @@
-import Header from "components/header";
+import Header from "/components/header";
 import { Fragment } from "react"
-import Link from 'next/link';
 import Head from 'next/head';
-import Image from 'next/image';
-import Tool from "components/tool";
+import Tool from "/components/tool";
 import { useState, useEffect } from "react";
 
 import styles from "@/styles/manifesto.module.css";
-import skills from "data/skills.json"
-import manifesto from "data/manifesto.json"
-import tools from "data/tools.json"
+import skills from "/data/skills.json"
+import manifesto from "/data/manifesto.json"
+import tools from "/data/tools.json"
 
 function Manifesto() {
     return (

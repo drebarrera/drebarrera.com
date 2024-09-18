@@ -1,9 +1,9 @@
 import { Fragment } from "react";
-import Header from "components/header";
+import Header from "/components/header";
 import Head from 'next/head';
 
-import featuredwork from "data/featuredprojects.json";
-import tools from "data/tools.json";
+import featuredwork from "/data/featuredprojects.json";
+import tools from "/data/tools.json";
 
 import styles from "@/styles/dynamic.module.css";
 import ArrowLink from "@/components/arrowlink";

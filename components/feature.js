@@ -1,4 +1,4 @@
-import ArrowLink from "components/arrowlink";
+import ArrowLink from "/components/arrowlink";
 
 import styles from "@/styles/components/feature.module.css";
 

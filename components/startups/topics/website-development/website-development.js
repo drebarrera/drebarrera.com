@@ -1,11 +1,11 @@
-import UIIcon from "components/startups/icons/ui";
-import PageIcon from "components/startups/icons/page";
+import UIIcon from "/components/startups/icons/ui";
+import PageIcon from "/components/startups/icons/page";
 
-import Specs from "components/startups/specs";
+import Specs from "/components/startups/specs";
 
-import WebAppComponent from "components/startups/topics/website-development/web-app";
-import CMSSiteComponent from "components/startups/topics/website-development/cms-site";
-import HostingComponent from "components/startups/topics/website-development/deployment";
+import WebAppComponent from "/components/startups/topics/website-development/web-app";
+import CMSSiteComponent from "/components/startups/topics/website-development/cms-site";
+import HostingComponent from "/components/startups/topics/website-development/deployment";
 
 import styles from "/styles/startups/index.module.css";
 
@@ -68,7 +68,7 @@ export default function WebDev() {
                             "Efficiency Loss When Scaling",
                             "Limited Control Over Backend",
                             "Third-Party Vulnerabilities",
-                            "Data Security Dependencies",
+                            "/data Security Dependencies",
                             "Requires Low Project Complexity",
                             "Focuses On Content Over Data",
                             "Expensive Subscription Fees"
@@ -85,7 +85,7 @@ export default function WebDev() {
                             "Optimization Opportunities",
                             "Scalable Architecture Options",
                             "Configurable Infrastructure",
-                            "Data-Oriented Telemetry Options",
+                            "/data-Oriented Telemetry Options",
                             "Enhanceable Security Features",
                             "Full Product Visibility",
                             "Third-Party Integration Options",
