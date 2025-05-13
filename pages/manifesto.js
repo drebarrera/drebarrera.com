@@ -65,39 +65,6 @@ function Skills() {
     )
 }
 
-/*function Tools() {
-    return (
-        <article className={`${styles.macrosection} ${styles.macrotool}`}>
-            <div className={`${styles.content}`}>
-                <h4>MY TOOLBOX</h4>
-                <div className={`${styles.tools}`}>
-                    {
-                    tools.map((tool) => {
-                        return (
-                            <section className={`${styles.toolset}`}>
-                                <h5>{tool.title}</h5>
-                                <div className={`${styles.toolcontent}`}>
-                                    {
-                                    Object.keys(tool.tools).map((item) => {
-                                        return (
-                                            <Link href={`${tool.tools[item]}`} target="_blank">
-                                                <div className={`${styles.tool}`}>
-                                                    <div className={`${styles.icon}`}><Image src={`/images/tools/${item.toLowerCase().replaceAll(' ', '_')}.webp`}  alt={`${item}`} layout="fill" objectFit="contain"/></div>
-                                                    <h6>{`${item}`}</h6>
-                                                </div>
-                                            </Link>
-                                        );
-                                    })}
-                                </div>
-                            </section>
-                        );
-                    })}
-                </div>
-            </div>
-        </article>
-    )
-}*/
-
 function Tools() {
     const entries = Object.entries(tools);
     const sortedEntries = entries.sort(([, a], [, b]) => b.year - a.year);
@@ -149,7 +116,7 @@ function Tools() {
                                     (category === 'community') ? '#674172' : 
                                     '#B5E655'
                                 };
-                                return <div onClick={(event) => handleClick(category, event)} className={`${styles.category}`} style={gradient}><p className={`${selected.includes(category) ? styles.categorySelected : ''}`}>{category}</p></div>;
+                                return <div onClick={(event) => handleClick(category, event)} className={`${styles.category}`} style={gradient}><p className={`${selected.includes(category) ? styles.categorySelected : ''}`}>{category == 'devops' ? 'devops & cloud' : category}</p></div>;
                             })
                         }
                     </div>

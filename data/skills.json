@@ -1,14 +1,14 @@
 {
   "Software Engineering": "100%",
   "Web Application Development": "100%",
-  "/data Automation": "100%",
-  "Branding": "90%",
+  "Data Automation": "100%",
+  "Branding & UI/UX": "90%",
   "Frontend Development": "90%",
   "Backend Development": "80%",
   "DevOps & Cloud": "70%",
   "Telemetry & API": "60%",
   "Mobile Development": "50%",
+  "Artificial Intelligence": "40%",
   "Embedded Software": "40%",
-  "Electrical Prototyping": "30%",
-  "Artificial Intelligence": "20%"
+  "Electrical Prototyping": "30%"
 }
