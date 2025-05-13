@@ -10,7 +10,7 @@
     "captureMB": "7%",
     "role": "Senior Software Engineer | Sole Proprietor",
     "location": "Austin, Texas",
-    "tools": ["Python", "C++", "Go", "TypeScript", "HTML", "CSS", "React", "Angular", "Node.js", "AWS", "Java", "Docker", "Linux", "Bash", "Git", "MySQL", "Selenium", "Figma", "Kubernetes", "TailwindCSS", "Next.js"],
+    "tools": ["Python", "C++", "Go", "TypeScript", "React", "Angular", "Node.js", "AWS", "Java", "Docker", "Linux", "Bash", "Git", "MySQL", "Selenium", "Figma", "Kubernetes", "TailwindCSS", "Next.js", "Puppeteer", "Supabase"],
     "website": "https://www.circlesquarelabs.com",
     "premise": "This project is in the context of my work to build and lead CircleSquare Labs. CircleSquare Labs is a full-service technology firm based out of Austin. With a business entity created for client-facing projects and another business entity for research and development, CircleSquare Labs is uniquely positioned to be a leader in pioneer technology in the future.",
     "challenge": "CircleSquare Labs began as a single-entity company designed to manage client projects under my sole proprietorship as a Senior Software Engineer. The initial challenge was to evolve from this foundational structure into a full-service technology firm capable of handling diverse client demands while also fostering research and development (R&D) initiatives. Balancing client-facing operations with the need to innovate in data computation technologies such as Optical Character Recognition (OCR), web crawling, and artificial intelligence (AI) required strategic planning, resource management, and an adaptable business model.",
