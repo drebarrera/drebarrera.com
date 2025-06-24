@@ -8,16 +8,16 @@ import styles from "@/styles/components/header.module.css";
 export default function Header() {
   const HEADER_LINKS = [
     {
+      href: "/#about",
+      name: "About",
+    },
+    {
       href: "/#work",
       name: "Work",
     },
     {
       href: "/#projects",
-      name: "Personal Projects",
-    },
-    {
-      href: "/manifesto",
-      name: "Manifesto",
+      name: "Passion Projects",
     },
     {
       href: "/Andres_Barrera_Resume.pdf",
@@ -47,7 +47,7 @@ export default function Header() {
   const menuStyle = menuClicked && (clientWidth < 850) ? { display: "flex" } : { display: "none" };
 
   return (
-    <header className={`${styles.header}`}>
+    <header className={`top-[60px] md:top-[50px] ${styles.header}`}>
       <div className={`${styles.wrapper}`}>
         <div className={`${styles.navbar}`}>
           <Link href="/">
@@ -61,7 +61,7 @@ export default function Header() {
                 </Link>
               );
             })}
-            <Link href="/contact">
+            <Link href="https://calendly.com/drebarrera/chat">
               <div className={`${styles.chatbutton}`} scroll="false">
                 Let's Chat
               </div>
@@ -94,7 +94,7 @@ export default function Header() {
           </Link>
         );
       })}
-      <Link href="/contact">
+      <Link href="https://calendly.com/drebarrera/chat">
         <div className={`${styles.chatbutton}`} scroll="false">
           Let's Chat
         </div>
