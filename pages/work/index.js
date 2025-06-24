@@ -15,7 +15,7 @@ import PersonalProjects from "@/components/index/PersonalProjects";
 import Austin from "@/components/index/Austin";
 import LimitlessInnovation from "@/components/index/LimitlessInnovation";
 import AboutMe from "@/components/index/AboutMe";
-
+import Banner from "@/components/banner";
 
 function IndexPage() {
   return (
@@ -24,6 +24,7 @@ function IndexPage() {
         <title>Andrés Barrera</title>
         <meta name="description" content="I help companies craft beautiful UI, orchestrate efficient automation, and prototype interconnected systems." />
       </Head>
+      <Banner />
       <Introduction />
       <Header />
       <Tools />
