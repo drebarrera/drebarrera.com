@@ -15,7 +15,7 @@ import PersonalProjects from "@/components/index/PersonalProjects";
 import Austin from "@/components/index/Austin";
 import LimitlessInnovation from "@/components/index/LimitlessInnovation";
 import AboutMe from "@/components/index/AboutMe";
-
+import Banner from "@/components/banner";
 
 function IndexPage() {
   return (
