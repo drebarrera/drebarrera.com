@@ -24,6 +24,7 @@ function IndexPage() {
         <title>Andrés Barrera</title>
         <meta name="description" content="I help companies craft beautiful UI, orchestrate efficient automation, and prototype interconnected systems." />
       </Head>
+      <Banner />
       <Introduction />
       <Header />
       <Tools />
