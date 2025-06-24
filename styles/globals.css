@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --gunmetal: #20333a;
   --dark-gunmetal: #1e2426;

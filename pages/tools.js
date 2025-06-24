@@ -8,8 +8,9 @@ import styles from "@/styles/manifesto.module.css";
 import skills from "/data/skills.json"
 import manifesto from "/data/manifesto.json"
 import tools from "/data/tools.json"
+import Banner from "@/components/banner";
 
-function Manifesto() {
+/*function Manifesto() {
     return (
         <article className={`${styles.macrosection} ${styles.macromanifesto}`}>
             <div className={`${styles.content}`}>
@@ -63,7 +64,7 @@ function Skills() {
             </div>
         </article>
     )
-}
+}*/
 
 function Tools() {
     const entries = Object.entries(tools);
@@ -146,10 +147,9 @@ export default function ManifestoPage() {
                 <title>Manifesto</title>
                 <meta name="description" content="My core values, skills, langauges, tools, and communities." />
             </Head>
-            <Header></Header>
-            <Manifesto></Manifesto>
-            <Skills></Skills>
-            <Tools></Tools>
+            <Banner/>
+            <Header/>
+            <Tools/>
         </Fragment>
     );
 }
