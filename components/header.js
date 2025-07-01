@@ -16,12 +16,12 @@ export default function Header() {
       name: "Work",
     },
     {
-      href: "/#projects",
-      name: "Passion Projects",
+      href: "https://mission.drebarrera.com",
+      name: "Mission",
     },
     {
-      href: "/Andres_Barrera_Resume.pdf",
-      name: "Resume",
+      href: "/#projects",
+      name: "Passion Projects",
     },
   ];
 
