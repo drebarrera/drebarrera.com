@@ -144,7 +144,7 @@ export default function ManifestoPage() {
     return (
         <Fragment>
             <Head>
-                <title>Manifesto</title>
+                <title>Andrés Barrera | Tools</title>
                 <meta name="description" content="My core values, skills, langauges, tools, and communities." />
             </Head>
             <Banner/>
