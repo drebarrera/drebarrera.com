@@ -7,7 +7,7 @@ export default function AboutMe() {
         <h2 className="text-5xl font-medium">ABOUT ME</h2>
         <div className="w-full flex flex-col items-center gap-[20px]">
           <p className="w-full text-base md:text-lg font-regular font-[Inter] font-light">
-            I’ve spent the last 7 years as a multidisciplinary Software Engineer, Product Designer, and Community Leader with a proven track record of architecting full-stack systems, leading product development teams, and designing culturally-intelligent, user-first experiences across startups, mid-sized companies, and nonprofit sectors. Having started coding at the age of 12 and receiving a Bachelor's in Computer Engineering from Purdue University, I am a perpetual builder, learner, and explorer.
+            I’ve spent the last 5 years as a multidisciplinary Software Engineer, Product Designer, and Community Leader with a proven track record of architecting full-stack systems, leading product development teams, and designing culturally-intelligent, user-first experiences across startups, mid-sized companies, and nonprofit sectors. Having started coding at the age of 13 and receiving a Bachelor's in Computer Engineering from Purdue University, I am a perpetual builder, learner, and explorer.
             <br /><br />
             I work as an independent contractor and founded CircleSquare Labs to provide application engineering, UI/UX design, and data automation systems for early stage startups.
             <br /><br />
