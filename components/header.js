@@ -51,7 +51,7 @@ export default function Header() {
       <div className={`${styles.wrapper}`}>
         <div className={`${styles.navbar}`}>
           <Link href="/">
-            <h1>Andr&#233;s Barrera</h1>
+            <h1>Andr&#233;s Barrera: <span style={{fontFamily: "ui-monospace"}}>Docs</span></h1>
           </Link>
           <div className={`${styles.nav}`}>
             {HEADER_LINKS.map((link) => {
