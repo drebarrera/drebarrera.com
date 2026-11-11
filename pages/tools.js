@@ -8,8 +8,9 @@ import styles from "@/styles/manifesto.module.css";
 import skills from "/data/skills.json"
 import manifesto from "/data/manifesto.json"
 import tools from "/data/tools.json"
+import Banner from "@/components/banner";
 
-function Manifesto() {
+/*function Manifesto() {
     return (
         <article className={`${styles.macrosection} ${styles.macromanifesto}`}>
             <div className={`${styles.content}`}>
@@ -57,39 +58,6 @@ function Skills() {
                                 </div>
                                 <h6>{skill}</h6>
                             </div>
-                        );
-                    })}
-                </div>
-            </div>
-        </article>
-    )
-}
-
-/*function Tools() {
-    return (
-        <article className={`${styles.macrosection} ${styles.macrotool}`}>
-            <div className={`${styles.content}`}>
-                <h4>MY TOOLBOX</h4>
-                <div className={`${styles.tools}`}>
-                    {
-                    tools.map((tool) => {
-                        return (
-                            <section className={`${styles.toolset}`}>
-                                <h5>{tool.title}</h5>
-                                <div className={`${styles.toolcontent}`}>
-                                    {
-                                    Object.keys(tool.tools).map((item) => {
-                                        return (
-                                            <Link href={`${tool.tools[item]}`} target="_blank">
-                                                <div className={`${styles.tool}`}>
-                                                    <div className={`${styles.icon}`}><Image src={`/images/tools/${item.toLowerCase().replaceAll(' ', '_')}.webp`}  alt={`${item}`} layout="fill" objectFit="contain"/></div>
-                                                    <h6>{`${item}`}</h6>
-                                                </div>
-                                            </Link>
-                                        );
-                                    })}
-                                </div>
-                            </section>
                         );
                     })}
                 </div>
@@ -149,7 +117,7 @@ function Tools() {
                                     (category === 'community') ? '#674172' : 
                                     '#B5E655'
                                 };
-                                return <div onClick={(event) => handleClick(category, event)} className={`${styles.category}`} style={gradient}><p className={`${selected.includes(category) ? styles.categorySelected : ''}`}>{category}</p></div>;
+                                return <div onClick={(event) => handleClick(category, event)} className={`${styles.category}`} style={gradient}><p className={`${selected.includes(category) ? styles.categorySelected : ''}`}>{category == 'devops' ? 'devops & cloud' : category}</p></div>;
                             })
                         }
                     </div>
@@ -176,13 +144,12 @@ export default function ManifestoPage() {
     return (
         <Fragment>
             <Head>
-                <title>Manifesto</title>
+                <title>Andrés Barrera | Tools</title>
                 <meta name="description" content="My core values, skills, langauges, tools, and communities." />
             </Head>
-            <Header></Header>
-            <Manifesto></Manifesto>
-            <Skills></Skills>
-            <Tools></Tools>
+            <Banner/>
+            <Header/>
+            <Tools/>
         </Fragment>
     );
 }

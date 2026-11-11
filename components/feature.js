@@ -12,6 +12,7 @@ function Feature(props) {
     "--captureMB": details.captureMB,
   };
 
+  const weblink = typeof details.website == "string" ? details.website : details.website[Object.keys(details.website)[0]];
   function FeatureInfo() {
     return (
       <div className={`${styles.info}`}>
@@ -20,7 +21,7 @@ function Feature(props) {
         <p>{`${details.description}`}</p>
         <div style={{"display": "flex", "flexDirection": "column", "rowGap": "8px"}}>
           <ArrowLink details={{link: details.link, url: `/${details.route}/${details.identifier}`}}/>
-          { (details.website != "") ? <ArrowLink details={{link: "Explore the Project", url: details.website}}/> : <></> }
+          { (weblink != "") ? <ArrowLink details={{link: "Explore the Project", url: weblink}}/> : <></> }
         </div>
       </div>
     );

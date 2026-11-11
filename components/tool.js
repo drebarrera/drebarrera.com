@@ -31,7 +31,7 @@ export default function Tool(props) {
     return (
         <Link href={url} className={`${styles.tool}`} style={gradient} target="_blank">
             <div className={`${styles.badge}`}>
-                <p className={`${styles.category}`}>{`${category}`}</p>
+                <p className={`${styles.category}`}>{`${category == 'devops' ? 'devops & cloud' : category}`}</p>
                 <h5>{`${name}`}</h5> 
                 <div dangerouslySetInnerHTML={{ __html: icon }} className={`${styles.icon}`}></div>
                 <div className={`${styles.experience}`}>

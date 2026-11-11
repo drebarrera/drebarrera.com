@@ -8,20 +8,20 @@ import styles from "@/styles/components/header.module.css";
 export default function Header() {
   const HEADER_LINKS = [
     {
+      href: "/#about",
+      name: "About",
+    },
+    {
       href: "/#work",
       name: "Work",
     },
     {
+      href: "https://mission.drebarrera.com",
+      name: "Mission",
+    },
+    {
       href: "/#projects",
-      name: "Personal Projects",
-    },
-    {
-      href: "/manifesto",
-      name: "Manifesto",
-    },
-    {
-      href: "/Andres_Barrera_Resume.pdf",
-      name: "Resume",
+      name: "Passion Projects",
     },
   ];
 
@@ -47,11 +47,11 @@ export default function Header() {
   const menuStyle = menuClicked && (clientWidth < 850) ? { display: "flex" } : { display: "none" };
 
   return (
-    <header className={`${styles.header}`}>
+    <header className={`top-[60px] md:top-[50px] ${styles.header}`}>
       <div className={`${styles.wrapper}`}>
         <div className={`${styles.navbar}`}>
           <Link href="/">
-            <h1>Andr&#233;s Barrera</h1>
+            <h1>Andr&#233;s Barrera: <span style={{fontFamily: "ui-monospace"}}>Docs</span></h1>
           </Link>
           <div className={`${styles.nav}`}>
             {HEADER_LINKS.map((link) => {
@@ -61,7 +61,7 @@ export default function Header() {
                 </Link>
               );
             })}
-            <Link href="/contact">
+            <Link href="https://calendly.com/drebarrera/chat">
               <div className={`${styles.chatbutton}`} scroll="false">
                 Let's Chat
               </div>
@@ -94,7 +94,7 @@ export default function Header() {
           </Link>
         );
       })}
-      <Link href="/contact">
+      <Link href="https://calendly.com/drebarrera/chat">
         <div className={`${styles.chatbutton}`} scroll="false">
           Let's Chat
         </div>
